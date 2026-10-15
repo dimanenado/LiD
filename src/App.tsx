@@ -27,18 +27,19 @@ export default function App() {
   const { p, update } = store
   const [tab, setTab] = useState<Tab>(tabFromHash)
   const [session, setSession] = useState<{ title: string; ids: string[]; n: number } | null>(null)
-  const [examActive, setExamActive] = useState(false)
+  // a running exam or an exam review takes the whole screen
+  const [fullscreen, setFullscreen] = useState(false)
   const [picker, setPicker] = useState(false)
 
   // the URL hash mirrors the tab so Back works and a reload keeps the tab
   useEffect(() => {
     const onHash = () => {
-      if (examActive) history.replaceState(null, '', '#exam')
+      if (fullscreen) history.replaceState(null, '', `#${tab}`)
       else setTab(tabFromHash())
     }
     window.addEventListener('hashchange', onHash)
     return () => window.removeEventListener('hashchange', onHash)
-  }, [examActive])
+  }, [fullscreen, tab])
 
   const go = (t: Tab) => {
     setTab(t)
@@ -69,8 +70,8 @@ export default function App() {
     )
 
   const picker_ = picker && <StatePicker value={p.state} onPick={(state) => update({ state })} onClose={() => setPicker(false)} />
-  // a running exam takes the whole screen; the tree stays the same so the exam keeps its state
-  const chrome = !examActive
+  // the tree stays the same in full screen so a running exam keeps its state
+  const chrome = !fullscreen
 
   return (
     <div className={chrome ? 'shell' : undefined}>
@@ -99,9 +100,22 @@ export default function App() {
 
       <main className={chrome ? 'page' : undefined}>
         {tab === 'learn' && <Learn store={store} practise={practise} />}
-        {tab === 'exam' && <ExamTab store={store} onActiveChange={setExamActive} onPractise={start} onChangeState={() => setPicker(true)} />}
+        {tab === 'exam' && (
+          <ExamTab
+            store={store}
+            onActiveChange={setFullscreen}
+            onPractise={start}
+            onChangeState={() => setPicker(true)}
+            onOpenStats={() => {
+              go('progress')
+              requestAnimationFrame(() => document.getElementById('exams')?.scrollIntoView())
+            }}
+          />
+        )}
         {tab === 'search' && <Search store={store} />}
-        {tab === 'progress' && <ProgressTab store={store} onChangeState={() => setPicker(true)} />}
+        {tab === 'progress' && (
+          <ProgressTab store={store} onChangeState={() => setPicker(true)} onPractise={start} onFullscreen={setFullscreen} />
+        )}
       </main>
 
       {chrome && (

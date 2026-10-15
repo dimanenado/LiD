@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight, Clock, RotateCcw, Trophy } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { BY_ID, PASS, STATES, TOPIC_SHORT, questionRef } from './data'
 import { QuestionCard } from './QuestionCard'
 import { ExamResult, Store } from './store'
@@ -24,7 +24,11 @@ function ScoreChart({ exams, compact = false }: { exams: ExamResult[]; compact?:
           <span>0</span>
         </div>
       )}
-      <div className="chart-plot" role="img" aria-label={`Scores of your last ${shown.length} exams: ${shown.map((e) => e.score).join(', ')}`}>
+      <div
+        className="chart-plot"
+        role="img"
+        aria-label={`Scores of your last ${shown.length} exams: ${shown.map((e) => e.score).join(', ')}`}
+      >
         <i className="pass-line" style={{ bottom: `${(PASS / total) * 100}%` }} />
         {shown.map((e) => (
           <span key={e.date} className="chart-col" title={`${e.score} / ${e.total}, ${fmtDate(e.date)}`}>
@@ -67,18 +71,20 @@ export function ExamSummaryCard({ exams, onOpen }: { exams: ExamResult[]; onOpen
 
 interface StatsProps {
   store: Store
-  onBack: () => void
   onPractise: (title: string, ids: string[]) => void
+  onReview: (exam: ExamResult) => void
 }
 
-/** Exam statistics: totals, score chart, topic accuracy, most missed questions, and every attempt. */
-export function ExamStats({ store, onBack, onPractise }: StatsProps) {
+/** Exam statistics for the Progress tab: totals, score chart, topic accuracy, most missed questions, and every attempt. */
+export function ExamStats({ store, onPractise, onReview }: StatsProps) {
   const exams = store.p.exams
-  const [reviewing, setReviewing] = useState<ExamResult | null>(null)
-
-  useEffect(() => window.scrollTo({ top: 0 }), [reviewing])
-
-  if (reviewing) return <ExamReview exam={reviewing} store={store} onBack={() => setReviewing(null)} />
+  if (!exams.length)
+    return (
+      <section className="stack-sm">
+        <h2 className="label">Exams</h2>
+        <div className="panel muted">No mock exams yet. Your results and stats will show up here.</div>
+      </section>
+    )
 
   const n = exams.length
   const pass = exams.filter(passed).length
@@ -107,156 +113,152 @@ export function ExamStats({ store, onBack, onPractise }: StatsProps) {
   const mostMissed = [...missed.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6)
 
   return (
-    <div className="session">
-      <header className="sessbar">
-        <div className="sessbar-in">
-          <button className="icon-btn" aria-label="Back to exam" onClick={onBack}>
-            <ChevronLeft size={18} />
-          </button>
-          <strong className="sess-title">Exam stats</strong>
+    <>
+      <section className="stack-sm" id="exams">
+        <h2 className="label">Exams</h2>
+        <div className="stat-tiles">
+          <div className="stat">
+            <span className="stat-num tnum">{n}</span>
+            <span className="stat-label">Attempts</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num tnum">{Math.round((pass / n) * 100)}%</span>
+            <span className="stat-label">Passed ({pass})</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num tnum">{best}</span>
+            <span className="stat-label">Best score</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num tnum">{avg.toFixed(1)}</span>
+            <span className="stat-label">Average</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num tnum">{avgMin}</span>
+            <span className="stat-label">Avg minutes</span>
+          </div>
         </div>
-      </header>
-      <main className="page">
-        <div className="stack">
-          <section className="stat-tiles">
-            <div className="stat">
-              <span className="stat-num tnum">{n}</span>
-              <span className="stat-label">Attempts</span>
-            </div>
-            <div className="stat">
-              <span className="stat-num tnum">{Math.round((pass / n) * 100)}%</span>
-              <span className="stat-label">Passed ({pass})</span>
-            </div>
-            <div className="stat">
-              <span className="stat-num tnum">{best}</span>
-              <span className="stat-label">Best score</span>
-            </div>
-            <div className="stat">
-              <span className="stat-num tnum">{avg.toFixed(1)}</span>
-              <span className="stat-label">Average</span>
-            </div>
-            <div className="stat">
-              <span className="stat-num tnum">{avgMin}</span>
-              <span className="stat-label">Avg minutes</span>
-            </div>
-          </section>
+      </section>
 
-          <section className="stack-sm">
-            <h2 className="label">Scores{n > CHART_MAX ? ` · last ${CHART_MAX}` : ''}</h2>
-            <div className="panel">
-              <ScoreChart exams={exams} />
-              <div className="chart-legend">
-                <span>Oldest</span>
-                <span>
-                  <i className="legend-line" /> {PASS} to pass
-                </span>
-                <span>Latest</span>
-              </div>
-            </div>
-          </section>
+      <section className="stack-sm">
+        <h2 className="label">Exam scores{n > CHART_MAX ? ` · last ${CHART_MAX}` : ''}</h2>
+        <div className="panel">
+          <ScoreChart exams={exams} />
+          <div className="chart-legend">
+            <span>Oldest</span>
+            <span>
+              <i className="legend-line" /> {PASS} to pass
+            </span>
+            <span>Latest</span>
+          </div>
+        </div>
+      </section>
 
-          <section className="stack-sm">
-            <h2 className="label">By topic in exams</h2>
-            {topicRows.length ? (
-              <div className="panel">
-                {topicRows.map((t) => {
-                  const pct = Math.round((t.ok / t.all) * 100)
-                  return (
-                    <div key={t.label} className="mastery">
-                      <div className="mastery-head">
-                        <b>{t.label}</b>
-                        <span className="muted tnum">
-                          {pct}% · {t.ok} / {t.all}
-                        </span>
-                      </div>
-                      <div className="meter">
-                        <i className={pct < 50 ? 'low' : ''} style={{ width: `${pct}%` }} />
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-            ) : (
-              <div className="panel muted small">Topic results start with your next exam.</div>
-            )}
-          </section>
-
-          {mostMissed.length > 0 && (
-            <section className="stack-sm">
-              <div className="section-head">
-                <h2 className="label">Missed most often</h2>
-                <button
-                  className="btn btn-ghost btn-sm"
-                  onClick={() => onPractise('Missed most in exams', mostMissed.map(([id]) => id))}
-                >
-                  <RotateCcw size={14} aria-hidden /> Practise these
-                </button>
-              </div>
-              <ul className="rows">
-                {mostMissed.map(([id, count]) => {
-                  const q = BY_ID.get(id)!
-                  return (
-                    <li key={id} className="row-static">
-                      <span className="row-main">
-                        <span className="clamp-2" lang="de">
-                          {q.de.q}
-                        </span>
-                        {store.p.showEnglish && (
-                          <span className="en clamp-2" lang="en">
-                            {q.en.q}
-                          </span>
-                        )}
-                      </span>
-                      <span className="chip chip-bad">{count}×</span>
-                    </li>
-                  )
-                })}
-              </ul>
-            </section>
-          )}
-
-          <section className="stack-sm">
-            <h2 className="label">All attempts</h2>
-            <ul className="list">
-              {exams.map((e) => {
-                const inner = (
-                  <>
-                    <span className={`chip ${passed(e) ? 'chip-ok' : 'chip-bad'}`}>{passed(e) ? 'Passed' : 'Not passed'}</span>
-                    <span className="row-main">
-                      <b className="tnum">
-                        {e.score} / {e.total}
-                      </b>
-                      <small>
-                        {new Date(e.date).toLocaleDateString()} · {STATES[e.state]} · {minutes(e.seconds)} min
-                        {!e.answers && ' · answers not saved'}
-                      </small>
+      <section className="stack-sm">
+        <h2 className="label">By topic in exams</h2>
+        {topicRows.length ? (
+          <div className="panel">
+            {topicRows.map((t) => {
+              const pct = Math.round((t.ok / t.all) * 100)
+              return (
+                <div key={t.label} className="mastery">
+                  <div className="mastery-head">
+                    <b>{t.label}</b>
+                    <span className="muted tnum">
+                      {pct}% · {t.ok} / {t.all}
                     </span>
-                    {e.score === best && <Trophy size={16} aria-label="Best score" className="trophy" />}
-                    {e.answers && <ChevronRight size={18} aria-hidden className="muted" />}
-                  </>
+                  </div>
+                  <div className="meter">
+                    <i className={pct < 50 ? 'low' : ''} style={{ width: `${pct}%` }} />
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        ) : (
+          <div className="panel muted small">Topic results start with your next exam.</div>
+        )}
+      </section>
+
+      {mostMissed.length > 0 && (
+        <section className="stack-sm">
+          <div className="section-head">
+            <h2 className="label">Missed most often</h2>
+            <button
+              className="btn btn-ghost btn-sm"
+              onClick={() =>
+                onPractise(
+                  'Missed most in exams',
+                  mostMissed.map(([id]) => id),
                 )
-                return (
-                  <li key={e.date}>
-                    {e.answers ? (
-                      <button className="list-row" onClick={() => setReviewing(e)}>
-                        {inner}
-                      </button>
-                    ) : (
-                      <div className="list-row static">{inner}</div>
+              }
+            >
+              <RotateCcw size={14} aria-hidden /> Practise these
+            </button>
+          </div>
+          <ul className="rows">
+            {mostMissed.map(([id, count]) => {
+              const q = BY_ID.get(id)!
+              return (
+                <li key={id} className="row-static">
+                  <span className="row-main">
+                    <span className="clamp-2" lang="de">
+                      {q.de.q}
+                    </span>
+                    {store.p.showEnglish && (
+                      <span className="en clamp-2" lang="en">
+                        {q.en.q}
+                      </span>
                     )}
-                  </li>
-                )
-              })}
-            </ul>
-          </section>
-        </div>
-      </main>
-    </div>
+                  </span>
+                  <span className="chip chip-bad">{count}×</span>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
+      )}
+
+      <section className="stack-sm">
+        <h2 className="label">All attempts</h2>
+        <ul className="list">
+          {exams.map((e) => {
+            const inner = (
+              <>
+                <span className={`chip ${passed(e) ? 'chip-ok' : 'chip-bad'}`}>{passed(e) ? 'Passed' : 'Not passed'}</span>
+                <span className="row-main">
+                  <b className="tnum">
+                    {e.score} / {e.total}
+                  </b>
+                  <small>
+                    {new Date(e.date).toLocaleDateString()} · {STATES[e.state]} · {minutes(e.seconds)} min
+                    {!e.answers && ' · answers not saved'}
+                  </small>
+                </span>
+                {e.score === best && <Trophy size={16} aria-label="Best score" className="trophy" />}
+                {e.answers && <ChevronRight size={18} aria-hidden className="muted" />}
+              </>
+            )
+            return (
+              <li key={e.date}>
+                {e.answers ? (
+                  <button className="list-row" onClick={() => onReview(e)}>
+                    {inner}
+                  </button>
+                ) : (
+                  <div className="list-row static">{inner}</div>
+                )}
+              </li>
+            )
+          })}
+        </ul>
+      </section>
+    </>
   )
 }
 
 /** Read-only walk through one past exam with the answers given. */
-function ExamReview({ exam, store, onBack }: { exam: ExamResult; store: Store; onBack: () => void }) {
+export function ExamReview({ exam, store, onBack }: { exam: ExamResult; store: Store; onBack: () => void }) {
   const answers = exam.answers!.filter(([id]) => BY_ID.has(id))
   const [idx, setIdx] = useState(0)
   const [id, chosen] = answers[idx]
@@ -270,7 +272,7 @@ function ExamReview({ exam, store, onBack }: { exam: ExamResult; store: Store; o
     <div className="session">
       <header className="sessbar">
         <div className="sessbar-in">
-          <button className="icon-btn" aria-label="Back to exam stats" onClick={onBack}>
+          <button className="icon-btn" aria-label="Back to progress" onClick={onBack}>
             <ChevronLeft size={18} />
           </button>
           <strong className="sess-title">
@@ -301,18 +303,17 @@ function ExamReview({ exam, store, onBack }: { exam: ExamResult; store: Store; o
         </nav>
       </div>
       <main className="page page-wide">
-        <QuestionCard
-          q={q}
-          label={`Question ${idx + 1}`}
-          showEnglish={store.p.showEnglish}
-          selected={chosen}
-          reveal
-        />
+        <QuestionCard q={q} label={`Question ${idx + 1}`} showEnglish={store.p.showEnglish} selected={chosen} reveal />
         {chosen === null && <p className="muted center">You did not answer this question.</p>}
       </main>
       <footer className="dock">
         <div className="dock-in">
-          <button className="btn btn-secondary btn-icon" aria-label="Previous question" disabled={idx === 0} onClick={() => go(idx - 1)}>
+          <button
+            className="btn btn-secondary btn-icon"
+            aria-label="Previous question"
+            disabled={idx === 0}
+            onClick={() => go(idx - 1)}
+          >
             <ChevronLeft size={18} />
           </button>
           <span className="grow muted small center">{questionRef(q)}</span>
