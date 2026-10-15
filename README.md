@@ -1,0 +1,32 @@
+# Leben in Deutschland prep
+
+Practice app for the German "Leben in Deutschland" test and the Einbürgerungstest. Every question is shown in German with an English translation side by side.
+
+- Practise by topic, your federal state's 10 questions, new questions, or all 300 general questions.
+- Mock exam: 30 general + 3 state questions, 60 minutes, 17 correct to pass.
+- Review mistakes: wrong answers stay in the pile until answered correctly twice in a row.
+- Browse and search all questions in German or English.
+- Progress is stored in the browser; export/import it as a JSON file.
+
+## Data
+
+`src/data/questions.json` is generated from the official BAMF PDF "Gesamtfragenkatalog zum Test Leben in Deutschland" (Stand 07.05.2025): 300 general questions and 10 per federal state. Images are in `public/images/`.
+English translations are unofficial. Answers with `"answerStatus": "draft"` have not yet been checked against the official BAMF online tool.
+
+Regenerate the raw data from a new PDF with the scripts in `scripts/` (needs `pdftotext` and `pip install pymupdf pillow`):
+
+```sh
+pdftotext -layout catalog.pdf catalog.txt
+python3 scripts/parse.py catalog.txt q.json
+python3 scripts/images.py catalog.pdf q.json img/
+```
+
+## Development
+
+```sh
+npm install
+npm run dev
+npm run build   # static site in dist/
+```
+
+Pushing to `main` deploys to GitHub Pages via `.github/workflows/deploy.yml` (enable Pages with source "GitHub Actions" in the repo settings).
