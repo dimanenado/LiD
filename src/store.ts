@@ -4,7 +4,7 @@ export interface QStat {
   seen: number
   correct: number
   wrong: number
-  /** consecutive correct answers; a question leaves "mistakes" at 2 */
+  /** consecutive correct answers; one right answer clears a mistake, two count as mastered */
   streak: number
   last: number
 }
@@ -44,7 +44,7 @@ function load(): Progress {
   return DEFAULT
 }
 
-export const isMistake = (s?: QStat) => !!s && s.wrong > 0 && s.streak < 2
+export const isMistake = (s?: QStat) => !!s && s.wrong > 0 && s.streak === 0
 export const isMastered = (s?: QStat) => !!s && s.streak >= 2
 
 export function useProgress() {
