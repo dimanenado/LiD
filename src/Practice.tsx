@@ -96,7 +96,7 @@ export function Practice({ title, ids, store, onExit, onRestart }: Props) {
                 <i key={i} className={ok ? 'ok' : 'bad'} />
               ))}
             </div>
-            <p className="muted">Questions you answer right twice in a row count as mastered.</p>
+            <p className="muted">A right answer clears a question from your mistakes. Two right in a row count as mastered.</p>
             <div className="actions">
               {missed.length > 0 && (
                 <button className="btn btn-primary" onClick={() => onRestart(`${title}: missed`, missed)}>
