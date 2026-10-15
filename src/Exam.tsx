@@ -1,13 +1,93 @@
+import { ChevronDown, ChevronLeft, ChevronRight, Clock, Flag, Grid3x3, Play, RotateCcw, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
-import { BY_ID, GENERAL, STATES, shuffle, stateQuestions } from './data'
+import { BY_ID, GENERAL, STATES, questionRef, shuffle, stateQuestions } from './data'
 import { QuestionCard } from './QuestionCard'
 import { Store } from './store'
+import { useConfirm } from './hooks'
+import { LangToggle } from './ui'
 
 const LIMIT = 60 * 60
-const PASS = 17
+export const PASS = 17
+
+interface Props {
+  store: Store
+  /** called while an exam is running so the app can hide the tab bar */
+  onActiveChange: (active: boolean) => void
+  onPractise: (title: string, ids: string[]) => void
+  onChangeState: () => void
+}
+
+/** Exam tab: rules and start screen, then a running exam, then results. */
+export function ExamTab({ store, onActiveChange, onPractise, onChangeState }: Props) {
+  const [run, setRun] = useState(0)
+  useEffect(() => () => onActiveChange(false), [onActiveChange])
+
+  if (run === 0) {
+    const last = store.p.exams[0]
+    return (
+      <div className="stack">
+        <section className="intro-card">
+          <span className="eyebrow">Mock exam</span>
+          <h1>Practise the real test</h1>
+          <ul className="rules">
+            <li>
+              <b>33</b> questions: 30 general and 3 about {STATES[store.p.state]}
+            </li>
+            <li>
+              <b>60</b> minutes, answers can be changed until you submit
+            </li>
+            <li>
+              <b>{PASS}</b> correct answers to pass
+            </li>
+          </ul>
+          <div className="actions">
+            <button
+              className="btn btn-primary btn-lg"
+              onClick={() => {
+                onActiveChange(true)
+                setRun(1)
+              }}
+            >
+              <Play size={18} aria-hidden /> Start exam
+            </button>
+            <button className="btn btn-ghost" onClick={onChangeState}>
+              Change state
+            </button>
+          </div>
+        </section>
+        {last && (
+          <p className="muted center">
+            Last exam: {last.score} / {last.total} ({last.score >= PASS ? 'passed' : 'not passed'}),{' '}
+            {new Date(last.date).toLocaleDateString()}
+          </p>
+        )}
+      </div>
+    )
+  }
+
+  return (
+    <Exam
+      key={run}
+      store={store}
+      onExit={() => {
+        onActiveChange(false)
+        setRun(0)
+      }}
+      onRetake={() => setRun((r) => r + 1)}
+      onPractise={onPractise}
+    />
+  )
+}
+
+interface ExamProps {
+  store: Store
+  onExit: () => void
+  onRetake: () => void
+  onPractise: (title: string, ids: string[]) => void
+}
 
 /** Mock test: 30 general + 3 state questions, 60 minutes, results at the end. */
-export function Exam({ store, onExit }: { store: Store; onExit: () => void }) {
+function Exam({ store, onExit, onRetake, onPractise }: ExamProps) {
   const ids = useMemo(
     () => [
       ...shuffle(GENERAL).slice(0, 30).map((q) => q.id),
@@ -21,6 +101,10 @@ export function Exam({ store, onExit }: { store: Store; onExit: () => void }) {
   const [start] = useState(() => Date.now())
   const [now, setNow] = useState(() => Date.now())
   const [finished, setFinished] = useState<number | null>(null)
+  /** after finishing: null = summary, number = reviewing that question */
+  const [review, setReview] = useState<number | null>(null)
+  const [mapOpen, setMapOpen] = useState(false)
+  const [ask, confirmEl] = useConfirm()
 
   const elapsed = Math.floor(((finished ?? now) - start) / 1000)
   const left = Math.max(0, LIMIT - elapsed)
@@ -43,7 +127,6 @@ export function Exam({ store, onExit }: { store: Store; onExit: () => void }) {
     })
     store.addExam({ date: end, state: store.p.state, score, total: ids.length, seconds: Math.floor((end - start) / 1000) })
     setFinished(end)
-    setIdx(0)
     window.scrollTo({ top: 0 })
   }
 
@@ -51,72 +134,235 @@ export function Exam({ store, onExit }: { store: Store; onExit: () => void }) {
     if (left === 0 && !finished) submit()
   })
 
-  const score = ids.filter((id, i) => answers[i] === BY_ID.get(id)!.correct).length
+  const go = (i: number) => {
+    setIdx(Math.max(0, Math.min(ids.length - 1, i)))
+    setMapOpen(false)
+    window.scrollTo({ top: 0 })
+  }
+
+  useEffect(() => {
+    if (finished) return
+    const onKey = (e: KeyboardEvent) => {
+      if (document.body.classList.contains('noscroll')) return
+      if (['1', '2', '3', '4'].includes(e.key)) setAnswers((a) => a.map((v, k) => (k === idx ? Number(e.key) - 1 : v)))
+      else if (e.key === 'ArrowRight') go(idx + 1)
+      else if (e.key === 'ArrowLeft') go(idx - 1)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  })
+
+  const correct = (i: number) => answers[i] === BY_ID.get(ids[i])!.correct
+  const score = ids.filter((_, i) => correct(i)).length
   const unanswered = answers.filter((a) => a === null).length
-  const q = BY_ID.get(ids[idx])!
   const mm = String(Math.floor(left / 60)).padStart(2, '0')
   const ss = String(left % 60).padStart(2, '0')
+  const timeTone = left < 300 ? 'chip-bad' : left < 600 ? 'chip-warn' : ''
+  const english = <LangToggle showEnglish={store.p.showEnglish} onChange={(v) => store.update({ showEnglish: v })} />
+
+  const leave = async () => {
+    if (finished) return onExit()
+    if (await ask({ title: 'Leave the exam?', body: 'Your answers so far will be lost.', ok: 'Leave exam', cancel: 'Keep going', danger: true }))
+      onExit()
+  }
+
+  const grid = (
+    <nav className="qgrid" aria-label="Questions">
+      {ids.map((id, i) => {
+        let cls = answers[i] !== null ? 'answered' : ''
+        if (finished) cls = correct(i) ? 'correct' : 'wrong'
+        const cur = finished ? review === i : i === idx
+        return (
+          <button
+            key={id}
+            className={`${cls} ${cur ? 'current' : ''}`}
+            aria-current={cur ? 'step' : undefined}
+            aria-label={`Question ${i + 1}${finished ? (correct(i) ? ', correct' : ', wrong') : answers[i] !== null ? ', answered' : ''}`}
+            onClick={() => (finished ? setReview(i) : go(i))}
+          >
+            {i + 1}
+          </button>
+        )
+      })}
+    </nav>
+  )
+
+  /* ---------- results ---------- */
+  if (finished && review === null) {
+    const missed = ids.filter((_, i) => !correct(i))
+    const passed = score >= PASS
+    return (
+      <div className="session">
+        <header className="sessbar">
+          <div className="sessbar-in">
+            <button className="icon-btn" aria-label="Close results" onClick={onExit}>
+              <X size={18} />
+            </button>
+            <strong className="sess-title">Mock exam · {STATES[store.p.state]}</strong>
+            <span className="chip">
+              <Clock size={14} aria-hidden /> {Math.max(1, Math.round(elapsed / 60))} min
+            </span>
+          </div>
+        </header>
+        <main className="page">
+          <div className="stack">
+            <section className="result-card">
+              <span className={`chip ${passed ? 'chip-ok' : 'chip-bad'}`}>{passed ? 'Passed' : 'Not passed'}</span>
+              <div className="big-score">
+                {score} <small>/ {ids.length}</small>
+              </div>
+              <div className="pass-track" aria-hidden>
+                <i className={passed ? 'ok' : 'bad'} style={{ width: `${(score / ids.length) * 100}%` }} />
+                <b style={{ left: `${(PASS / ids.length) * 100}%` }} />
+              </div>
+              <div className="pass-legend" aria-hidden>
+                <span>0</span>
+                <span>{PASS} needed to pass</span>
+                <span>{ids.length}</span>
+              </div>
+            </section>
+
+            <section className="stack-sm">
+              <h2 className="label">Tap a question to review</h2>
+              {grid}
+            </section>
+
+            {missed.length > 0 && (
+              <section className="stack-sm">
+                <h2 className="label">You missed</h2>
+                <ul className="rows">
+                  {missed.map((id) => {
+                    const q = BY_ID.get(id)!
+                    return (
+                      <li key={id}>
+                        <button className="row-btn" onClick={() => setReview(ids.indexOf(id))}>
+                          <span className="row-main">
+                            <span className="clamp-2" lang="de">
+                              {q.de.q}
+                            </span>
+                            {store.p.showEnglish && (
+                              <span className="en clamp-2" lang="en">
+                                {q.en.q}
+                              </span>
+                            )}
+                          </span>
+                          <small className="muted">{questionRef(q)}</small>
+                          <ChevronRight size={18} aria-hidden className="muted" />
+                        </button>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </section>
+            )}
+          </div>
+        </main>
+        <footer className="dock">
+          <div className="dock-in">
+            <button className="btn btn-secondary" onClick={onRetake}>
+              <RotateCcw size={16} aria-hidden /> New exam
+            </button>
+            {missed.length > 0 ? (
+              <button className="btn btn-primary" onClick={() => onPractise('Missed in mock exam', missed)}>
+                Practise the {missed.length} I missed
+              </button>
+            ) : (
+              <button className="btn btn-primary" onClick={onExit}>
+                Done
+              </button>
+            )}
+          </div>
+        </footer>
+      </div>
+    )
+  }
+
+  /* ---------- running exam, or reviewing one question after it ---------- */
+  const cur = finished ? review! : idx
+  const q = BY_ID.get(ids[cur])!
 
   return (
-    <section>
-      <header className="sessionbar">
-        <button onClick={() => (finished || confirm('Leave the exam? Your answers will be lost.')) && onExit()}>✕</button>
-        <strong>Mock exam · {STATES[store.p.state]}</strong>
-        {finished ? <span>Review</span> : <span className={left < 300 ? 'bad' : ''}>⏱ {mm}:{ss}</span>}
-      </header>
-
-      {finished && (
-        <div className={`result ${score >= PASS ? 'pass' : 'fail'}`}>
-          <h2>{score >= PASS ? 'Passed' : 'Not passed'}: {score} / {ids.length}</h2>
-          <p>
-            You need {PASS} correct answers to pass. Tap any number below to review that question.
-          </p>
-          <button className="primary" onClick={onExit}>
-            Back to home
-          </button>
-        </div>
-      )}
-
-      <nav className="grid33" aria-label="Questions">
-        {ids.map((id, i) => {
-          let cls = answers[i] !== null ? 'answered' : ''
-          if (finished) cls = answers[i] === BY_ID.get(id)!.correct ? 'correct' : 'wrong'
-          return (
-            <button key={id} className={`${cls} ${i === idx ? 'current' : ''}`} onClick={() => setIdx(i)}>
-              {i + 1}
+    <div className="session">
+      {confirmEl}
+      <header className="sessbar">
+        <div className="sessbar-in">
+          {finished ? (
+            <button className="icon-btn" aria-label="Back to results" onClick={() => setReview(null)}>
+              <ChevronLeft size={18} />
             </button>
-          )
-        })}
-      </nav>
-
-      <QuestionCard
-        q={q}
-        showEnglish={store.p.showEnglish}
-        selected={answers[idx]}
-        reveal={!!finished}
-        onSelect={
-          finished
-            ? undefined
-            : (i) => {
-                setAnswers((a) => a.map((v, k) => (k === idx ? i : v)))
-              }
-        }
-      />
-
-      <div className="feedback">
-        <button disabled={idx === 0} onClick={() => setIdx(idx - 1)}>
-          Previous
+          ) : (
+            <button className="icon-btn" aria-label="Leave exam" onClick={leave}>
+              <X size={18} />
+            </button>
+          )}
+          <strong className="sess-title">{finished ? 'Review' : 'Mock exam'}</strong>
+          {english}
+          {!finished && (
+            <span className={`chip timer ${timeTone}`} aria-label={`${mm} minutes ${ss} seconds left`}>
+              <Clock size={14} aria-hidden /> {mm}:{ss}
+            </span>
+          )}
+        </div>
+      </header>
+      <div className="sess-progress">
+        <button className="map-toggle" aria-expanded={mapOpen} onClick={() => setMapOpen((o) => !o)}>
+          <Grid3x3 size={16} aria-hidden />
+          <span>
+            Question {cur + 1} of {ids.length}
+          </span>
+          {!finished && <span className="muted">· {ids.length - unanswered} answered</span>}
+          <ChevronDown size={16} aria-hidden className={mapOpen ? 'flip' : ''} />
         </button>
-        {idx + 1 < ids.length && <button onClick={() => setIdx(idx + 1)}>Next</button>}
-        {!finished && (
-          <button
-            className="primary"
-            onClick={() => (unanswered === 0 || confirm(`${unanswered} questions unanswered. Submit anyway?`)) && submit()}
-          >
-            Submit exam
-          </button>
-        )}
+        <div className={mapOpen ? 'map open' : 'map'}>{grid}</div>
       </div>
-    </section>
+      <main className="page page-wide">
+        <QuestionCard
+          q={q}
+          label={cur >= 30 ? 'State question' : undefined}
+          showEnglish={store.p.showEnglish}
+          selected={answers[cur]}
+          reveal={!!finished}
+          onSelect={finished ? undefined : (i) => setAnswers((a) => a.map((v, k) => (k === idx ? i : v)))}
+        />
+        {finished && answers[cur] === null && <p className="muted center">You did not answer this question.</p>}
+      </main>
+      <footer className="dock">
+        <div className="dock-in">
+          <button
+            className="btn btn-secondary btn-icon"
+            aria-label="Previous question"
+            disabled={cur === 0}
+            onClick={() => (finished ? setReview(cur - 1) : go(idx - 1))}
+          >
+            <ChevronLeft size={18} />
+          </button>
+          {cur + 1 < ids.length ? (
+            <button className="btn btn-secondary grow" onClick={() => (finished ? setReview(cur + 1) : go(idx + 1))}>
+              Next <ChevronRight size={18} aria-hidden />
+            </button>
+          ) : (
+            <span className="grow" />
+          )}
+          {!finished && (
+            <button
+              className={cur + 1 === ids.length || unanswered === 0 ? 'btn btn-primary' : 'btn btn-ghost'}
+              onClick={async () => {
+                const ok =
+                  unanswered === 0 ||
+                  (await ask({
+                    title: 'Submit the exam?',
+                    body: `${unanswered} question${unanswered === 1 ? ' is' : 's are'} still unanswered and will count as wrong.`,
+                    ok: 'Submit',
+                    cancel: 'Keep going',
+                  }))
+                if (ok) submit()
+              }}
+            >
+              <Flag size={16} aria-hidden /> Submit
+            </button>
+          )}
+        </div>
+      </footer>
+    </div>
   )
 }

@@ -1,30 +1,36 @@
+import { CircleCheck, CircleX, RotateCcw, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { BY_ID } from './data'
 import { QuestionCard } from './QuestionCard'
 import { Store } from './store'
+import { LangToggle } from './ui'
 
 interface Props {
   title: string
   ids: string[]
   store: Store
   onExit: () => void
+  /** start a new session, e.g. with the questions missed in this one */
+  onRestart: (title: string, ids: string[]) => void
 }
 
 /** Answer one question at a time with immediate feedback. */
-export function Practice({ title, ids, store, onExit }: Props) {
+export function Practice({ title, ids, store, onExit, onRestart }: Props) {
   const [idx, setIdx] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
-  const [score, setScore] = useState({ right: 0, wrong: 0 })
+  const [results, setResults] = useState<boolean[]>([])
 
   const q = BY_ID.get(ids[idx])
   const answered = selected !== null
+  const right = results.filter(Boolean).length
+  const wrong = results.length - right
 
   const choose = (i: number) => {
     if (answered || !q) return
     setSelected(i)
     const ok = i === q.correct
     store.record(q.id, ok)
-    setScore((s) => (ok ? { ...s, right: s.right + 1 } : { ...s, wrong: s.wrong + 1 }))
+    setResults((r) => [...r, ok])
   }
 
   const next = () => {
@@ -35,8 +41,9 @@ export function Practice({ title, ids, store, onExit }: Props) {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      if (document.body.classList.contains('noscroll')) return
       if (!answered && ['1', '2', '3', '4'].includes(e.key)) choose(Number(e.key) - 1)
-      else if (answered && (e.key === 'Enter' || e.key === ' ')) {
+      else if (answered && e.key === 'Enter' && !(e.target instanceof HTMLButtonElement)) {
         e.preventDefault()
         next()
       }
@@ -45,57 +52,119 @@ export function Practice({ title, ids, store, onExit }: Props) {
     return () => window.removeEventListener('keydown', onKey)
   })
 
+  const header = (
+    <header className="sessbar">
+      <div className="sessbar-in">
+        <button className="icon-btn" aria-label="Close practice" onClick={onExit}>
+          <X size={18} />
+        </button>
+        <strong className="sess-title">{title}</strong>
+        <LangToggle showEnglish={store.p.showEnglish} onChange={(v) => store.update({ showEnglish: v })} />
+      </div>
+    </header>
+  )
+
   if (ids.length === 0) {
     return (
-      <section>
-        <h2>{title}</h2>
-        <p>Nothing to practise here yet.</p>
-        <button onClick={onExit}>Back</button>
-      </section>
+      <div className="session">
+        {header}
+        <main className="page">
+          <div className="empty">
+            <h2>Nothing to practise here yet</h2>
+            <button className="btn btn-primary" onClick={onExit}>
+              Back to Learn
+            </button>
+          </div>
+        </main>
+      </div>
     )
   }
 
   if (!q) {
+    const missed = ids.filter((_, i) => results[i] === false)
     return (
-      <section className="done">
-        <h2>{title}: done</h2>
-        <p>
-          {score.right} correct, {score.wrong} wrong out of {ids.length}.
-        </p>
-        <button className="primary" onClick={onExit}>
-          Back to home
-        </button>
-      </section>
+      <div className="session">
+        {header}
+        <main className="page">
+          <section className="result-card">
+            <span className="eyebrow">Session complete</span>
+            <div className="big-score">
+              {right} <small>/ {ids.length} correct</small>
+            </div>
+            <div className="seg-progress" aria-hidden>
+              {results.map((ok, i) => (
+                <i key={i} className={ok ? 'ok' : 'bad'} />
+              ))}
+            </div>
+            <p className="muted">Questions you answer right twice in a row count as mastered.</p>
+            <div className="actions">
+              {missed.length > 0 && (
+                <button className="btn btn-primary" onClick={() => onRestart(`${title}: missed`, missed)}>
+                  <RotateCcw size={16} aria-hidden /> Review the {missed.length} I missed
+                </button>
+              )}
+              <button className={missed.length ? 'btn btn-secondary' : 'btn btn-primary'} onClick={onExit}>
+                Back to Learn
+              </button>
+            </div>
+          </section>
+        </main>
+      </div>
     )
   }
 
+  const segmented = ids.length <= 40
+  const ok = selected === q.correct
+
   return (
-    <section>
-      <header className="sessionbar">
-        <button onClick={onExit}>✕</button>
-        <strong>{title}</strong>
-        <span>
-          {idx + 1} / {ids.length} · ✓ {score.right} · ✗ {score.wrong}
-        </span>
-      </header>
-      <div className="progressline" style={{ width: `${(idx / ids.length) * 100}%` }} />
-      <QuestionCard
-        q={q}
-        showEnglish={store.p.showEnglish}
-        selected={selected}
-        reveal={answered}
-        onSelect={answered ? undefined : choose}
-      />
-      {answered && (
-        <div className="feedback">
-          <span className={selected === q.correct ? 'ok' : 'bad'}>
-            {selected === q.correct ? 'Correct!' : 'Not quite.'}
+    <div className="session">
+      {header}
+      <div className="sess-progress">
+        {segmented ? (
+          <div className="seg-progress" aria-hidden>
+            {ids.map((_, i) => (
+              <i key={i} className={i < results.length ? (results[i] ? 'ok' : 'bad') : i === idx ? 'cur' : ''} />
+            ))}
+          </div>
+        ) : (
+          <div className="meter meter-accent" aria-hidden>
+            <i style={{ width: `${(idx / ids.length) * 100}%` }} />
+          </div>
+        )}
+        <div className="sess-counts">
+          <span>
+            {idx + 1} / {ids.length}
           </span>
-          <button className="primary" onClick={next} autoFocus>
-            {idx + 1 < ids.length ? 'Next' : 'Finish'}
-          </button>
+          <span className="ok">✓ {right}</span>
+          <span className="bad">✗ {wrong}</span>
         </div>
-      )}
-    </section>
+      </div>
+      <main className="page page-wide">
+        <QuestionCard
+          q={q}
+          showEnglish={store.p.showEnglish}
+          selected={selected}
+          reveal={answered}
+          onSelect={answered ? undefined : choose}
+        />
+      </main>
+      <footer className="dock">
+        <div className="dock-in">
+          {answered ? (
+            <>
+              <span className={`verdict ${ok ? 'ok' : 'bad'}`} role="status">
+                {ok ? <CircleCheck size={20} aria-hidden /> : <CircleX size={20} aria-hidden />}
+                {ok ? 'Correct' : `Not quite. The answer is ${'ABCD'[q.correct]}.`}
+              </span>
+              <button className="btn btn-primary" onClick={next} autoFocus>
+                {idx + 1 < ids.length ? 'Next question' : 'See results'}
+              </button>
+            </>
+          ) : (
+            <span className="dock-hint">Pick an answer{' · '}keys 1–4</span>
+          )}
+        </div>
+      </footer>
+    </div>
   )
 }

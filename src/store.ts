@@ -20,17 +20,24 @@ export interface ExamResult {
 export interface Progress {
   state: string
   showEnglish: boolean
+  /** shuffle practice sets (exam is always random) */
+  shuffle: boolean
+  /** the user picked a state at least once; hides the welcome screen */
+  onboarded: boolean
   stats: Record<string, QStat>
   exams: ExamResult[]
 }
 
 const KEY = 'lid-prep:v1'
-const DEFAULT: Progress = { state: 'BE', showEnglish: true, stats: {}, exams: [] }
+const DEFAULT: Progress = { state: 'BE', showEnglish: true, shuffle: true, onboarded: false, stats: {}, exams: [] }
 
 function load(): Progress {
   try {
     const s = localStorage.getItem(KEY)
-    if (s) return { ...DEFAULT, ...JSON.parse(s) }
+    if (s) {
+      // progress saved before the redesign has no "onboarded" flag; those users already chose a state
+      return { ...DEFAULT, onboarded: true, ...JSON.parse(s) }
+    }
   } catch {
     /* storage unavailable */
   }
