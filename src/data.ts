@@ -46,6 +46,14 @@ export const TOPIC_LABELS: Record<Topic, string> = {
   state: 'Your state',
 }
 
+export const TOPIC_SHORT: Record<Exclude<Topic, 'state'>, string> = {
+  politics: 'Politics',
+  history: 'History',
+  society: 'Society',
+}
+
+export const questionRef = (q: Question) => (q.state ? `${STATES[q.state]} · No. ${q.number}` : `No. ${q.number}`)
+
 export const stateQuestions = (state: string) => QUESTIONS.filter((q) => q.state === state)
 
 export const imageUrl = (file: string) => `${import.meta.env.BASE_URL}images/${file}`
