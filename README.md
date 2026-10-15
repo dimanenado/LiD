@@ -11,7 +11,7 @@ Practice app for the German "Leben in Deutschland" test and the Einbürgerungste
 ## Data
 
 `src/data/questions.json` is generated from the official BAMF PDF "Gesamtfragenkatalog zum Test Leben in Deutschland" (Stand 07.05.2025): 300 general questions and 10 per federal state. Images are in `public/images/`.
-English translations are unofficial. Answers with `"answerStatus": "draft"` have not yet been checked against the official BAMF online tool.
+English translations are unofficial. All 460 answers were checked against the official BAMF online tool (oet.bamf.de) on 2026-10-15 and are marked `"answerStatus": "verified"`; new or changed answers should be set to `"draft"` until checked again.
 
 Regenerate the raw data from a new PDF with the scripts in `scripts/` (needs `pdftotext` and `pip install pymupdf pillow`):
 

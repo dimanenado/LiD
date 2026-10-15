@@ -173,8 +173,7 @@ export default function App() {
         </div>
         <p className="muted small">
           Questions from the official BAMF catalog “Gesamtfragenkatalog zum Test Leben in Deutschland” (as of 07.05.2025).
-          English translations are unofficial. Answers marked “unverified” have not yet been checked against the official
-          BAMF tool.
+          English translations are unofficial. Answers were checked against the official BAMF online tool on 15.10.2026.
         </p>
       </>
     )
