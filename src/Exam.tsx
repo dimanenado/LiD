@@ -1,13 +1,13 @@
 import { ChevronDown, ChevronLeft, ChevronRight, Clock, Flag, Grid3x3, Play, RotateCcw, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
-import { BY_ID, GENERAL, STATES, questionRef, shuffle, stateQuestions } from './data'
+import { BY_ID, GENERAL, PASS, STATES, questionRef, shuffle, stateQuestions } from './data'
+import { ExamStats, ExamSummaryCard } from './ExamStats'
 import { QuestionCard } from './QuestionCard'
 import { Store } from './store'
 import { useConfirm } from './hooks'
 import { LangToggle } from './ui'
 
 const LIMIT = 60 * 60
-export const PASS = 17
 
 interface Props {
   store: Store
@@ -20,10 +20,22 @@ interface Props {
 /** Exam tab: rules and start screen, then a running exam, then results. */
 export function ExamTab({ store, onActiveChange, onPractise, onChangeState }: Props) {
   const [run, setRun] = useState(0)
+  const [stats, setStats] = useState(false)
   useEffect(() => () => onActiveChange(false), [onActiveChange])
 
+  if (run === 0 && stats && store.p.exams.length)
+    return (
+      <ExamStats
+        store={store}
+        onBack={() => {
+          onActiveChange(false)
+          setStats(false)
+        }}
+        onPractise={onPractise}
+      />
+    )
+
   if (run === 0) {
-    const last = store.p.exams[0]
     return (
       <div className="stack">
         <section className="intro-card">
@@ -55,11 +67,15 @@ export function ExamTab({ store, onActiveChange, onPractise, onChangeState }: Pr
             </button>
           </div>
         </section>
-        {last && (
-          <p className="muted center">
-            Last exam: {last.score} / {last.total} ({last.score >= PASS ? 'passed' : 'not passed'}),{' '}
-            {new Date(last.date).toLocaleDateString()}
-          </p>
+        {store.p.exams.length > 0 && (
+          <ExamSummaryCard
+            exams={store.p.exams}
+            onOpen={() => {
+              onActiveChange(true)
+              setStats(true)
+              window.scrollTo({ top: 0 })
+            }}
+          />
         )}
       </div>
     )
@@ -125,7 +141,14 @@ function Exam({ store, onExit, onRetake, onPractise }: ExamProps) {
       if (ok) score++
       if (answers[i] !== null) store.record(id, ok)
     })
-    store.addExam({ date: end, state: store.p.state, score, total: ids.length, seconds: Math.floor((end - start) / 1000) })
+    store.addExam({
+      date: end,
+      state: store.p.state,
+      score,
+      total: ids.length,
+      seconds: Math.floor((end - start) / 1000),
+      answers: ids.map((id, i) => [id, answers[i]]),
+    })
     setFinished(end)
     window.scrollTo({ top: 0 })
   }

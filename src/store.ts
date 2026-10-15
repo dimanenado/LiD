@@ -15,6 +15,8 @@ export interface ExamResult {
   score: number
   total: number
   seconds: number
+  /** [question id, chosen option or null] in exam order; missing on exams taken before this was saved */
+  answers?: [string, number | null][]
 }
 
 export interface Progress {
