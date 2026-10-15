@@ -1,7 +1,7 @@
 import { ChevronDown, ChevronLeft, ChevronRight, Clock, Flag, Grid3x3, Play, RotateCcw, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { BY_ID, GENERAL, PASS, STATES, questionRef, shuffle, stateQuestions } from './data'
-import { ExamStats, ExamSummaryCard } from './ExamStats'
+import { ExamSummaryCard } from './ExamStats'
 import { QuestionCard } from './QuestionCard'
 import { Store } from './store'
 import { useConfirm } from './hooks'
@@ -15,25 +15,14 @@ interface Props {
   onActiveChange: (active: boolean) => void
   onPractise: (title: string, ids: string[]) => void
   onChangeState: () => void
+  /** exam stats live in the Progress tab */
+  onOpenStats: () => void
 }
 
 /** Exam tab: rules and start screen, then a running exam, then results. */
-export function ExamTab({ store, onActiveChange, onPractise, onChangeState }: Props) {
+export function ExamTab({ store, onActiveChange, onPractise, onChangeState, onOpenStats }: Props) {
   const [run, setRun] = useState(0)
-  const [stats, setStats] = useState(false)
   useEffect(() => () => onActiveChange(false), [onActiveChange])
-
-  if (run === 0 && stats && store.p.exams.length)
-    return (
-      <ExamStats
-        store={store}
-        onBack={() => {
-          onActiveChange(false)
-          setStats(false)
-        }}
-        onPractise={onPractise}
-      />
-    )
 
   if (run === 0) {
     return (
@@ -70,11 +59,7 @@ export function ExamTab({ store, onActiveChange, onPractise, onChangeState }: Pr
         {store.p.exams.length > 0 && (
           <ExamSummaryCard
             exams={store.p.exams}
-            onOpen={() => {
-              onActiveChange(true)
-              setStats(true)
-              window.scrollTo({ top: 0 })
-            }}
+            onOpen={onOpenStats}
           />
         )}
       </div>

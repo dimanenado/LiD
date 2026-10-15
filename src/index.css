@@ -429,7 +429,7 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 .chart-axis span:first-child { top: 0; transform: none; }
 .chart-axis span:last-child { bottom: 0; transform: none; }
 .chart-plot { position: relative; flex: 1; display: flex; align-items: flex-end; gap: 4px; border-bottom: 1px solid var(--line); }
-.chart-col { flex: 1; min-width: 0; height: 100%; display: flex; align-items: flex-end; }
+.chart-col { flex: 1; min-width: 0; max-width: 56px; height: 100%; display: flex; align-items: flex-end; }
 .chart-col i { display: block; width: 100%; border-radius: 4px 4px 0 0; }
 .chart-col i.ok { background: var(--ok); }
 .chart-col i.bad { background: var(--bad); }
@@ -452,3 +452,4 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 .trophy { color: var(--warn); flex: none; }
 .score-chart.compact .chart-col { max-width: 24px; }
 .list-row > .chip:first-child { min-width: 96px; justify-content: center; }
+#exams { scroll-margin-top: calc(var(--topbar-h) + 8px); }

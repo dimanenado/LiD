@@ -1,15 +1,48 @@
 import { ChevronRight, Download, MapPin, RotateCcw, Upload } from 'lucide-react'
-import { useRef } from 'react'
-import { GENERAL, PASS, STATES, TOPIC_SHORT, stateQuestions } from './data'
-import { isMastered, isMistake, Store } from './store'
+import { useEffect, useRef, useState } from 'react'
+import { GENERAL, STATES, TOPIC_SHORT, stateQuestions } from './data'
+import { ExamReview, ExamStats } from './ExamStats'
+import { ExamResult, isMastered, isMistake, Store } from './store'
 import { useConfirm, useToast } from './hooks'
 import { Meter, Switch } from './ui'
 
-export function ProgressTab({ store, onChangeState }: { store: Store; onChangeState: () => void }) {
+interface Props {
+  store: Store
+  onChangeState: () => void
+  onPractise: (title: string, ids: string[]) => void
+  /** hides the app's top bar and tabs while a past exam is reviewed */
+  onFullscreen: (on: boolean) => void
+}
+
+export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: Props) {
   const { p, update } = store
+  const [reviewing, setReviewing] = useState<ExamResult | null>(null)
+  const scrollBack = useRef(0)
   const fileRef = useRef<HTMLInputElement>(null)
   const [ask, confirmEl] = useConfirm()
   const [toast, toastEl] = useToast()
+
+  useEffect(() => () => onFullscreen(false), [onFullscreen])
+
+  const review = (e: ExamResult) => {
+    scrollBack.current = window.scrollY
+    onFullscreen(true)
+    setReviewing(e)
+    window.scrollTo({ top: 0 })
+  }
+
+  if (reviewing)
+    return (
+      <ExamReview
+        exam={reviewing}
+        store={store}
+        onBack={() => {
+          onFullscreen(false)
+          setReviewing(null)
+          requestAnimationFrame(() => window.scrollTo({ top: scrollBack.current }))
+        }}
+      />
+    )
 
   const groups = [
     ...(['politics', 'history', 'society'] as const).map((t) => ({ label: TOPIC_SHORT[t], qs: GENERAL.filter((q) => q.topic === t) })),
@@ -84,31 +117,7 @@ export function ProgressTab({ store, onChangeState }: { store: Store; onChangeSt
         </div>
       </section>
 
-      <section className="stack-sm">
-        <h2 className="label">Exam history</h2>
-        {p.exams.length === 0 ? (
-          <div className="panel muted">No mock exams yet. Your results will show up here.</div>
-        ) : (
-          <ul className="list">
-            {p.exams.slice(0, 15).map((e) => {
-              const passed = e.score >= PASS
-              return (
-                <li key={e.date} className="list-row static">
-                  <span className={`chip ${passed ? 'chip-ok' : 'chip-bad'}`}>{passed ? 'Passed' : 'Not passed'}</span>
-                  <span className="row-main">
-                    <b className="tnum">
-                      {e.score} / {e.total}
-                    </b>
-                    <small>
-                      {new Date(e.date).toLocaleDateString()} · {STATES[e.state]} · {Math.max(1, Math.round(e.seconds / 60))} min
-                    </small>
-                  </span>
-                </li>
-              )
-            })}
-          </ul>
-        )}
-      </section>
+      <ExamStats store={store} onPractise={onPractise} onReview={review} />
 
       <section className="stack-sm">
         <h2 className="label">Settings</h2>
