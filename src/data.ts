@@ -46,6 +46,9 @@ export const TOPIC_LABELS: Record<Topic, string> = {
   state: 'Your state',
 }
 
+/** correct answers needed to pass the Einbürgerungstest */
+export const PASS = 17
+
 export const TOPIC_SHORT: Record<Exclude<Topic, 'state'>, string> = {
   politics: 'Politics',
   history: 'History',

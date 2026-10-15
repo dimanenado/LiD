@@ -1,7 +1,6 @@
 import { ChevronRight, Download, MapPin, RotateCcw, Upload } from 'lucide-react'
 import { useRef } from 'react'
-import { PASS } from './Exam'
-import { GENERAL, STATES, TOPIC_SHORT, stateQuestions } from './data'
+import { GENERAL, PASS, STATES, TOPIC_SHORT, stateQuestions } from './data'
 import { isMastered, isMistake, Store } from './store'
 import { useConfirm, useToast } from './hooks'
 import { Meter, Switch } from './ui'
