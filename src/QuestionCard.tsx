@@ -131,8 +131,8 @@ const answerOf = (q: Question, lang: 'de' | 'en') => q[lang].options[q.correct].
 function LookAlikes({ q, others, showEnglish }: { q: Question; others: Question[]; showEnglish: boolean }) {
   return (
     <aside className="alikes" aria-label="Look-alike questions">
-      <h3 className="alikes-head">
-        <Shuffle size={15} aria-hidden /> Don&apos;t mix up
+      <h3 className="alikes-head chip chip-warn">
+        <Shuffle size={14} aria-hidden /> Don&apos;t mix up
       </h3>
       <ul>
         {others.map((o) => {
@@ -145,11 +145,11 @@ function LookAlikes({ q, others, showEnglish }: { q: Question; others: Question[
                 {twin && ' · same question, other options'}
               </small>
               {!twin && (
-                <span lang="de" className="alike-q">
+                <span lang="de">
                   {highlight(o.de.q, kw.q.de, 'de', true)}
                 </span>
               )}
-              <span className="alike-a">
+              <span>
                 <span aria-hidden>→ </span>
                 <b lang="de">{answerOf(o, 'de')}</b>
                 {showEnglish && answerOf(o, 'en') !== answerOf(o, 'de') && (
