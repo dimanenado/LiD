@@ -456,13 +456,14 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 #exams { scroll-margin-top: calc(var(--topbar-h) + 8px); }
 
 /* ---------- key words ---------- */
-mark.kw { background: var(--accent-soft); color: var(--text); font-weight: 700; padding: 0 3px; border-radius: 4px; }
-mark.kw-neg { background: var(--bad-soft); color: var(--bad); font-weight: 800; padding: 0 4px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.02em; }
-.option.correct mark.kw { background: var(--surface); color: var(--ok); }
+/* colour only, no fills: accent for cues, red for negations, green for the answer */
+mark.kw { background: none; color: var(--accent); font-weight: 700; padding: 0; border-radius: 0; }
+.qtext .de mark.kw { font-weight: inherit; }
+mark.kw-neg { background: none; color: var(--bad); font-weight: 800; padding: 0; }
+.option.correct mark.kw { color: var(--ok); font-weight: 800; }
 
 .alikes { display: grid; gap: var(--s3); padding: var(--s4); border-radius: var(--r-card); background: var(--surface); }
 .alikes-head { justify-self: start; }
 .alikes ul { display: grid; gap: var(--s2); }
 .alikes li { display: grid; gap: 2px; padding: var(--s3); border-radius: var(--r-ctl); background: var(--surface-2); font-size: var(--fs-md); }
 .alikes li > small { font-size: var(--fs-xs); font-weight: 600; }
-.alikes li mark.kw { background: var(--surface); }
