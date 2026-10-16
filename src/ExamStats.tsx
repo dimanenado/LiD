@@ -303,7 +303,15 @@ export function ExamReview({ exam, store, onBack }: { exam: ExamResult; store: S
         </nav>
       </div>
       <main className="page page-wide">
-        <QuestionCard q={q} label={`Question ${idx + 1}`} showEnglish={store.p.showEnglish} selected={chosen} reveal />
+        <QuestionCard
+          q={q}
+          label={`Question ${idx + 1}`}
+          showEnglish={store.p.showEnglish}
+          selected={chosen}
+          reveal
+          keywords={store.p.keywords}
+          userState={store.p.state}
+        />
         {chosen === null && <p className="muted center">You did not answer this question.</p>}
       </main>
       <footer className="dock">

@@ -146,6 +146,8 @@ export function Practice({ title, ids, store, onExit, onRestart }: Props) {
           selected={selected}
           reveal={answered}
           onSelect={answered ? undefined : choose}
+          keywords={store.p.keywords}
+          userState={store.p.state}
         />
       </main>
       <footer className="dock">

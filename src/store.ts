@@ -24,6 +24,8 @@ export interface Progress {
   showEnglish: boolean
   /** shuffle practice sets (exam is always random) */
   shuffle: boolean
+  /** highlight key words in questions and answers */
+  keywords: boolean
   /** the user picked a state at least once; hides the welcome screen */
   onboarded: boolean
   stats: Record<string, QStat>
@@ -31,7 +33,7 @@ export interface Progress {
 }
 
 const KEY = 'lid-prep:v1'
-const DEFAULT: Progress = { state: 'BE', showEnglish: true, shuffle: true, onboarded: false, stats: {}, exams: [] }
+const DEFAULT: Progress = { state: 'BE', showEnglish: true, shuffle: true, keywords: true, onboarded: false, stats: {}, exams: [] }
 
 function load(): Progress {
   try {

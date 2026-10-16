@@ -66,6 +66,7 @@ export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: 
         state: data.state ?? p.state,
         showEnglish: data.showEnglish ?? true,
         shuffle: data.shuffle ?? true,
+        keywords: data.keywords ?? true,
         onboarded: true,
         stats: data.stats,
         exams: data.exams ?? [],
@@ -136,6 +137,13 @@ export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: 
             hint="Next to the German text on wide screens, under it on phones"
             checked={p.showEnglish}
             onChange={(v) => update({ showEnglish: v })}
+          />
+          <Switch
+            id="set-keywords"
+            label="Highlight key words"
+            hint="Marks the words that link each question to its answer, and warns about look-alike questions"
+            checked={p.keywords}
+            onChange={(v) => update({ keywords: v })}
           />
           <Switch
             id="set-shuffle"

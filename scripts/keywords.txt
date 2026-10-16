@@ -1,0 +1,340 @@
+G-1|gegen die Regierung sagen|Meinungsfreiheit|speak out against the government|freedom of opinion
+G-2|14. Lebensjahr;entscheiden|Religionsunterricht|turns 14;decide|religious education
+G-3|Rechtsstaat|an die Gesetze halten|Rechtsstaat|abide by the laws
+G-4|Grundrechten||fundamental rights|
+G-5|Wahlen;frei|weder beeinflusst noch;gezwungen|Elections;free|neither be influenced nor forced
+G-6|Verfassung||constitution|Grundgesetz
+G-7|Grundrechten;Verfassung garantiert|Glaubens- und Gewissensfreiheit|fundamental rights;guaranteed|belief and conscience
+G-8|Grundgesetz|gleich viel Geld|Grundgesetz|same amount of money
+G-9|nur für Ausländerinnen/Ausländer||only to foreigners|
+G-10|vereinbar||compatible|
+G-11|Verfassung;genannt||constitution;called|Grundgesetz
+G-12|Pressefreiheit abschaffen|Nein;Grundrecht|abolish freedom of the press|No;fundamental right
+G-13|"Opposition"|nicht zu der Regierungspartei|"opposition"|not belong to the governing party
+G-14|Meinungsfreiheit|Meinung im Internet äußern|Freedom of opinion|opinion on the internet
+G-15|verbietet||prohibit|
+G-16|Meinungsfreiheit;eingeschränkt|falscher Behauptungen über einzelne Personen|freedom of opinion restricted|false claims about individual persons
+G-17|Gesetze verbieten|Ungleichbehandlung|laws prohibit|unequal treatment
+G-18|Artikel 1|Menschenwürde|Article 1|human dignity
+G-19|"Freizügigkeit"|Wohnort selbst aussuchen|"Freizügigkeit"|choose where you live
+G-20|Diktatur|verfassungswidrig|dictatorship|unconstitutional
+G-21|Wappen der Bundesrepublik||coat of arms of the Federal Republic|
+G-22|Staatsform||form of state|
+G-23|meisten Erwerbstätigen|Firma oder Behörde|most people in work|company or a public authority
+G-24|Wie viele Bundesländer||How many federal states|
+G-25|Bundesland|Elsass-Lothringen|federal state|Alsace-Lorraine
+G-26|Deutschland ist|demokratischer und sozialer Bundesstaat|Germany is|democratic and social federal state
+G-27|Deutschland ist|Bundesstaat|Germany is|federal state
+G-28|wählt;Abgeordneten zum Bundestag|wahlberechtigte Volk|elects the members of the Bundestag|eligible to vote
+G-29|Wappentier||heraldic animal|
+G-30|Merkmal unserer Demokratie|Pressezensur|feature of our democracy|press censorship
+G-31|Zusammenarbeit von Parteien;Regierung||cooperation between parties;form a government|coalition
+G-32|staatliche Gewalt||branch of state power|
+G-33|Aussage ist richtig|Staat und Religionsgemeinschaften;getrennt|statement is correct|state and religious communities;separate
+G-34|Was ist Deutschland|Monarchie|What is Germany|monarchy
+G-35|finanziert;Sozialversicherung|Sozialabgaben|finance social insurance|Social security contributions
+G-36|soziale Sicherheit|Krankenversicherung|social security|health insurance
+G-37|Regierungschefinnen/Regierungschefs der meisten Bundesländer||heads of government of most German federal states|Minister-President
+G-38|demokratischer und sozialer|Bundesstaat|democratic and social|federal state
+G-39|jedes deutsche Bundesland|eigene Regierung|every German federal state|own government
+G-40|Nationalhymne||national anthem|
+G-41|mehr als eine Partei|unterschiedlichen Meinungen|more than one party|different opinions
+G-42|neues Gesetz|Parlament|new law|parliament
+G-43|Partei verboten|gegen die Verfassung kämpft|party be banned|fights against the constitution
+G-44|direkt wählen|Bundespräsidentin/den Bundespräsidenten|elect directly|Bundespräsident
+G-45|Pflegeversicherung|Sozialversicherung|long-term care insurance|Social insurance
+G-46|Aufgabe gehört dazu|Straßen und Schulen|task is one of them|roads and schools
+G-47|Aufgabe gehört|Urlaubsreisen|task is|vacation trips
+G-48|Verfassungsorganen|Bürgerversammlung|constitutional organs|citizens' assembly
+G-49|Schulpolitik|Bundesländer|school policy|federal states
+G-50|Wirtschaftsform||economic system|social market economy
+G-51|demokratischen Rechtsstaat|Privatpolizei ohne Grund|democratic state under the rule of law|private police force without reason
+G-52|"Volkssouveränität";Alle Staatsgewalt geht vom|Volke|"Volkssouveränität";All state authority comes from the|people
+G-53|"Rechtsstaat"|Staat muss die Gesetze einhalten|"Rechtsstaat"|state must abide by the laws
+G-54|staatliche Gewalt||branch of state power|Directive
+G-55|Bild|Bundestagssitz in Berlin|picture|seat of the Bundestag
+G-56|Gemeindeverwaltung|Ordnungsamt|municipal administration|Ordnungsamt
+G-57|Präsidentin/zum Präsidenten des Deutschen Bundestages|stärksten Fraktion|President of the Deutscher Bundestag|largest parliamentary group
+G-58|ernennt;Ministerinnen/die Minister|Bundespräsidentin/der Bundespräsident|appoints the ministers|Bundespräsident
+G-59|erstmals eine jüdische Gemeinde|1700 Jahren|first time;Jewish community|1,700 years
+G-60|Bundestag und der Bundesrat|Legislative|Bundestag;Bundesrat|legislature
+G-61|"Volkssouveränität"|vom Volke aus|"Volkssouveränität"|from the people
+G-62|Parlament eines deutschen Bundeslandes||parliament of a German federal state|Landtagswahl
+G-63|Exekutive|Gerichte|executive|courts
+G-64|gegliedert|Bund, Länder und Kommunen|divided into|federation, federal states and municipalities
+G-65|Aufgaben des Deutschen Bundestages|Bundeskabinett zu bilden|tasks of the Deutscher Bundestag|form the federal cabinet
+G-66|größten jüdischen Gemeinden|Berlin und München|largest Jewish communities|Berlin and Munich
+G-67|Aufgabe der Bundesländer|Schulpolitik|responsibility of the federal states|School policy
+G-68|kontrolliert;Schulwesen|nach dem Grundgesetz seine Aufgabe|supervise the school system|its task under the Grundgesetz
+G-69|unterste politische Stufe|Gemeinden|lowest political tier|Municipalities
+G-70|Aufgaben der deutschen Bundespräsidentin/des deutschen Bundespräsidenten|schlägt die Kanzlerin/den Kanzler zur Wahl vor|task of the German Bundespräsident|proposes the chancellor for election
+G-71|am häufigsten auf|in Berlin|spend most of her/his time|in Berlin
+G-72|jetzige Bundeskanzlerin/der jetzige Bundeskanzler||current Federal Chancellor|
+G-73|beiden größten Fraktionen|CDU/CSU und AfD|two largest parliamentary groups|CDU/CSU and AfD
+G-74|Parlament für ganz Deutschland||parliament for the whole of Germany|Bundestag
+G-75|Staatsoberhaupt||head of state|
+G-76|CDU||CDU|
+G-77|Bundeswehr|Armee|Bundeswehr|armed forces
+G-78|SPD||SPD|
+G-79|FDP||FDP|
+G-80|Auslegung des Grundgesetzes|Bundesverfassungsgericht|interpreting the Grundgesetz|Federal Constitutional Court
+G-81|wählt;Bundeskanzler|Bundestag|elects the Federal Chancellor|Bundestag
+G-82|leitet;Bundeskabinett|Bundeskanzler|heads the German federal cabinet|Federal Chancellor
+G-83|wählt;Bundeskanzler|Bundestag|elects the German Federal Chancellor|Bundestag
+G-84|Hauptaufgabe;Bundespräsident|repräsentiert das Land|main task;Bundespräsident|represents the country
+G-85|bildet den deutschen Bundesrat|Regierungsvertreter der Bundesländer|makes up the German Bundesrat|government representatives of the federal states
+G-86|wählt;Bundespräsidentin/den Bundespräsidenten|Bundesversammlung|elects the Bundespräsident|Bundesversammlung
+G-87|Staatsoberhaupt|Bundespräsident|head of state|Federal President
+G-88|Opposition|kontrolliert die Regierung|opposition|oversees the government
+G-89|Vereinigung von Abgeordneten einer Partei|Fraktion|association of members of parliament from one party|Fraktion
+G-90|Bundesländer wirken an der Gesetzgebung des Bundes mit|Bundesrat|federal states participate in federal legislation|Bundesrat
+G-91|Regierungswechsel in einem Bundesland|schwieriger;Mehrheit im Bundesrat|change of government in a federal state|more difficult;majority in the Bundesrat
+G-92|CSU||CSU|
+G-93|"Zweitstimmen"|mehr Sitze|"Zweitstimmen"|more seats
+G-94|Alter;Wahl zum Deutschen Bundestag||what age;vote|
+G-95|meisten Kinder|Schulpflicht|most children|Compulsory schooling
+G-96|Holocaust leugnet|fünf Jahren oder mit Geldstrafe|denies the Holocaust|five years or a fine
+G-97|automatisch;fest angestellt|Sozialversicherung|automatically;permanently employed|Social insurance
+G-98|Fraktion wechseln|Mehrheit verlieren|switch their parliamentary group|lose its majority
+G-99|bezahlt;Sozialversicherungen|Arbeitgeberinnen/Arbeitgeber und Arbeitnehmerinnen/Arbeitnehmer|pays for social insurance|Employers and employees
+G-100|gesetzlichen Sozialversicherung|Lebensversicherung|statutory social insurance|life insurance
+G-101|Gewerkschaften|Arbeitnehmerinnen und Arbeitnehmer|Trade unions|employees
+G-102|geehrt;besondere Leistung|Bundesverdienstkreuz|honored;outstanding contribution|Bundesverdienstkreuz
+G-103|"Ampelkoalition"|SPD, FDP und Bündnis 90/Die Grünen|"Ampelkoalition"|SPD, FDP and Bündnis 90/Die Grünen
+G-104|verliert ihre Arbeit;Grund|bekommt ein Kind|loses her job;reason|having a baby
+G-105|Wahlhelferinnen/Wahlhelfern|zählen die Stimmen|election workers|count the votes
+G-106|Wahlhelferinnen/Wahlhelfern|zählen die Stimmen|election workers|count the votes
+G-107|wie viele Jahre;Bundestag|4 Jahre|how many years;Bundestag|4 years
+G-108|Bundestagswahl;jede/jeder wählen|Bürgerin/Bürger der Bundesrepublik;mindestens 18 Jahre|Bundestag election;anyone may vote|citizen of the Federal Republic;at least 18
+G-109|Wie oft;Bundestagswahlen|alle vier Jahre|How often;Bundestag|every four years
+G-110|wie viele Jahre;Bundestag|4 Jahre|how many years;Bundestag|4 years
+G-111|Staat Israel;verboten|Aufruf zur Vernichtung Israels|State of Israel;prohibited|calling for the destruction of Israel
+G-112|Wahlen||Elections|secret
+G-113|gewinnt die Partei|meisten Stimmen|won by the party|most votes
+G-114|teilzunehmen||Taking part|right
+G-115|"aktives Wahlrecht"|Man kann wählen|"aktives Wahlrecht"|You can vote
+G-116|wählen dürfen|aktives Wahlrecht|allowed to vote|active right to vote
+G-117|Wie viel Prozent;Zweitstimmen||minimum percentage of second votes|
+G-118|Makkabi-Sportvereinen;Mitglied|alle Menschen|Makkabi sports clubs;member|everyone
+G-119|Wahlen;frei|ohne Zwang entscheiden|Elections;free|decide without coercion
+G-120|Wahlsystem|Mehrheits- und Verhältniswahlrecht|electoral system|majority and proportional representation
+G-121|Mindestanteil an Wählerstimmen|5%-Hürde|minimum share of votes|5% threshold
+G-122|Grundsatz|frei, gleich, geheim|principle|free, equal, secret
+G-123|"5%-Hürde"|Mindestanteil an Wählerstimmen|"5% threshold"|Minimum share of votes
+G-124|Bundestagswahl|Parlaments für Deutschland|Bundestag election|parliament for Germany
+G-125|Funktion von regelmäßigen Wahlen|Wechsel der Regierung|function of regular elections|change of government
+G-126|vor einer Wahl|Wahlbenachrichtigung|before an election|polling card
+G-127|Warum;5%-Hürde|viele kleine Parteien|Why;5% threshold|many small parties
+G-128|Parlamentsmitglieder;gewählt|Abgeordnete|Members of parliament;elected|Abgeordnete
+G-129|Vom Volk gewählt|Bundestag|people elect|Bundestag
+G-130|Stimmzettel;gültig||ballot paper;valid|
+G-131|Bürgermeisterin/ein Bürgermeister|Oberhaupt einer Gemeinde|Bürgermeisterin/Bürgermeister|head of a municipality
+G-132|ehrenamtlich|freiwillig und unbezahlt|ehrenamtlich|voluntarily and unpaid
+G-133|erlaubt|Briefwahl|allowed|postal ballot
+G-134|Buslinie abschaffen|Bürgerinitiative|abolish the bus line|citizens' initiative
+G-135|Gewerkschaften|Arbeitnehmerinnen und Arbeitnehmer|trade unions|employees
+G-136|Arbeitsgericht|ungerechtfertigter Kündigung|labor court|unjustified dismissal
+G-137|Konflikten in der Arbeitswelt|Arbeitsgericht|conflicts in the world of work|labor court
+G-138|zu Unrecht gekündigt|Kündigungsschutzklage|dismissed me unfairly|unfair dismissal lawsuit
+G-139|Prozess vor Gericht|Straftat begangen;angeklagt|trial;court|criminal offense;charged
+G-140|Schöffin/ein Schöffe|Schuld und Strafe|Schöffin/Schöffe|guilt and punishment
+G-141|Rechtsfragen;vor Gericht|Rechtsanwältin/ein Rechtsanwalt|legal questions;in court|lawyer
+G-142|Hauptaufgabe;Richterin/eines Richters|spricht Urteile|main task of a judge|pronounces judgments
+G-143|Richterin/ein Richter|Judikative|judge|judiciary
+G-144|Richterin/ein Richter|rechtsprechenden Gewalt|judge|judicial power
+G-145|Staatsgewalt;Richterin/ein Richter|Judikative|branch of state power;judge|judiciary
+G-146|Verfahren vor einem Gericht|Prozess|proceeding before a court|Trial
+G-147|Arbeit einer Richterin/eines Richters|Recht sprechen|work of a judge|administering justice
+G-148|Aufgabe der Polizei|Einhaltung von Gesetzen|task of the police|compliance with the laws
+G-149|antisemitisches Verhalten|Holocaust leugnen|antisemitic behavior|denying the Holocaust
+G-150|Gerichtsschöffin/ein Gerichtsschöffe|ehrenamtliche Richterin|Gerichtsschöffin/Gerichtsschöffe|volunteer (honorary) judge
+G-151|Wer baute die Mauer|DDR|Who built the Wall|GDR
+G-152|Nationalsozialisten;an der Macht|1933 bis 1945|National Socialists;in power|1933 to 1945
+G-153|8. Mai 1945|Ende des Zweiten Weltkriegs|8 May 1945|End of the Second World War
+G-154|Zweite Weltkrieg zu Ende||Second World War end|
+G-155|Nationalsozialisten;an der Macht|1933 bis 1945|National Socialists;in power|1933 to 1945
+G-156|Hitler Reichskanzler||Hitler become Reich Chancellor|
+G-157|errichteten 1933|Diktatur|established in Germany|dictatorship
+G-158|"Dritte Reich"|Diktatur|"Third Reich"|dictatorship
+G-159|Was gab es;Nationalsozialismus|freie Wahlen|What did;exist;National Socialist era|free elections
+G-160|1939 bis 1945|Zweite Weltkrieg|1939 to 1945|Second World War
+G-161|NS-Staat|staatlichen Rassismus|Nazi state|state racism
+G-162|Stauffenberg|Attentat auf Hitler|Stauffenberg|assassination attempt on Hitler
+G-163|zerstörten;Synagogen||destroy synagogues|
+G-164|9. November 1938|Synagogen;zerstört|9 November 1938|synagogues;destroyed
+G-165|erste Bundeskanzler|Adenauer|first Federal Chancellor|Adenauer
+G-166|"Wir sind das Volk"|Montagsdemonstrationen 1989|"Wir sind das Volk"|1989 Monday demonstrations
+G-167|"Alliierte Besatzungsmächte"|USA, Sowjetunion, Großbritannien, Frankreich|"Allied occupying powers"|USA, Soviet Union, Great Britain, France
+G-168|"Alliierte Besatzungsmacht"|Japan|"Allied occupying power"|Japan
+G-169|Bundesrepublik Deutschland gegründet||Federal Republic of Germany founded|
+G-170|Was gab es;Nationalsozialismus|Verbot von Parteien|What existed;National Socialist era|banning of political parties
+G-171|Soziale Marktwirtschaft|Angebot und Nachfrage;sozialen Ausgleich|Social market economy|supply and demand;social balance
+G-172|Besatzungszone;DDR|sowjetischen|occupation zone;GDR|Soviet
+G-173|Gründungsmitglied|Europäischen Union|founding member|European Union
+G-174|DDR gegründet||GDR founded|
+G-175|Wie viele Besatzungszonen||How many occupation zones|
+G-176|Besatzungszonen;verteilt||occupation zones distributed|
+G-177|vier Sektoren|Berlin|four sectors|Berlin
+G-178|Luftbrücke|unterbrach den gesamten Verkehr auf dem Landwege|airlift|cut off all traffic by land
+G-179|Zweite Weltkrieg in Europa offiziell|bedingungslose Kapitulation|Second World War in Europe officially end|unconditional surrender
+G-180|erste Bundeskanzler|Adenauer|first Federal Chancellor|Adenauer
+G-181|Willy Brandt;Kniefall|um Vergebung|Willy Brandt;kneeling|forgiveness
+G-182|jüdische Gebetshaus|Synagoge|Jewish house of prayer|Synagogue
+G-183|"Wirtschaftswunder"|50er Jahre|"Wirtschaftswunder"|1950s
+G-184|Staat Israel gegründet|Resolution der Vereinten Nationen|State of Israel founded|resolution of the United Nations
+G-185|"Eiserner Vorhang"|Warschauer Pakts gegen den Westen|"Iron Curtain"|Warsaw Pact from the West
+G-186|1953;Aufstand|17. Juni|1953;uprising|17 June
+G-187|Hammer, Zirkel und Ährenkranz|DDR|hammer, compass and wreath|GDR
+G-188|Mauer in Berlin gebaut||Wall in Berlin built|
+G-189|baute;Mauer||build the Wall|
+G-190|DDR||DDR|
+G-191|Mauer;geöffnet||Wall;opened|
+G-192|DDR||GDR|
+G-193|1961 bis 1989|Mauer geteilt|1961 to 1989|divided by a wall
+G-194|3. Oktober|Einheit|3 October|Unity
+G-195|DDR||GDR|
+G-196|"Die Wende"|Diktatur zur Demokratie|"Die Wende"|dictatorship to a democracy
+G-197|DDR||GDR|
+G-198|DDR||GDR|
+G-199|"Stasi"|Staatssicherheit|"Stasi"|State Security
+G-200|DDR||GDR|
+G-201|nur Bundesländer;früheren DDR||only federal states;former GDR|
+G-202|"Kalten Krieg"|Warschauer Pakt|"Cold War"|Warsaw Pact
+G-203|Wirtschaftssystem der DDR|Planwirtschaft|economic system of the GDR|planned economy
+G-204|zu einem Staat|beigetreten|become one state|joined
+G-205|neuen Bundesländer|Europäischen Union|new federal states|European Union
+G-206|„Stolpersteine“|Opfer des Nationalsozialismus|"Stolpersteine"|victims of National Socialism
+G-207|Militärbündnis;DDR|Warschauer Pakt|military alliance;GDR|Warsaw Pact
+G-208|"Stasi"|Geheimdienst|"Stasi"|secret service
+G-209|Wappen der Deutschen Demokratischen Republik||coat of arms of the German Democratic Republic|
+G-210|17. Juni 1953|Streiks;Volksaufstand|17 June 1953|strikes;popular uprising
+G-211|"Ostverträge"|Willy Brandt|"Ostverträge"|Willy Brandt
+G-212|vollem Namen||full name|
+G-213|Einwohner||inhabitants|
+G-214|Farben;Flagge||colours of the German flag|
+G-215|"Kanzler der Deutschen Einheit"|Helmut Kohl|"Chancellor of German Unity"|Helmut Kohl
+G-216|Plenarsaal|Bundesadler|plenary hall|federal eagle
+G-217|Zeitraum;DDR|1949 bis 1990|period;GDR|1949 to 1990
+G-218|Bundesländer kamen;Wiedervereinigung||federal states were added;reunification|
+G-219|Grenzen von heute||present-day borders|
+G-220|27. Januar|Auschwitz|27 January|Auschwitz
+G-221|Schengener Abkommens|ohne Passkontrolle|Schengen Agreement|without passport checks
+G-222|Nachbarland||neighbouring country|
+G-223|Nachbarland||neighbouring country|
+G-224|EU||EU|
+G-225|deutschsprachige Bevölkerung|Österreich|German-speaking population|Austria
+G-226|Flagge der Europäischen Union||flag of the European Union|
+G-227|Nachbarland||neighbouring country|
+G-228|Beitritt der DDR;1990|Wiedervereinigung|accession of the GDR;1990|reunification
+G-229|Nachbarland||neighbouring country|
+G-230|Europäische Parlament|5 Jahre|European Parliament|5 years
+G-231|"europäische Integration"|Zusammenschluss europäischer Staaten|"European integration"|joining together of European states
+G-232|Europawahl|Abgeordneten des Europäischen Parlaments|European election|members of the European Parliament
+G-233|Nachbarland||neighbouring country|
+G-234|ein Sitz des Europäischen Parlaments|Straßburg|one seat of the European Parliament|Strasbourg
+G-235|Verdun;Ziel der Europäischen Union|Frieden und Sicherheit|Verdun;goal of the European Union|peace and security
+G-236|Mitgliedstaaten||member states|
+G-237|"Römischen Verträge";Inhalt|Europäischen Wirtschaftsgemeinschaft|"Treaties of Rome";contain|European Economic Community
+G-238|An welchen Orten|Straßburg, Luxemburg und Brüssel|which places|Strasbourg, Luxembourg and Brussels
+G-239|Verträge;Europäischen Wirtschaftsgemeinschaft|"Römischen Verträge"|treaties;European Economic Community|"Treaties of Rome"
+G-240|Euro in bar||cash;euros|
+G-241|Elterngeld|Antrag bei der Elterngeldstelle|Elterngeld|application to the Elterngeldstelle
+G-242|Kindergarten|Eltern/die Erziehungsberechtigten|kindergarten|parents/legal guardians
+G-243|Demonstration;vorher|Demonstration anmelden|demonstration;beforehand|register the demonstration
+G-244|Schulabschluss;Universität|Abitur|school-leaving qualification;university|Abitur
+G-245|als Paar zusammenleben|13 Jahre|live together as a couple|Anne (13)
+G-246|volljährig||come of age|
+G-247|schwanger;Schutz|Mutterschutz|pregnant;protection|Mutterschutz
+G-248|Erziehung der Kinder|Eltern|raising children|parents
+G-249|verantwortlich für die Kindererziehung|Eltern|responsible for raising children|parents
+G-250|gut bezahlten Arbeitsplatz|gut ausgebildet|well-paid job|well trained/educated
+G-251|Kind schlägt|bestraft|hits a child|punished
+G-252|In Deutschland|nur mit einer Partnerin/einem Partner verheiratet|In Germany|married to only one partner
+G-253|umziehen|Einwohnermeldeamt|move house|Einwohnermeldeamt
+G-254|"Trennungsjahr"|mindestens ein Jahr getrennt|"Trennungsjahr"|separately for at least one year
+G-255|Erziehungsproblemen|Jugendamt|problems raising their children|Jugendamt
+G-256|Restaurant eröffnen|Gaststättenerlaubnis|open a restaurant|restaurant licence
+G-257|erwachsene Frau;Abitur nachholen|Abendgymnasium|adult woman;Abitur later|Abendgymnasium
+G-258|Jugendamt|aus der Familie nehmen|Jugendamt|remove a child
+G-259|Berufsinformationszentrum BIZ|Lehrstellensuche|BIZ career information centre|apprenticeship
+G-260|Kind in der Schule|Anwesenheitspflicht|child at school|compulsory attendance
+G-261|30 Jahren;Abitur nachholen|Abendgymnasium|30-year-old man;Abitur later|Abendgymnasium
+G-262|Gleichbehandlung|Behinderung benachteiligt|equal treatment|disadvantaged;disability
+G-263|strafmündig;14 Jahre und älter|bestraft|criminally responsible;14 and over|punished
+G-264|bunte Kostüme und Masken|Rosenmontag|colourful costumes and masks|Rosenmontag
+G-265|heiraten|Standesamt|get married|Standesamt
+G-266|Nachtruhe|22 Uhr|night-time quiet|10 p.m.
+G-267|22 Jahre alt;Freund;Eltern|respektieren|22 years old;boyfriend;parents|respect the decision
+G-268|Führerschein;Muttersprache|Theorie-Prüfung;Muttersprache|driving licence;mother tongue|theory test in her mother tongue
+G-269|ab dem Alter von drei Jahren;Anspruch|Kindergartenplatz|from the age of three;entitled|kindergarten place
+G-270|Volkshochschule|Weiterbildung|Volkshochschule|further education
+G-271|Weihnachten|Tannenbaum schmücken|Christmas|decorating a fir tree
+G-272|Lebensform;erlaubt|mit zwei Frauen zur selben Zeit|form of living together;allowed|two women at the same time
+G-273|Erziehungsproblemen|Jugendamt|problems raising your children|Jugendamt
+G-274|Brief geöffnet|Briefgeheimnis|opened a letter|secrecy of correspondence
+G-275|Ehescheidung|Anwältin/eines Anwalts|divorce|lawyer
+G-276|Behörde schlecht behandelt|Behördenleiterin/beim Behördenleiter beschweren|treated badly;public authority|complain to the head of the authority
+G-277|zweijähriges Kind;Diskriminierung|Mutter|two-year-old child;discrimination|mother
+G-278|Rollstuhl;Diskriminierung|Rollstuhl|wheelchair;discrimination|wheelchair
+G-279|"Hausordnung"|Regeln;alle Bewohnerinnen und Bewohner|"Hausordnung"|rules;all residents
+G-280|falschen Steuerbescheid|Einspruch|incorrect tax assessment|objection
+G-281|Schwimmbad;dunkle Hautfarbe;Recht|Gleichbehandlung|swimming pool;dark skin;right|equal treatment
+G-282|Ehrenamt müssen|Wahlhelferin/Wahlhelfer|honorary office must|election worker
+G-283|falsche Rechnung;Behörde|Widerspruch|incorrect bill;public authority|Widerspruch
+G-284|ändert sich in Zukunft sehr schnell|immer weiter lernen|change very quickly|keep on learning
+G-285|fest angestellte;Gehalt|Umsatzsteuer|permanent employee;salary|sales tax
+G-286|Firma hilft;Problemen mit der Arbeitgeberin|Betriebsrat|company helps employees;problems with their employer|Betriebsrat
+G-287|Arbeitsverhältnis beenden|Kündigungsfrist|end your employment|notice period
+G-288|besondere Verantwortung für Israel|nationalsozialistischen Verbrechen gegen Juden|special responsibility towards Israel|National Socialist crimes against Jews
+G-289|dunkler Hautfarbe;Kellner;Diskriminierung|dunkle Haut|dark skin;waiter;discrimination|dark skin
+G-290|Fernseher;kaputt|reklamieren|television;broken|make a claim
+G-291|Steuererklärung;Kirche|Kirchensteuer|tax return;church|church tax
+G-292|religiösen Toleranz|glauben, was er möchte|religious tolerance|believe what they want
+G-293|Ostern|Eier bemalen|Easter|painting eggs
+G-294|Pfingsten|christlicher Feiertag|Pentecost|Christian holiday
+G-295|Religion;geprägt|Christentum|religion;shaped|Christianity
+G-296|letzten vier Wochen vor Weihnachten|Adventszeit|last four weeks before Christmas|Advent
+G-297|meisten Migrantinnen und Migranten||most migrants|
+G-298|In der DDR;Migrantinnen und Migranten|Vietnam, Polen, Mosambik|In the GDR, migrants|Vietnam, Poland, Mozambique
+G-299|50er und 60er Jahren;angeworben|Gastarbeiterinnen/Gastarbeiter|1950s and 1960s;recruited|Gastarbeiter
+G-300|ersten Gastarbeiterinnen und Gastarbeiter|Italien|first guest workers|Italy
+# Look-alike groups: questions people mix up because they sound alike but have different answers.
+# Who elects / appoints whom
+~ G-28 G-44 G-58 G-81 G-83 G-86 G-129
+# Head of state vs head of government
+~ G-72 G-75 G-82 G-87
+# Terms of office: Bundestag 4, Landtag 5 (Bremen 4), EU Parliament 5
+~ G-107 G-110 G-230 *-3
+# Voting ages: Bundestag 18, local elections 16 or 18
+~ G-94 *-4
+# Ages: 14 (religion, criminal responsibility), 18 (adult)
+~ G-2 G-246 G-263
+# Branches of state power
+~ G-60 G-63 G-143 G-144 G-145
+# Fundamental rights
+~ G-4 G-7 G-9
+# Federal states vs parents
+~ G-49 G-67 G-248 G-249
+# Years: 1933 Hitler, 1938 synagogues, 1939-1945 war, 1945 end
+~ G-154 G-156 G-160 G-163
+# The Wall: built 1961, opened 1989
+~ G-188 G-189 G-191
+# Dates: 17 June 1953 vs 3 October
+~ G-186 G-194
+# Numbers: 4 occupation zones, 5 new states, 16 states, 27 EU members
+~ G-24 G-175 G-218 G-236
+# Chancellors
+~ G-165 G-180 G-211 G-215
+# Migration: most migrants Turkey, first guest workers Italy
+~ G-297 G-300
+# European Parliament: one seat vs all places
+~ G-234 G-238
+# Objections: tax assessment Einspruch, bill Widerspruch
+~ G-280 G-283
+# Work conflicts: court vs works council
+~ G-136 G-137 G-286
+# Offices: registration, marriage, youth welfare
+~ G-253 G-265 G-255 G-273
+# One word flips the answer: "gehört dazu" vs "gehört nicht dazu", "gab es" vs "gab es nicht"
+~ G-46 G-47
+~ G-159 G-170
