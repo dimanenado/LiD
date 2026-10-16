@@ -1,4 +1,4 @@
-import { ChartNoAxesColumn, House, LucideIcon, MapPin, Search as SearchIcon, Timer } from 'lucide-react'
+import { ChartNoAxesColumn, House, LucideIcon, MapPin, Search as SearchIcon, Settings, Timer } from 'lucide-react'
 import { ReactNode, useCallback, useEffect, useState } from 'react'
 import { QUESTIONS, STATES, shuffle } from './data'
 import { ExamTab } from './Exam'
@@ -6,12 +6,14 @@ import { Learn } from './Learn'
 import { Practice } from './Practice'
 import { ProgressTab } from './ProgressTab'
 import { Search } from './Search'
+import { SettingsTab } from './SettingsTab'
 import { useTheme } from './hooks'
 import { TranslationProvider } from './TranslationProvider'
 import { useProgress } from './store'
 import { StatePicker } from './ui'
 
-type Tab = 'learn' | 'exam' | 'search' | 'progress'
+// settings is reached from the gear in the top bar, not from the tabs
+type Tab = 'learn' | 'exam' | 'search' | 'progress' | 'settings'
 const TABS: { id: Tab; label: string; Icon: LucideIcon }[] = [
   { id: 'learn', label: 'Learn', Icon: House },
   { id: 'exam', label: 'Exam', Icon: Timer },
@@ -21,7 +23,7 @@ const TABS: { id: Tab; label: string; Icon: LucideIcon }[] = [
 
 const tabFromHash = (): Tab => {
   const h = location.hash.slice(1)
-  return TABS.some((t) => t.id === h) ? (h as Tab) : 'learn'
+  return TABS.some((t) => t.id === h) || h === 'settings' ? (h as Tab) : 'learn'
 }
 
 export default function App() {
@@ -103,6 +105,14 @@ export default function App() {
             <button className="chip chip-btn" onClick={() => setPicker(true)} aria-label={`Federal state: ${STATES[p.state]}. Change`}>
               <MapPin size={14} aria-hidden /> {STATES[p.state]}
             </button>
+            <button
+              className={`icon-btn gear${tab === 'settings' ? ' on' : ''}`}
+              aria-label="Settings"
+              aria-current={tab === 'settings' ? 'page' : undefined}
+              onClick={() => go('settings')}
+            >
+              <Settings size={20} aria-hidden />
+            </button>
           </div>
         </header>
       )}
@@ -123,8 +133,9 @@ export default function App() {
         )}
         {tab === 'search' && <Search store={store} />}
         {tab === 'progress' && (
-          <ProgressTab store={store} onChangeState={() => setPicker(true)} onPractise={start} onFullscreen={setFullscreen} />
+          <ProgressTab store={store} onPractise={start} onFullscreen={setFullscreen} />
         )}
+        {tab === 'settings' && <SettingsTab store={store} onChangeState={() => setPicker(true)} />}
       </main>
 
       {chrome && (

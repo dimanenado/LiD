@@ -120,6 +120,8 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 }
 .topnav button:hover { color: var(--text); background: var(--surface-2); }
 .topnav button.on { color: var(--accent); background: var(--accent-soft); }
+.gear { margin-left: calc(var(--s2) - var(--s4)); }
+.gear.on { color: var(--accent); background: var(--accent-soft); }
 
 .tabbar {
   position: fixed; inset: auto 0 0 0; z-index: 10;
