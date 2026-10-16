@@ -103,7 +103,7 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 
 .topbar { position: sticky; top: 0; z-index: 10; background: var(--bg); }
 .topbar-in {
-  max-width: calc(var(--w-wide) + 32px); margin: 0 auto; height: var(--topbar-h);
+  max-width: calc(var(--w-content) + 32px); margin: 0 auto; height: var(--topbar-h);
   display: flex; align-items: center; gap: var(--s4);
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
@@ -121,6 +121,10 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 .topnav button:hover { color: var(--text); background: var(--surface-2); }
 .topnav button.on { color: var(--accent); background: var(--accent-soft); }
 .gear { margin-left: calc(var(--s2) - var(--s4)); }
+/* long state names (Mecklenburg-Vorpommern) end in "…" so the bar fits the content column */
+.state-chip { flex: 0 1 auto; min-width: 0; }
+.state-chip svg { flex: none; }
+.state-chip span { overflow: hidden; text-overflow: ellipsis; }
 .gear.on { color: var(--accent); background: var(--accent-soft); }
 
 .tabbar {
@@ -138,6 +142,9 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 
 @media (min-width: 760px) {
   .topnav { display: flex; }
+  /* on desktop the bar lines up with the content column, so only the mark fits next to the nav */
+  .brand-name { display: none; }
+  .state-chip { max-width: 180px; }
   .brand { margin-right: var(--s4); }
   .topnav { margin-right: auto; }
   .tabbar { display: none; }
