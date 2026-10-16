@@ -1,6 +1,7 @@
-import { Check, Info, Shuffle, X } from 'lucide-react'
+import { Check, Flag, Info, Shuffle, X } from 'lucide-react'
 import { ReactNode } from 'react'
 import { Question, imageUrl, questionRef } from './data'
+import { feedbackUrl } from './feedback'
 import { LANGS, Translation, useTranslation } from './i18n'
 import { highlight, keywordsFor, lookAlikes } from './keywords'
 
@@ -131,6 +132,10 @@ export function QuestionCard({ q, selected, reveal, onSelect, label, hideQuestio
       </ol>
 
       {alikes.length > 0 && <LookAlikes q={q} others={alikes} t={t} />}
+
+      <a className="report-link" href={feedbackUrl({ question: q, state: userState })} target="_blank" rel="noopener">
+        <Flag size={13} aria-hidden /> Report a problem with this question
+      </a>
     </article>
   )
 }

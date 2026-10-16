@@ -1,6 +1,7 @@
-import { ChevronRight, Download, Languages, MapPin, RotateCcw, Upload } from 'lucide-react'
+import { ChevronRight, Download, Languages, MapPin, MessageSquare, RotateCcw, Upload } from 'lucide-react'
 import { useRef, useState } from 'react'
 import { STATES } from './data'
+import { feedbackUrl } from './feedback'
 import { LANGS } from './i18n'
 import { Store, Theme, translationSettings } from './store'
 import { useConfirm, useToast } from './hooks'
@@ -154,6 +155,11 @@ export function SettingsTab({ store, onChangeState }: Props) {
           Questions from the official BAMF catalog “Gesamtfragenkatalog zum Test Leben in Deutschland” (as of 07.05.2025).
           Translations are unofficial. Answers were checked against the official BAMF online tool on 15.10.2026.
         </p>
+        <div className="actions">
+          <a className="btn btn-secondary" href={feedbackUrl({ state: store.p.state })} target="_blank" rel="noopener">
+            <MessageSquare size={16} aria-hidden /> Send feedback or ideas
+          </a>
+        </div>
       </section>
     </div>
   )
