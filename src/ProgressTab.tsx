@@ -1,11 +1,11 @@
-import { ChevronRight, Download, MapPin, RotateCcw, Upload } from 'lucide-react'
+import { ChevronRight, Download, Languages, MapPin, RotateCcw, Upload } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { GENERAL, STATES, TOPIC_SHORT, stateQuestions } from './data'
 import { ExamReview, ExamStats } from './ExamStats'
-import { LANGS, TransLang } from './i18n'
+import { LANGS } from './i18n'
 import { ExamResult, isMastered, isMistake, Store, Theme, translationSettings } from './store'
 import { useConfirm, useToast } from './hooks'
-import { Meter, Switch } from './ui'
+import { LangPicker, Meter, Switch } from './ui'
 
 const THEMES: [Theme, string][] = [
   ['system', 'System'],
@@ -24,6 +24,7 @@ interface Props {
 export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: Props) {
   const { p, update } = store
   const [reviewing, setReviewing] = useState<ExamResult | null>(null)
+  const [langPicker, setLangPicker] = useState(false)
   const scrollBack = useRef(0)
   const fileRef = useRef<HTMLInputElement>(null)
   const [ask, confirmEl] = useConfirm()
@@ -102,6 +103,7 @@ export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: 
     <div className="stack">
       {confirmEl}
       {toastEl}
+      {langPicker && <LangPicker store={store} onClose={() => setLangPicker(false)} />}
 
       <section className="stack-sm">
         <h2 className="label">Mastery</h2>
@@ -151,29 +153,14 @@ export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: 
               ))}
             </div>
           </div>
-          <label className="setting" htmlFor="set-lang">
-            <span className="setting-text">
-              <span>Translation</span>
-              <small>Next to the German text on wide screens, under it on phones</small>
+          <button className="list-row" onClick={() => setLangPicker(true)}>
+            <Languages size={18} aria-hidden className="list-icon" />
+            <span className="row-main">
+              <b>Translation</b>
+              <small>{p.showTranslation ? LANGS[p.lang].native : 'Off · German only'}</small>
             </span>
-            <select
-              id="set-lang"
-              className="select"
-              value={p.showTranslation ? p.lang : 'off'}
-              onChange={(e) =>
-                e.target.value === 'off'
-                  ? update({ showTranslation: false })
-                  : update({ showTranslation: true, lang: e.target.value as TransLang })
-              }
-            >
-              <option value="off">Off (German only)</option>
-              {Object.entries(LANGS).map(([code, l]) => (
-                <option key={code} value={code}>
-                  {l.native === l.name ? l.name : `${l.native} · ${l.name}`}
-                </option>
-              ))}
-            </select>
-          </label>
+            <ChevronRight size={18} aria-hidden className="muted" />
+          </button>
           <Switch
             id="set-keywords"
             label="Highlight key words"
