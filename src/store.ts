@@ -19,8 +19,12 @@ export interface ExamResult {
   answers?: [string, number | null][]
 }
 
+export type Theme = 'system' | 'light' | 'dark'
+
 export interface Progress {
   state: string
+  /** color theme; "system" follows the device setting */
+  theme: Theme
   showEnglish: boolean
   /** shuffle practice sets (exam is always random) */
   shuffle: boolean
@@ -33,7 +37,7 @@ export interface Progress {
 }
 
 const KEY = 'lid-prep:v1'
-const DEFAULT: Progress = { state: 'BE', showEnglish: true, shuffle: true, keywords: true, onboarded: false, stats: {}, exams: [] }
+const DEFAULT: Progress = { state: 'BE', theme: 'system', showEnglish: true, shuffle: true, keywords: true, onboarded: false, stats: {}, exams: [] }
 
 function load(): Progress {
   try {

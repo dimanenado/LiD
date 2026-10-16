@@ -306,6 +306,7 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 
 /* ---------- settings ---------- */
 .setting { display: flex; align-items: center; gap: var(--s4); min-height: 60px; padding: var(--s3) var(--s4); cursor: pointer; }
+.setting.static { cursor: default; }
 .setting-text { flex: 1; display: grid; gap: 2px; font-weight: 700; }
 .setting-text small { color: var(--muted); font-weight: 400; font-size: var(--fs-sm); }
 .switch {

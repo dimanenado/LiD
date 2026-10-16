@@ -6,6 +6,7 @@ import { Learn } from './Learn'
 import { Practice } from './Practice'
 import { ProgressTab } from './ProgressTab'
 import { Search } from './Search'
+import { useTheme } from './hooks'
 import { useProgress } from './store'
 import { StatePicker } from './ui'
 
@@ -25,6 +26,7 @@ const tabFromHash = (): Tab => {
 export default function App() {
   const store = useProgress()
   const { p, update } = store
+  useTheme(p.theme)
   const [tab, setTab] = useState<Tab>(tabFromHash)
   const [session, setSession] = useState<{ title: string; ids: string[]; n: number } | null>(null)
   // a running exam or an exam review takes the whole screen

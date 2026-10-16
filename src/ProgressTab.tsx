@@ -2,9 +2,15 @@ import { ChevronRight, Download, MapPin, RotateCcw, Upload } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { GENERAL, STATES, TOPIC_SHORT, stateQuestions } from './data'
 import { ExamReview, ExamStats } from './ExamStats'
-import { ExamResult, isMastered, isMistake, Store } from './store'
+import { ExamResult, isMastered, isMistake, Store, Theme } from './store'
 import { useConfirm, useToast } from './hooks'
 import { Meter, Switch } from './ui'
+
+const THEMES: [Theme, string][] = [
+  ['system', 'System'],
+  ['light', 'Light'],
+  ['dark', 'Dark'],
+]
 
 interface Props {
   store: Store
@@ -131,6 +137,19 @@ export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: 
             </span>
             <ChevronRight size={18} aria-hidden className="muted" />
           </button>
+          <div className="setting static" role="group" aria-labelledby="set-theme">
+            <span className="setting-text">
+              <span id="set-theme">Appearance</span>
+              <small>System follows your device's light or dark mode</small>
+            </span>
+            <div className="seg">
+              {THEMES.map(([v, label]) => (
+                <button key={v} className={p.theme === v ? 'on' : ''} aria-pressed={p.theme === v} onClick={() => update({ theme: v })}>
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
           <Switch
             id="set-english"
             label="Show English translation"

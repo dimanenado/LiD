@@ -5,8 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#f4f6f9" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0f131a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f4f6f9" />
+    <script>
+      // apply the saved Appearance setting before first paint so dark mode doesn't flash light
+      try {
+        var t = (JSON.parse(localStorage.getItem('lid-prep:v1') || '{}').theme) || 'system'
+        if (t === 'system') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.dataset.theme = t
+        if (t === 'dark') document.querySelector('meta[name=theme-color]').content = '#0f131a'
+      } catch (e) {}
+    </script>
     <title>Leben in Deutschland prep</title>
   </head>
   <body>
