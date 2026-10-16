@@ -319,10 +319,6 @@ mark { background: var(--warn-soft); color: inherit; border-radius: 3px; padding
 }
 .switch:checked { background: var(--accent); }
 .switch:checked::after { transform: translateX(18px); background: var(--on-accent); }
-.select {
-  flex: none; max-width: 50%; padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--r-ctl);
-  background: var(--surface-2); color: var(--text); font: inherit; font-size: var(--fs-sm); font-weight: 600; cursor: pointer;
-}
 
 .panel { display: grid; gap: var(--s4); padding: var(--s4); border-radius: var(--r-card); background: var(--surface); }
 .mastery { display: grid; gap: var(--s2); }

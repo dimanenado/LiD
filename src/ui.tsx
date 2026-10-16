@@ -1,7 +1,7 @@
 import { ReactNode, useEffect, useRef } from 'react'
-import { Check, MapPin, X } from 'lucide-react'
+import { Check, Languages, MapPin, X } from 'lucide-react'
 import { Question, STATES } from './data'
-import { LANGS, useTranslation } from './i18n'
+import { LANGS, TransLang, useTranslation } from './i18n'
 import type { Store } from './store'
 
 /** Horizontal progress bar; value 0..1. */
@@ -111,6 +111,43 @@ export function StatePicker({ value, onPick, onClose, title = 'Your federal stat
               <MapPin size={16} aria-hidden />
               <span>{name}</span>
               {code === value && <Check size={18} aria-hidden />}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </Modal>
+  )
+}
+
+/** Translation language for settings: off, or one of the languages. */
+export function LangPicker({ store, onClose }: { store: Store; onClose: () => void }) {
+  const { showTranslation, lang } = store.p
+  const current = showTranslation ? lang : 'off'
+  const choices: [TransLang | 'off', string, string | null][] = [
+    ['off', 'Off', 'German only'],
+    ...Object.entries(LANGS).map(([code, l]): [TransLang, string, string | null] => [code as TransLang, l.native, l.native === l.name ? null : l.name]),
+  ]
+  return (
+    <Modal title="Translation" onClose={onClose} sheet>
+      <p className="modal-body muted">Shown next to the German text on wide screens, under it on phones.</p>
+      <ul className="state-list">
+        {choices.map(([code, label, hint]) => (
+          <li key={code}>
+            <button
+              className={code === current ? 'state-opt on' : 'state-opt'}
+              aria-pressed={code === current}
+              data-autofocus={code === current ? true : undefined}
+              onClick={() => {
+                store.update(code === 'off' ? { showTranslation: false } : { showTranslation: true, lang: code })
+                onClose()
+              }}
+            >
+              <Languages size={16} aria-hidden />
+              <span lang={code === 'off' ? undefined : code}>
+                {label}
+                {hint && <small className="muted"> · {hint}</small>}
+              </span>
+              {code === current && <Check size={18} aria-hidden />}
             </button>
           </li>
         ))}
