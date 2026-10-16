@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { BY_ID, PASS, STATES, TOPIC_SHORT, questionRef } from './data'
 import { QuestionCard } from './QuestionCard'
 import { ExamResult, Store } from './store'
-import { LangToggle } from './ui'
+import { LangToggle, TransQuestion } from './ui'
 
 const CHART_MAX = 20
 
@@ -205,11 +205,7 @@ export function ExamStats({ store, onPractise, onReview }: StatsProps) {
                     <span className="clamp-2" lang="de">
                       {q.de.q}
                     </span>
-                    {store.p.showEnglish && (
-                      <span className="en clamp-2" lang="en">
-                        {q.en.q}
-                      </span>
-                    )}
+                    <TransQuestion q={q} className="en clamp-2" />
                   </span>
                   <span className="chip chip-bad">{count}×</span>
                 </li>
@@ -278,7 +274,7 @@ export function ExamReview({ exam, store, onBack }: { exam: ExamResult; store: S
           <strong className="sess-title">
             {fmtDate(exam.date)} · {exam.score} / {exam.total}
           </strong>
-          <LangToggle showEnglish={store.p.showEnglish} onChange={(v) => store.update({ showEnglish: v })} />
+          <LangToggle store={store} />
           <span className="chip">
             <Clock size={14} aria-hidden /> {minutes(exam.seconds)} min
           </span>
@@ -306,7 +302,6 @@ export function ExamReview({ exam, store, onBack }: { exam: ExamResult; store: S
         <QuestionCard
           q={q}
           label={`Question ${idx + 1}`}
-          showEnglish={store.p.showEnglish}
           selected={chosen}
           reveal
           keywords={store.p.keywords}

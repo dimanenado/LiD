@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { TransLang, isTransLang } from './i18n'
 
 export interface QStat {
   seen: number
@@ -25,7 +26,10 @@ export interface Progress {
   state: string
   /** color theme; "system" follows the device setting */
   theme: Theme
-  showEnglish: boolean
+  /** show the translation next to the German text */
+  showTranslation: boolean
+  /** language of the translation */
+  lang: TransLang
   /** shuffle practice sets (exam is always random) */
   shuffle: boolean
   /** highlight key words in questions and answers */
@@ -37,14 +41,23 @@ export interface Progress {
 }
 
 const KEY = 'lid-prep:v1'
-const DEFAULT: Progress = { state: 'BE', theme: 'system', showEnglish: true, shuffle: true, keywords: true, onboarded: false, stats: {}, exams: [] }
+const DEFAULT: Progress = { state: 'BE', theme: 'system', showTranslation: true, lang: 'en', shuffle: true, keywords: true, onboarded: false, stats: {}, exams: [] }
+
+/** Translation settings from saved or imported progress; older saves only have "showEnglish". */
+export function translationSettings(data: Record<string, unknown>): Pick<Progress, 'showTranslation' | 'lang'> {
+  const show = data.showTranslation ?? data.showEnglish
+  return { showTranslation: typeof show === 'boolean' ? show : true, lang: isTransLang(data.lang) ? data.lang : 'en' }
+}
 
 function load(): Progress {
   try {
     const s = localStorage.getItem(KEY)
     if (s) {
       // progress saved before the redesign has no "onboarded" flag; those users already chose a state
-      return { ...DEFAULT, onboarded: true, ...JSON.parse(s) }
+      const saved = JSON.parse(s)
+      const translation = translationSettings(saved)
+      delete saved.showEnglish
+      return { ...DEFAULT, onboarded: true, ...saved, ...translation }
     }
   } catch {
     /* storage unavailable */

@@ -1,5 +1,5 @@
 import { ChartNoAxesColumn, House, LucideIcon, MapPin, Search as SearchIcon, Timer } from 'lucide-react'
-import { useCallback, useEffect, useState } from 'react'
+import { ReactNode, useCallback, useEffect, useState } from 'react'
 import { QUESTIONS, STATES, shuffle } from './data'
 import { ExamTab } from './Exam'
 import { Learn } from './Learn'
@@ -7,6 +7,7 @@ import { Practice } from './Practice'
 import { ProgressTab } from './ProgressTab'
 import { Search } from './Search'
 import { useTheme } from './hooks'
+import { TranslationProvider } from './TranslationProvider'
 import { useProgress } from './store'
 import { StatePicker } from './ui'
 
@@ -59,8 +60,14 @@ export default function App() {
 
   if (!p.onboarded) return <Welcome onPick={(state) => update({ state, onboarded: true })} />
 
+  const wrap = (node: ReactNode) => (
+    <TranslationProvider lang={p.lang} show={p.showTranslation}>
+      {node}
+    </TranslationProvider>
+  )
+
   if (session)
-    return (
+    return wrap(
       <Practice
         key={session.n}
         title={session.title}
@@ -68,14 +75,14 @@ export default function App() {
         store={store}
         onExit={() => setSession(null)}
         onRestart={start}
-      />
+      />,
     )
 
   const picker_ = picker && <StatePicker value={p.state} onPick={(state) => update({ state })} onClose={() => setPicker(false)} />
   // the tree stays the same in full screen so a running exam keeps its state
   const chrome = !fullscreen
 
-  return (
+  return wrap(
     <div className={chrome ? 'shell' : undefined}>
       {chrome && (
         <header className="topbar">
@@ -131,7 +138,7 @@ export default function App() {
         </nav>
       )}
       {picker_}
-    </div>
+    </div>,
   )
 }
 
@@ -143,7 +150,7 @@ function Welcome({ onPick }: { onPick: (state: string) => void }) {
           <span className="eyebrow">Leben in Deutschland · Einbürgerungstest</span>
           <h1>Prepare for the test in German and English</h1>
           <p className="muted">
-            All 460 official questions with an English translation next to each one. Practise by topic, review your
+            All 460 official questions with an English, Turkish or Russian translation next to each one. Practise by topic, review your
             mistakes and take timed mock exams. Your progress stays in this browser.
           </p>
         </div>

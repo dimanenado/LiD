@@ -59,7 +59,7 @@ export function Practice({ title, ids, store, onExit, onRestart }: Props) {
           <X size={18} />
         </button>
         <strong className="sess-title">{title}</strong>
-        <LangToggle showEnglish={store.p.showEnglish} onChange={(v) => store.update({ showEnglish: v })} />
+        <LangToggle store={store} />
       </div>
     </header>
   )
@@ -142,7 +142,6 @@ export function Practice({ title, ids, store, onExit, onRestart }: Props) {
       <main className="page page-wide">
         <QuestionCard
           q={q}
-          showEnglish={store.p.showEnglish}
           selected={selected}
           reveal={answered}
           onSelect={answered ? undefined : choose}

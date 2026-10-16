@@ -5,7 +5,7 @@ import { ExamSummaryCard } from './ExamStats'
 import { QuestionCard } from './QuestionCard'
 import { Store } from './store'
 import { useConfirm } from './hooks'
-import { LangToggle } from './ui'
+import { LangToggle, TransQuestion } from './ui'
 
 const LIMIT = 60 * 60
 
@@ -166,7 +166,7 @@ function Exam({ store, onExit, onRetake, onPractise }: ExamProps) {
   const mm = String(Math.floor(left / 60)).padStart(2, '0')
   const ss = String(left % 60).padStart(2, '0')
   const timeTone = left < 300 ? 'chip-bad' : left < 600 ? 'chip-warn' : ''
-  const english = <LangToggle showEnglish={store.p.showEnglish} onChange={(v) => store.update({ showEnglish: v })} />
+  const english = <LangToggle store={store} />
 
   const leave = async () => {
     if (finished) return onExit()
@@ -248,11 +248,7 @@ function Exam({ store, onExit, onRetake, onPractise }: ExamProps) {
                             <span className="clamp-2" lang="de">
                               {q.de.q}
                             </span>
-                            {store.p.showEnglish && (
-                              <span className="en clamp-2" lang="en">
-                                {q.en.q}
-                              </span>
-                            )}
+                            <TransQuestion q={q} className="en clamp-2" />
                           </span>
                           <small className="muted">{questionRef(q)}</small>
                           <ChevronRight size={18} aria-hidden className="muted" />
@@ -327,7 +323,6 @@ function Exam({ store, onExit, onRetake, onPractise }: ExamProps) {
         <QuestionCard
           q={q}
           label={cur >= 30 ? 'State question' : undefined}
-          showEnglish={store.p.showEnglish}
           selected={answers[cur]}
           reveal={!!finished}
           keywords={!!finished && store.p.keywords}

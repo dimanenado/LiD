@@ -2,6 +2,7 @@ import { ChevronDown, Search as SearchIcon, X } from 'lucide-react'
 import { ReactNode, useMemo, useState } from 'react'
 import { Question, QUESTIONS, STATES, TOPIC_SHORT, questionRef } from './data'
 import { QuestionCard } from './QuestionCard'
+import { LANGS, useTranslation } from './i18n'
 import { highlight, keywordsFor } from './keywords'
 import { isMistake, Store } from './store'
 
@@ -32,6 +33,7 @@ function highlighter(term: string) {
 /** Searchable catalog of the general questions plus the selected state's, with answers on tap. */
 export function Search({ store }: { store: Store }) {
   const { p } = store
+  const t = useTranslation()
   const [term, setTerm] = useState('')
   const [filter, setFilter] = useState<Filter>('all')
   const [open, setOpen] = useState<string | null>(null)
@@ -48,7 +50,7 @@ export function Search({ store }: { store: Store }) {
   ]
 
   const list = useMemo(() => {
-    const t = norm(term.trim())
+    const needle = norm(term.trim())
     const keep = (q: Question) => {
       switch (filter) {
         case 'general':
@@ -66,15 +68,24 @@ export function Search({ store }: { store: Store }) {
     return QUESTIONS.filter((q) => q.state === null || q.state === p.state)
       .filter(keep)
       .filter(
-        (q) => !t || String(q.number) === t || norm([q.de.q, q.en.q, ...q.de.options, ...q.en.options].join(' ')).includes(t),
+        (q) => {
+          if (!needle || String(q.number) === needle) return true
+          const tr = t.text(q)
+          return norm([q.de.q, ...q.de.options, tr?.q ?? '', ...(tr?.options ?? [])].join(' ')).includes(needle)
+        },
       )
-  }, [term, filter, p.state, p.stats])
+  }, [term, filter, p.state, p.stats, t])
 
   const mark = useMemo(() => highlighter(term), [term])
   // the search term wins; without one, the question's key words are marked
   const qText = (q: Question, lang: 'de' | 'en') => {
     const kw = keywordsFor(q)
     return term.trim() || !p.keywords || !kw ? mark(q[lang].q) : highlight(q[lang].q, kw.q[lang], lang, true)
+  }
+  const trText = (q: Question) => {
+    if (t.lang === 'en') return qText(q, 'en')
+    const tr = t.text(q)
+    return tr ? mark(tr.q) : null
   }
 
   return (
@@ -85,7 +96,7 @@ export function Search({ store }: { store: Store }) {
           <input
             id="search"
             type="search"
-            placeholder="Search German or English, or a number"
+            placeholder={`Search German or ${LANGS[t.lang].name}, or a number`}
             value={term}
             onChange={(e) => {
               setTerm(e.target.value)
@@ -137,9 +148,9 @@ export function Search({ store }: { store: Store }) {
                     <span className="de" lang="de">
                       {qText(q, 'de')}
                     </span>
-                    {p.showEnglish && (
-                      <span className="en" lang="en">
-                        {qText(q, 'en')}
+                    {t.show && (
+                      <span className="en" lang={t.lang}>
+                        {trText(q)}
                       </span>
                     )}
                   </span>
@@ -149,7 +160,6 @@ export function Search({ store }: { store: Store }) {
                   <div className="result-body">
                     <QuestionCard
                       q={q}
-                      showEnglish={p.showEnglish}
                       selected={null}
                       reveal
                       hideQuestion

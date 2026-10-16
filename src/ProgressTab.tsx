@@ -2,7 +2,8 @@ import { ChevronRight, Download, MapPin, RotateCcw, Upload } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { GENERAL, STATES, TOPIC_SHORT, stateQuestions } from './data'
 import { ExamReview, ExamStats } from './ExamStats'
-import { ExamResult, isMastered, isMistake, Store, Theme } from './store'
+import { LANGS, TransLang } from './i18n'
+import { ExamResult, isMastered, isMistake, Store, Theme, translationSettings } from './store'
 import { useConfirm, useToast } from './hooks'
 import { Meter, Switch } from './ui'
 
@@ -70,7 +71,7 @@ export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: 
       if (typeof data !== 'object' || !data.stats) throw new Error('bad file')
       update({
         state: data.state ?? p.state,
-        showEnglish: data.showEnglish ?? true,
+        ...translationSettings(data),
         shuffle: data.shuffle ?? true,
         keywords: data.keywords ?? true,
         onboarded: true,
@@ -150,13 +151,29 @@ export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: 
               ))}
             </div>
           </div>
-          <Switch
-            id="set-english"
-            label="Show English translation"
-            hint="Next to the German text on wide screens, under it on phones"
-            checked={p.showEnglish}
-            onChange={(v) => update({ showEnglish: v })}
-          />
+          <label className="setting" htmlFor="set-lang">
+            <span className="setting-text">
+              <span>Translation</span>
+              <small>Next to the German text on wide screens, under it on phones</small>
+            </span>
+            <select
+              id="set-lang"
+              className="select"
+              value={p.showTranslation ? p.lang : 'off'}
+              onChange={(e) =>
+                e.target.value === 'off'
+                  ? update({ showTranslation: false })
+                  : update({ showTranslation: true, lang: e.target.value as TransLang })
+              }
+            >
+              <option value="off">Off (German only)</option>
+              {Object.entries(LANGS).map(([code, l]) => (
+                <option key={code} value={code}>
+                  {l.native === l.name ? l.name : `${l.native} · ${l.name}`}
+                </option>
+              ))}
+            </select>
+          </label>
           <Switch
             id="set-keywords"
             label="Highlight key words"
@@ -205,7 +222,7 @@ export function ProgressTab({ store, onChangeState, onPractise, onFullscreen }: 
         <h2 className="label">About</h2>
         <p className="muted small">
           Questions from the official BAMF catalog “Gesamtfragenkatalog zum Test Leben in Deutschland” (as of 07.05.2025).
-          English translations are unofficial. Answers were checked against the official BAMF online tool on 15.10.2026.
+          Translations are unofficial. Answers were checked against the official BAMF online tool on 15.10.2026.
         </p>
       </section>
     </div>

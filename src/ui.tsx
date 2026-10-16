@@ -1,6 +1,8 @@
 import { ReactNode, useEffect, useRef } from 'react'
 import { Check, MapPin, X } from 'lucide-react'
-import { STATES } from './data'
+import { Question, STATES } from './data'
+import { LANGS, useTranslation } from './i18n'
+import type { Store } from './store'
 
 /** Horizontal progress bar; value 0..1. */
 export function Meter({ value, tone = 'ok', label }: { value: number; tone?: 'ok' | 'accent'; label?: string }) {
@@ -24,18 +26,31 @@ export function Switch({ id, checked, onChange, label, hint }: { id: string; che
   )
 }
 
-/** "DE" / "DE + EN" toggle used in every session header. */
-export function LangToggle({ showEnglish, onChange }: { showEnglish: boolean; onChange: (v: boolean) => void }) {
+/** "DE" / "DE + EN" toggle used in every session header; names the language picked in settings. */
+export function LangToggle({ store }: { store: Store }) {
+  const { showTranslation: on, lang } = store.p
+  const set = (v: boolean) => store.update({ showTranslation: v })
   return (
     <div className="seg" role="group" aria-label="Languages shown">
-      <button className={!showEnglish ? 'on' : ''} aria-pressed={!showEnglish} onClick={() => onChange(false)}>
+      <button className={!on ? 'on' : ''} aria-pressed={!on} onClick={() => set(false)}>
         DE
       </button>
-      <button className={showEnglish ? 'on' : ''} aria-pressed={showEnglish} onClick={() => onChange(true)}>
-        DE + EN
+      <button className={on ? 'on' : ''} aria-pressed={on} onClick={() => set(true)} aria-label={`German and ${LANGS[lang].name}`}>
+        DE + {LANGS[lang].code}
       </button>
     </div>
   )
+}
+
+/** The question in the translation language, for list rows; nothing while translations are off. */
+export function TransQuestion({ q, className }: { q: Question; className?: string }) {
+  const t = useTranslation()
+  const text = t.show ? t.text(q) : undefined
+  return text ? (
+    <span className={className} lang={t.lang}>
+      {text.q}
+    </span>
+  ) : null
 }
 
 /** Modal shell used for confirms and the state picker. Closes on Escape and on the scrim. */
