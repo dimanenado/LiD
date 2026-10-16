@@ -155,9 +155,11 @@ export function SettingsTab({ store, onChangeState }: Props) {
           Questions from the official BAMF catalog “Gesamtfragenkatalog zum Test Leben in Deutschland” (as of 07.05.2025).
           Translations are unofficial. Answers were checked against the official BAMF online tool on 15.10.2026.
         </p>
+        <p className="muted small">Version {__APP_VERSION__}</p>
+        <p className="small">Spotted a wrong answer or an odd translation, or have an idea? Let me know.</p>
         <div className="actions">
           <a className="btn btn-secondary" href={feedbackUrl({ state: store.p.state })} target="_blank" rel="noopener">
-            <MessageSquare size={16} aria-hidden /> Send feedback or ideas
+            <MessageSquare size={16} aria-hidden /> Share feedback
           </a>
         </div>
       </section>
