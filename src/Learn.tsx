@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpen, Landmark, RotateCcw, Scale, Shuffle, Sparkles, Users } from 'lucide-react'
+import { ArrowRight, BookOpen, Flame, Landmark, RotateCcw, Scale, Shuffle, Sparkles, Users } from 'lucide-react'
 import { GENERAL, QUESTIONS, STATES, TOPIC_SHORT, stateQuestions } from './data'
 import { isMastered, isMistake, Store } from './store'
 import { Meter } from './ui'
@@ -16,6 +16,13 @@ export function Learn({ store, practise }: Props) {
   const mastered = pool.filter((q) => isMastered(p.stats[q.id])).length
   const mistakes = pool.filter((q) => isMistake(p.stats[q.id]))
   const unseen = pool.filter((q) => !p.stats[q.id])
+  // the 20 questions answered wrong most often, ties broken by the higher miss rate
+  const missRate = (id: string) => p.stats[id].wrong / p.stats[id].seen
+  const missedMost = pool
+    .filter((q) => (p.stats[q.id]?.wrong ?? 0) > 0)
+    .sort((a, b) => p.stats[b.id].wrong - p.stats[a.id].wrong || missRate(b.id) - missRate(a.id))
+    .slice(0, 20)
+  const mostMisses = missedMost.length ? p.stats[missedMost[0].id].wrong : 0
 
   // one recommended next step: mistakes first, then new questions, then everything shuffled
   const next = mistakes.length
@@ -91,6 +98,18 @@ export function Learn({ store, practise }: Props) {
             <span className="row-main">
               <b>Mistakes</b>
               <small>{mistakes.length ? `${mistakes.length} to review` : 'No mistakes to review'}</small>
+            </span>
+            <ArrowRight size={18} aria-hidden className="muted" />
+          </button>
+          <button className="list-row" disabled={!missedMost.length} onClick={() => practise('Missed most often', missedMost)}>
+            <Flame size={18} aria-hidden className="list-icon" />
+            <span className="row-main">
+              <b>Missed most often</b>
+              <small>
+                {missedMost.length
+                  ? `${missedMost.length} question${missedMost.length === 1 ? '' : 's'}, missed up to ${mostMisses} time${mostMisses === 1 ? '' : 's'}`
+                  : 'Nothing missed yet'}
+              </small>
             </span>
             <ArrowRight size={18} aria-hidden className="muted" />
           </button>
