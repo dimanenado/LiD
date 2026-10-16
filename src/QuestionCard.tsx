@@ -1,11 +1,11 @@
 import { Check, Info, Shuffle, X } from 'lucide-react'
 import { ReactNode } from 'react'
 import { Question, imageUrl, questionRef } from './data'
+import { LANGS, Translation, useTranslation } from './i18n'
 import { highlight, keywordsFor, lookAlikes } from './keywords'
 
 interface Props {
   q: Question
-  showEnglish: boolean
   selected: number | null
   /** show right/wrong colouring */
   reveal: boolean
@@ -24,13 +24,18 @@ interface Props {
 
 const LETTERS = ['A', 'B', 'C', 'D']
 
-export function QuestionCard({ q, showEnglish, selected, reveal, onSelect, label, hideQuestion, mark, keywords, userState }: Props) {
-  const bi = showEnglish ? 'bi' : 'mono'
+export function QuestionCard({ q, selected, reveal, onSelect, label, hideQuestion, mark, keywords, userState }: Props) {
+  const t = useTranslation()
+  const tr = t.show ? t.text(q) : undefined
+  const bi = tr ? 'bi' : 'mono'
   const kw = keywords && !mark ? keywordsFor(q) : undefined
-  const plain = mark ?? ((t: string) => t)
+  const plain = mark ?? ((s: string) => s)
+  // key words exist for German and English only
   const qText = (lang: 'de' | 'en') => (kw ? highlight(q[lang].q, kw.q[lang], lang, true) : plain(q[lang].q))
   const oText = (lang: 'de' | 'en', i: number) =>
     kw && reveal && i === q.correct ? highlight(q[lang].options[i], kw.a[lang], lang, false) : plain(q[lang].options[i])
+  const trQ = () => (t.lang === 'en' ? qText('en') : plain(tr!.q))
+  const trOption = (i: number) => (t.lang === 'en' ? oText('en', i) : plain(tr!.options[i]))
   const alikes = kw && reveal ? lookAlikes(q, userState ?? '') : []
   return (
     <article className="qcard">
@@ -48,12 +53,12 @@ export function QuestionCard({ q, showEnglish, selected, reveal, onSelect, label
             <p className="de" lang="de">
               {qText('de')}
             </p>
-            {showEnglish && (
-              <p className="en" lang="en">
+            {tr && (
+              <p className="en" lang={t.lang}>
                 <span className="lang-tag" aria-hidden>
-                  EN
+                  {LANGS[t.lang].code}
                 </span>
-                <span>{qText('en')}</span>
+                <span>{trQ()}</span>
               </p>
             )}
           </div>
@@ -74,7 +79,12 @@ export function QuestionCard({ q, showEnglish, selected, reveal, onSelect, label
               <img src={imageUrl(f)} alt={`Bild ${i + 1}`} loading="lazy" />
               <figcaption>
                 Bild {i + 1}
-                {showEnglish && <span className="en"> · Image {i + 1}</span>}
+                {tr && (
+                  <span className="en" lang={t.lang}>
+                    {' '}
+                    · {LANGS[t.lang].image} {i + 1}
+                  </span>
+                )}
               </figcaption>
             </figure>
           ))}
@@ -87,7 +97,7 @@ export function QuestionCard({ q, showEnglish, selected, reveal, onSelect, label
           if (reveal && i === q.correct) state = 'correct'
           else if (reveal && i === selected) state = 'wrong'
           else if (i === selected) state = 'selected'
-          const en = q.en.options[i]
+          const other = tr?.options[i]
           return (
             <li key={i}>
               <button
@@ -102,9 +112,9 @@ export function QuestionCard({ q, showEnglish, selected, reveal, onSelect, label
                 </span>
                 <span className={`otext ${bi}`}>
                   <span lang="de">{oText('de', i)}</span>
-                  {showEnglish && en !== de && (
-                    <span lang="en" className="en">
-                      {oText('en', i)}
+                  {other && other !== de && (
+                    <span lang={t.lang} className="en">
+                      {trOption(i)}
                     </span>
                   )}
                 </span>
@@ -120,15 +130,15 @@ export function QuestionCard({ q, showEnglish, selected, reveal, onSelect, label
         })}
       </ol>
 
-      {alikes.length > 0 && <LookAlikes q={q} others={alikes} showEnglish={showEnglish} />}
+      {alikes.length > 0 && <LookAlikes q={q} others={alikes} t={t} />}
     </article>
   )
 }
 
-const answerOf = (q: Question, lang: 'de' | 'en') => q[lang].options[q.correct].replace(/[.…]+$/, '')
+const answerOf = (options: string[] | undefined, q: Question) => options?.[q.correct].replace(/[.…]+$/, '')
 
 /** Questions that sound like this one but have another answer, each with its own answer, to keep them apart. */
-function LookAlikes({ q, others, showEnglish }: { q: Question; others: Question[]; showEnglish: boolean }) {
+function LookAlikes({ q, others, t }: { q: Question; others: Question[]; t: Translation }) {
   return (
     <aside className="alikes" aria-label="Look-alike questions">
       <h3 className="alikes-head chip chip-warn">
@@ -138,6 +148,8 @@ function LookAlikes({ q, others, showEnglish }: { q: Question; others: Question[
         {others.map((o) => {
           const twin = o.de.q === q.de.q
           const kw = keywordsFor(o)!
+          const de = answerOf(o.de.options, o)
+          const other = t.show ? answerOf(t.text(o)?.options, o) : undefined
           return (
             <li key={o.id}>
               <small className="muted">
@@ -151,11 +163,11 @@ function LookAlikes({ q, others, showEnglish }: { q: Question; others: Question[
               )}
               <span>
                 <span aria-hidden>→ </span>
-                <b lang="de">{answerOf(o, 'de')}</b>
-                {showEnglish && answerOf(o, 'en') !== answerOf(o, 'de') && (
-                  <span lang="en" className="en">
+                <b lang="de">{de}</b>
+                {other && other !== de && (
+                  <span lang={t.lang} className="en">
                     {' '}
-                    · {answerOf(o, 'en')}
+                    · {other}
                   </span>
                 )}
               </span>
