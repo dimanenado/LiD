@@ -186,6 +186,8 @@ a.btn { text-decoration: none; }
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
+/* a session whose body is the narrow .page column: bar and dock line up with it */
+.session-narrow .sessbar-in, .session-narrow .dock-in { max-width: calc(var(--w-content) + 32px); }
 .dock-hint { color: var(--muted); font-size: var(--fs-sm); }
 .verdict { display: flex; align-items: center; gap: var(--s2); font-weight: 700; margin-right: auto; }
 @media (max-width: 520px) {
