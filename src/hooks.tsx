@@ -1,4 +1,5 @@
 import { ReactNode, useCallback, useEffect, useState } from 'react'
+import { Theme } from './store'
 import { Modal } from './ui'
 
 interface ConfirmOpts {
@@ -48,3 +49,18 @@ export function useToast(): [(msg: string) => void, ReactNode] {
   return [setMsg, msg && <div className="toast" role="status">{msg}</div>]
 }
 
+/** Puts the resolved theme on <html data-theme> and keeps it in step with the device while "system" is chosen. */
+export function useTheme(theme: Theme) {
+  useEffect(() => {
+    const mq = matchMedia('(prefers-color-scheme: dark)')
+    const apply = () => {
+      const t = theme === 'system' ? (mq.matches ? 'dark' : 'light') : theme
+      document.documentElement.dataset.theme = t
+      document.querySelector('meta[name=theme-color]')?.setAttribute('content', t === 'dark' ? '#0f131a' : '#f4f6f9')
+    }
+    apply()
+    if (theme !== 'system') return
+    mq.addEventListener('change', apply)
+    return () => mq.removeEventListener('change', apply)
+  }, [theme])
+}
