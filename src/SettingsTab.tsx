@@ -83,6 +83,14 @@ export function SettingsTab({ store, onChangeState }: Props) {
             </span>
             <ChevronRight size={18} aria-hidden className="muted" />
           </button>
+          <button className="list-row" onClick={() => setLangPicker(true)}>
+            <Languages size={18} aria-hidden className="list-icon" />
+            <span className="row-main">
+              <b>Translation</b>
+              <small>{p.showTranslation ? LANGS[p.lang].native : 'Off · German only'}</small>
+            </span>
+            <ChevronRight size={18} aria-hidden className="muted" />
+          </button>
           <div className="setting static" role="group" aria-labelledby="set-theme">
             <span className="setting-text">
               <span id="set-theme">Appearance</span>
@@ -96,14 +104,6 @@ export function SettingsTab({ store, onChangeState }: Props) {
               ))}
             </div>
           </div>
-          <button className="list-row" onClick={() => setLangPicker(true)}>
-            <Languages size={18} aria-hidden className="list-icon" />
-            <span className="row-main">
-              <b>Translation</b>
-              <small>{p.showTranslation ? LANGS[p.lang].native : 'Off · German only'}</small>
-            </span>
-            <ChevronRight size={18} aria-hidden className="muted" />
-          </button>
           <Switch
             id="set-keywords"
             label="Highlight key words"
