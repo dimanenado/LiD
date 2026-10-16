@@ -89,7 +89,7 @@ export default function App() {
       {chrome && (
         <header className="topbar">
           <div className="topbar-in">
-            <button className="brand" onClick={() => go('learn')}>
+            <button className="brand" aria-label="Leben in Deutschland" onClick={() => go('learn')}>
               <span className="brand-mark" aria-hidden>
                 LiD
               </span>
@@ -102,8 +102,8 @@ export default function App() {
                 </button>
               ))}
             </nav>
-            <button className="chip chip-btn" onClick={() => setPicker(true)} aria-label={`Federal state: ${STATES[p.state]}. Change`}>
-              <MapPin size={14} aria-hidden /> {STATES[p.state]}
+            <button className="chip chip-btn state-chip" onClick={() => setPicker(true)} aria-label={`Federal state: ${STATES[p.state]}. Change`}>
+              <MapPin size={14} aria-hidden /> <span>{STATES[p.state]}</span>
             </button>
             <button
               className={`icon-btn gear${tab === 'settings' ? ' on' : ''}`}
