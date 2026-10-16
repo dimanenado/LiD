@@ -2,6 +2,7 @@ import { ChevronDown, Search as SearchIcon, X } from 'lucide-react'
 import { ReactNode, useMemo, useState } from 'react'
 import { Question, QUESTIONS, STATES, TOPIC_SHORT, questionRef } from './data'
 import { QuestionCard } from './QuestionCard'
+import { highlight, keywordsFor } from './keywords'
 import { isMistake, Store } from './store'
 
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -70,6 +71,11 @@ export function Search({ store }: { store: Store }) {
   }, [term, filter, p.state, p.stats])
 
   const mark = useMemo(() => highlighter(term), [term])
+  // the search term wins; without one, the question's key words are marked
+  const qText = (q: Question, lang: 'de' | 'en') => {
+    const kw = keywordsFor(q)
+    return term.trim() || !p.keywords || !kw ? mark(q[lang].q) : highlight(q[lang].q, kw.q[lang], lang, true)
+  }
 
   return (
     <div className="stack">
@@ -129,11 +135,11 @@ export function Search({ store }: { store: Store }) {
                   <span className="row-main">
                     <small className="muted">{questionRef(q)}</small>
                     <span className="de" lang="de">
-                      {mark(q.de.q)}
+                      {qText(q, 'de')}
                     </span>
                     {p.showEnglish && (
                       <span className="en" lang="en">
-                        {mark(q.en.q)}
+                        {qText(q, 'en')}
                       </span>
                     )}
                   </span>
@@ -141,7 +147,16 @@ export function Search({ store }: { store: Store }) {
                 </button>
                 {isOpen && (
                   <div className="result-body">
-                    <QuestionCard q={q} showEnglish={p.showEnglish} selected={null} reveal hideQuestion mark={mark} />
+                    <QuestionCard
+                      q={q}
+                      showEnglish={p.showEnglish}
+                      selected={null}
+                      reveal
+                      hideQuestion
+                      mark={term.trim() ? mark : undefined}
+                      keywords={p.keywords}
+                      userState={p.state}
+                    />
                   </div>
                 )}
               </li>

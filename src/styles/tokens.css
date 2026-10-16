@@ -19,6 +19,8 @@
   --warn: #9a6400;
   --warn-soft: #fdf1d8;
   --scrim: rgb(10 14 22 / 0.45);
+  --kw: #ffe08a;
+  --kw-answer: #9fe0bb;
 
   /* type */
   --font: 'Figtree Variable', 'Figtree', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -77,6 +79,8 @@
     --warn: #f2c160;
     --warn-soft: #3a2f16;
     --scrim: rgb(0 0 0 / 0.6);
+    --kw: #6b5310;
+    --kw-answer: #1f6a42;
     color-scheme: dark;
   }
 }

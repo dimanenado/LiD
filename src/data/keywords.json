@@ -1,0 +1,9056 @@
+{
+ "G-1": {
+  "q": {
+   "de": [
+    "gegen die Regierung sagen"
+   ],
+   "en": [
+    "speak out against the government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Meinungsfreiheit"
+   ],
+   "en": [
+    "freedom of opinion"
+   ]
+  }
+ },
+ "G-2": {
+  "q": {
+   "de": [
+    "14. Lebensjahr",
+    "entscheiden"
+   ],
+   "en": [
+    "turns 14",
+    "decide"
+   ]
+  },
+  "a": {
+   "de": [
+    "Religionsunterricht"
+   ],
+   "en": [
+    "religious education"
+   ]
+  },
+  "like": [
+   "G-246",
+   "G-263"
+  ]
+ },
+ "G-3": {
+  "q": {
+   "de": [
+    "Rechtsstaat"
+   ],
+   "en": [
+    "Rechtsstaat"
+   ]
+  },
+  "a": {
+   "de": [
+    "an die Gesetze halten"
+   ],
+   "en": [
+    "abide by the laws"
+   ]
+  }
+ },
+ "G-4": {
+  "q": {
+   "de": [
+    "Grundrechten"
+   ],
+   "en": [
+    "fundamental rights"
+   ]
+  },
+  "a": {
+   "de": [
+    "Meinungsfreiheit"
+   ],
+   "en": [
+    "Freedom of opinion"
+   ]
+  },
+  "like": [
+   "G-7",
+   "G-9"
+  ]
+ },
+ "G-5": {
+  "q": {
+   "de": [
+    "Wahlen",
+    "frei"
+   ],
+   "en": [
+    "Elections",
+    "free"
+   ]
+  },
+  "a": {
+   "de": [
+    "weder beeinflusst noch",
+    "gezwungen"
+   ],
+   "en": [
+    "neither be influenced nor forced"
+   ]
+  },
+  "like": [
+   "G-119"
+  ]
+ },
+ "G-6": {
+  "q": {
+   "de": [
+    "Verfassung"
+   ],
+   "en": [
+    "constitution"
+   ]
+  },
+  "a": {
+   "de": [
+    "Grundgesetz"
+   ],
+   "en": [
+    "Grundgesetz"
+   ]
+  }
+ },
+ "G-7": {
+  "q": {
+   "de": [
+    "Grundrechten",
+    "Verfassung garantiert"
+   ],
+   "en": [
+    "fundamental rights",
+    "guaranteed"
+   ]
+  },
+  "a": {
+   "de": [
+    "Glaubens- und Gewissensfreiheit"
+   ],
+   "en": [
+    "belief and conscience"
+   ]
+  },
+  "like": [
+   "G-4",
+   "G-9"
+  ]
+ },
+ "G-8": {
+  "q": {
+   "de": [
+    "Grundgesetz"
+   ],
+   "en": [
+    "Grundgesetz"
+   ]
+  },
+  "a": {
+   "de": [
+    "gleich viel Geld"
+   ],
+   "en": [
+    "same amount of money"
+   ]
+  }
+ },
+ "G-9": {
+  "q": {
+   "de": [
+    "nur für Ausländerinnen/Ausländer"
+   ],
+   "en": [
+    "only to foreigners"
+   ]
+  },
+  "a": {
+   "de": [
+    "Asyl"
+   ],
+   "en": [
+    "asylum"
+   ]
+  },
+  "like": [
+   "G-4",
+   "G-7"
+  ]
+ },
+ "G-10": {
+  "q": {
+   "de": [
+    "vereinbar"
+   ],
+   "en": [
+    "compatible"
+   ]
+  },
+  "a": {
+   "de": [
+    "die Geldstrafe"
+   ],
+   "en": [
+    "a fine"
+   ]
+  }
+ },
+ "G-11": {
+  "q": {
+   "de": [
+    "Verfassung",
+    "genannt"
+   ],
+   "en": [
+    "constitution",
+    "called"
+   ]
+  },
+  "a": {
+   "de": [
+    "Grundgesetz"
+   ],
+   "en": [
+    "Grundgesetz"
+   ]
+  }
+ },
+ "G-12": {
+  "q": {
+   "de": [
+    "Pressefreiheit abschaffen"
+   ],
+   "en": [
+    "abolish freedom of the press"
+   ]
+  },
+  "a": {
+   "de": [
+    "Nein",
+    "Grundrecht"
+   ],
+   "en": [
+    "No",
+    "fundamental right"
+   ]
+  }
+ },
+ "G-13": {
+  "q": {
+   "de": [
+    "\"Opposition\""
+   ],
+   "en": [
+    "\"opposition\""
+   ]
+  },
+  "a": {
+   "de": [
+    "nicht zu der Regierungspartei"
+   ],
+   "en": [
+    "not belong to the governing party"
+   ]
+  }
+ },
+ "G-14": {
+  "q": {
+   "de": [
+    "Meinungsfreiheit"
+   ],
+   "en": [
+    "Freedom of opinion"
+   ]
+  },
+  "a": {
+   "de": [
+    "Meinung im Internet äußern"
+   ],
+   "en": [
+    "opinion on the internet"
+   ]
+  }
+ },
+ "G-15": {
+  "q": {
+   "de": [
+    "verbietet"
+   ],
+   "en": [
+    "prohibit"
+   ]
+  },
+  "a": {
+   "de": [
+    "Zwangsarbeit"
+   ],
+   "en": [
+    "forced labor"
+   ]
+  }
+ },
+ "G-16": {
+  "q": {
+   "de": [
+    "Meinungsfreiheit",
+    "eingeschränkt"
+   ],
+   "en": [
+    "freedom of opinion restricted"
+   ]
+  },
+  "a": {
+   "de": [
+    "falscher Behauptungen über einzelne Personen"
+   ],
+   "en": [
+    "false claims about individual persons"
+   ]
+  }
+ },
+ "G-17": {
+  "q": {
+   "de": [
+    "Gesetze verbieten"
+   ],
+   "en": [
+    "laws prohibit"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ungleichbehandlung"
+   ],
+   "en": [
+    "unequal treatment"
+   ]
+  }
+ },
+ "G-18": {
+  "q": {
+   "de": [
+    "Artikel 1"
+   ],
+   "en": [
+    "Article 1"
+   ]
+  },
+  "a": {
+   "de": [
+    "Menschenwürde"
+   ],
+   "en": [
+    "human dignity"
+   ]
+  }
+ },
+ "G-19": {
+  "q": {
+   "de": [
+    "\"Freizügigkeit\""
+   ],
+   "en": [
+    "\"Freizügigkeit\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Wohnort selbst aussuchen"
+   ],
+   "en": [
+    "choose where you live"
+   ]
+  }
+ },
+ "G-20": {
+  "q": {
+   "de": [
+    "Diktatur"
+   ],
+   "en": [
+    "dictatorship"
+   ]
+  },
+  "a": {
+   "de": [
+    "verfassungswidrig"
+   ],
+   "en": [
+    "unconstitutional"
+   ]
+  }
+ },
+ "G-21": {
+  "q": {
+   "de": [
+    "Wappen der Bundesrepublik"
+   ],
+   "en": [
+    "coat of arms of the Federal Republic"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 1"
+   ],
+   "en": [
+    "Image 1"
+   ]
+  }
+ },
+ "G-22": {
+  "q": {
+   "de": [
+    "Staatsform"
+   ],
+   "en": [
+    "form of state"
+   ]
+  },
+  "a": {
+   "de": [
+    "Republik"
+   ],
+   "en": [
+    "Republic"
+   ]
+  }
+ },
+ "G-23": {
+  "q": {
+   "de": [
+    "meisten Erwerbstätigen"
+   ],
+   "en": [
+    "most people in work"
+   ]
+  },
+  "a": {
+   "de": [
+    "Firma oder Behörde"
+   ],
+   "en": [
+    "company or a public authority"
+   ]
+  }
+ },
+ "G-24": {
+  "q": {
+   "de": [
+    "Wie viele Bundesländer"
+   ],
+   "en": [
+    "How many federal states"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-175",
+   "G-218",
+   "G-236"
+  ]
+ },
+ "G-25": {
+  "q": {
+   "de": [
+    "Bundesland"
+   ],
+   "en": [
+    "federal state"
+   ]
+  },
+  "a": {
+   "de": [
+    "Elsass-Lothringen"
+   ],
+   "en": [
+    "Alsace-Lorraine"
+   ]
+  }
+ },
+ "G-26": {
+  "q": {
+   "de": [
+    "Deutschland ist"
+   ],
+   "en": [
+    "Germany is"
+   ]
+  },
+  "a": {
+   "de": [
+    "demokratischer und sozialer Bundesstaat"
+   ],
+   "en": [
+    "democratic and social federal state"
+   ]
+  },
+  "like": [
+   "G-27"
+  ]
+ },
+ "G-27": {
+  "q": {
+   "de": [
+    "Deutschland ist"
+   ],
+   "en": [
+    "Germany is"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundesstaat"
+   ],
+   "en": [
+    "federal state"
+   ]
+  },
+  "like": [
+   "G-26"
+  ]
+ },
+ "G-28": {
+  "q": {
+   "de": [
+    "wählt",
+    "Abgeordneten zum Bundestag"
+   ],
+   "en": [
+    "elects the members of the Bundestag"
+   ]
+  },
+  "a": {
+   "de": [
+    "wahlberechtigte Volk"
+   ],
+   "en": [
+    "eligible to vote"
+   ]
+  },
+  "like": [
+   "G-44",
+   "G-58",
+   "G-81",
+   "G-83",
+   "G-86",
+   "G-129"
+  ]
+ },
+ "G-29": {
+  "q": {
+   "de": [
+    "Wappentier"
+   ],
+   "en": [
+    "heraldic animal"
+   ]
+  },
+  "a": {
+   "de": [
+    "Adler"
+   ],
+   "en": [
+    "Eagle"
+   ]
+  }
+ },
+ "G-30": {
+  "q": {
+   "de": [
+    "Merkmal unserer Demokratie"
+   ],
+   "en": [
+    "feature of our democracy"
+   ]
+  },
+  "a": {
+   "de": [
+    "Pressezensur"
+   ],
+   "en": [
+    "press censorship"
+   ]
+  }
+ },
+ "G-31": {
+  "q": {
+   "de": [
+    "Zusammenarbeit von Parteien",
+    "Regierung"
+   ],
+   "en": [
+    "cooperation between parties",
+    "form a government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Koalition"
+   ],
+   "en": [
+    "coalition"
+   ]
+  }
+ },
+ "G-32": {
+  "q": {
+   "de": [
+    "staatliche Gewalt"
+   ],
+   "en": [
+    "branch of state power"
+   ]
+  },
+  "a": {
+   "de": [
+    "Presse"
+   ],
+   "en": [
+    "Press"
+   ]
+  },
+  "like": [
+   "G-54"
+  ]
+ },
+ "G-33": {
+  "q": {
+   "de": [
+    "Aussage ist richtig"
+   ],
+   "en": [
+    "statement is correct"
+   ]
+  },
+  "a": {
+   "de": [
+    "Staat und Religionsgemeinschaften",
+    "getrennt"
+   ],
+   "en": [
+    "state and religious communities",
+    "separate"
+   ]
+  }
+ },
+ "G-34": {
+  "q": {
+   "de": [
+    "Was ist Deutschland"
+   ],
+   "en": [
+    "What is Germany"
+   ]
+  },
+  "a": {
+   "de": [
+    "Monarchie"
+   ],
+   "en": [
+    "monarchy"
+   ]
+  }
+ },
+ "G-35": {
+  "q": {
+   "de": [
+    "finanziert",
+    "Sozialversicherung"
+   ],
+   "en": [
+    "finance social insurance"
+   ]
+  },
+  "a": {
+   "de": [
+    "Sozialabgaben"
+   ],
+   "en": [
+    "Social security contributions"
+   ]
+  }
+ },
+ "G-36": {
+  "q": {
+   "de": [
+    "soziale Sicherheit"
+   ],
+   "en": [
+    "social security"
+   ]
+  },
+  "a": {
+   "de": [
+    "Krankenversicherung"
+   ],
+   "en": [
+    "health insurance"
+   ]
+  }
+ },
+ "G-37": {
+  "q": {
+   "de": [
+    "Regierungschefinnen/Regierungschefs der meisten Bundesländer"
+   ],
+   "en": [
+    "heads of government of most German federal states"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Minister-President"
+   ]
+  }
+ },
+ "G-38": {
+  "q": {
+   "de": [
+    "demokratischer und sozialer"
+   ],
+   "en": [
+    "democratic and social"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundesstaat"
+   ],
+   "en": [
+    "federal state"
+   ]
+  }
+ },
+ "G-39": {
+  "q": {
+   "de": [
+    "jedes deutsche Bundesland"
+   ],
+   "en": [
+    "every German federal state"
+   ]
+  },
+  "a": {
+   "de": [
+    "eigene Regierung"
+   ],
+   "en": [
+    "own government"
+   ]
+  }
+ },
+ "G-40": {
+  "q": {
+   "de": [
+    "Nationalhymne"
+   ],
+   "en": [
+    "national anthem"
+   ]
+  },
+  "a": {
+   "de": [
+    "Einigkeit und Recht und Freiheit"
+   ],
+   "en": [
+    "\"Einigkeit und Recht und Freiheit …\""
+   ]
+  }
+ },
+ "G-41": {
+  "q": {
+   "de": [
+    "mehr als eine Partei"
+   ],
+   "en": [
+    "more than one party"
+   ]
+  },
+  "a": {
+   "de": [
+    "unterschiedlichen Meinungen"
+   ],
+   "en": [
+    "different opinions"
+   ]
+  }
+ },
+ "G-42": {
+  "q": {
+   "de": [
+    "neues Gesetz"
+   ],
+   "en": [
+    "new law"
+   ]
+  },
+  "a": {
+   "de": [
+    "Parlament"
+   ],
+   "en": [
+    "parliament"
+   ]
+  }
+ },
+ "G-43": {
+  "q": {
+   "de": [
+    "Partei verboten"
+   ],
+   "en": [
+    "party be banned"
+   ]
+  },
+  "a": {
+   "de": [
+    "gegen die Verfassung kämpft"
+   ],
+   "en": [
+    "fights against the constitution"
+   ]
+  }
+ },
+ "G-44": {
+  "q": {
+   "de": [
+    "direkt wählen"
+   ],
+   "en": [
+    "elect directly"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundespräsidentin/den Bundespräsidenten"
+   ],
+   "en": [
+    "Bundespräsident"
+   ]
+  },
+  "like": [
+   "G-28",
+   "G-58",
+   "G-81",
+   "G-83",
+   "G-86",
+   "G-129"
+  ]
+ },
+ "G-45": {
+  "q": {
+   "de": [
+    "Pflegeversicherung"
+   ],
+   "en": [
+    "long-term care insurance"
+   ]
+  },
+  "a": {
+   "de": [
+    "Sozialversicherung"
+   ],
+   "en": [
+    "Social insurance"
+   ]
+  }
+ },
+ "G-46": {
+  "q": {
+   "de": [
+    "Aufgabe gehört dazu"
+   ],
+   "en": [
+    "task is one of them"
+   ]
+  },
+  "a": {
+   "de": [
+    "Straßen und Schulen"
+   ],
+   "en": [
+    "roads and schools"
+   ]
+  },
+  "like": [
+   "G-47"
+  ]
+ },
+ "G-47": {
+  "q": {
+   "de": [
+    "Aufgabe gehört"
+   ],
+   "en": [
+    "task is"
+   ]
+  },
+  "a": {
+   "de": [
+    "Urlaubsreisen"
+   ],
+   "en": [
+    "vacation trips"
+   ]
+  },
+  "like": [
+   "G-46"
+  ]
+ },
+ "G-48": {
+  "q": {
+   "de": [
+    "Verfassungsorganen"
+   ],
+   "en": [
+    "constitutional organs"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bürgerversammlung"
+   ],
+   "en": [
+    "citizens' assembly"
+   ]
+  }
+ },
+ "G-49": {
+  "q": {
+   "de": [
+    "Schulpolitik"
+   ],
+   "en": [
+    "school policy"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundesländer"
+   ],
+   "en": [
+    "federal states"
+   ]
+  },
+  "like": [
+   "G-67",
+   "G-248",
+   "G-249"
+  ]
+ },
+ "G-50": {
+  "q": {
+   "de": [
+    "Wirtschaftsform"
+   ],
+   "en": [
+    "economic system"
+   ]
+  },
+  "a": {
+   "de": [
+    "soziale Marktwirtschaft"
+   ],
+   "en": [
+    "social market economy"
+   ]
+  }
+ },
+ "G-51": {
+  "q": {
+   "de": [
+    "demokratischen Rechtsstaat"
+   ],
+   "en": [
+    "democratic state under the rule of law"
+   ]
+  },
+  "a": {
+   "de": [
+    "Privatpolizei ohne Grund"
+   ],
+   "en": [
+    "private police force without reason"
+   ]
+  }
+ },
+ "G-52": {
+  "q": {
+   "de": [
+    "\"Volkssouveränität\"",
+    "Alle Staatsgewalt geht vom"
+   ],
+   "en": [
+    "\"Volkssouveränität\"",
+    "All state authority comes from the"
+   ]
+  },
+  "a": {
+   "de": [
+    "Volke"
+   ],
+   "en": [
+    "people"
+   ]
+  }
+ },
+ "G-53": {
+  "q": {
+   "de": [
+    "\"Rechtsstaat\""
+   ],
+   "en": [
+    "\"Rechtsstaat\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Staat muss die Gesetze einhalten"
+   ],
+   "en": [
+    "state must abide by the laws"
+   ]
+  }
+ },
+ "G-54": {
+  "q": {
+   "de": [
+    "staatliche Gewalt"
+   ],
+   "en": [
+    "branch of state power"
+   ]
+  },
+  "a": {
+   "de": [
+    "Direktive"
+   ],
+   "en": [
+    "Directive"
+   ]
+  },
+  "like": [
+   "G-32"
+  ]
+ },
+ "G-55": {
+  "q": {
+   "de": [
+    "Bild"
+   ],
+   "en": [
+    "picture"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundestagssitz in Berlin"
+   ],
+   "en": [
+    "seat of the Bundestag"
+   ]
+  }
+ },
+ "G-56": {
+  "q": {
+   "de": [
+    "Gemeindeverwaltung"
+   ],
+   "en": [
+    "municipal administration"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ordnungsamt"
+   ],
+   "en": [
+    "Ordnungsamt"
+   ]
+  }
+ },
+ "G-57": {
+  "q": {
+   "de": [
+    "Präsidentin/zum Präsidenten des Deutschen Bundestages"
+   ],
+   "en": [
+    "President of the Deutscher Bundestag"
+   ]
+  },
+  "a": {
+   "de": [
+    "stärksten Fraktion"
+   ],
+   "en": [
+    "largest parliamentary group"
+   ]
+  }
+ },
+ "G-58": {
+  "q": {
+   "de": [
+    "ernennt",
+    "Ministerinnen/die Minister"
+   ],
+   "en": [
+    "appoints the ministers"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundespräsidentin/der Bundespräsident"
+   ],
+   "en": [
+    "Bundespräsident"
+   ]
+  },
+  "like": [
+   "G-28",
+   "G-44",
+   "G-81",
+   "G-83",
+   "G-86",
+   "G-129"
+  ]
+ },
+ "G-59": {
+  "q": {
+   "de": [
+    "erstmals eine jüdische Gemeinde"
+   ],
+   "en": [
+    "first time",
+    "Jewish community"
+   ]
+  },
+  "a": {
+   "de": [
+    "1700 Jahren"
+   ],
+   "en": [
+    "1,700 years"
+   ]
+  }
+ },
+ "G-60": {
+  "q": {
+   "de": [
+    "Bundestag und der Bundesrat"
+   ],
+   "en": [
+    "Bundestag",
+    "Bundesrat"
+   ]
+  },
+  "a": {
+   "de": [
+    "Legislative"
+   ],
+   "en": [
+    "legislature"
+   ]
+  },
+  "like": [
+   "G-63",
+   "G-143",
+   "G-144",
+   "G-145"
+  ]
+ },
+ "G-61": {
+  "q": {
+   "de": [
+    "\"Volkssouveränität\""
+   ],
+   "en": [
+    "\"Volkssouveränität\""
+   ]
+  },
+  "a": {
+   "de": [
+    "vom Volke aus"
+   ],
+   "en": [
+    "from the people"
+   ]
+  }
+ },
+ "G-62": {
+  "q": {
+   "de": [
+    "Parlament eines deutschen Bundeslandes"
+   ],
+   "en": [
+    "parliament of a German federal state"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landtagswahl"
+   ],
+   "en": [
+    "Landtagswahl"
+   ]
+  }
+ },
+ "G-63": {
+  "q": {
+   "de": [
+    "Exekutive"
+   ],
+   "en": [
+    "executive"
+   ]
+  },
+  "a": {
+   "de": [
+    "Gerichte"
+   ],
+   "en": [
+    "courts"
+   ]
+  },
+  "like": [
+   "G-60",
+   "G-143",
+   "G-144",
+   "G-145"
+  ]
+ },
+ "G-64": {
+  "q": {
+   "de": [
+    "gegliedert"
+   ],
+   "en": [
+    "divided into"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bund, Länder und Kommunen"
+   ],
+   "en": [
+    "federation, federal states and municipalities"
+   ]
+  }
+ },
+ "G-65": {
+  "q": {
+   "de": [
+    "Aufgaben des Deutschen Bundestages"
+   ],
+   "en": [
+    "tasks of the Deutscher Bundestag"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundeskabinett zu bilden"
+   ],
+   "en": [
+    "form the federal cabinet"
+   ]
+  }
+ },
+ "G-66": {
+  "q": {
+   "de": [
+    "größten jüdischen Gemeinden"
+   ],
+   "en": [
+    "largest Jewish communities"
+   ]
+  },
+  "a": {
+   "de": [
+    "Berlin und München"
+   ],
+   "en": [
+    "Berlin and Munich"
+   ]
+  }
+ },
+ "G-67": {
+  "q": {
+   "de": [
+    "Aufgabe der Bundesländer"
+   ],
+   "en": [
+    "responsibility of the federal states"
+   ]
+  },
+  "a": {
+   "de": [
+    "Schulpolitik"
+   ],
+   "en": [
+    "School policy"
+   ]
+  },
+  "like": [
+   "G-49",
+   "G-248",
+   "G-249"
+  ]
+ },
+ "G-68": {
+  "q": {
+   "de": [
+    "kontrolliert",
+    "Schulwesen"
+   ],
+   "en": [
+    "supervise the school system"
+   ]
+  },
+  "a": {
+   "de": [
+    "nach dem Grundgesetz seine Aufgabe"
+   ],
+   "en": [
+    "its task under the Grundgesetz"
+   ]
+  }
+ },
+ "G-69": {
+  "q": {
+   "de": [
+    "unterste politische Stufe"
+   ],
+   "en": [
+    "lowest political tier"
+   ]
+  },
+  "a": {
+   "de": [
+    "Gemeinden"
+   ],
+   "en": [
+    "Municipalities"
+   ]
+  }
+ },
+ "G-70": {
+  "q": {
+   "de": [
+    "Aufgaben der deutschen Bundespräsidentin/des deutschen Bundespräsidenten"
+   ],
+   "en": [
+    "task of the German Bundespräsident"
+   ]
+  },
+  "a": {
+   "de": [
+    "schlägt die Kanzlerin/den Kanzler zur Wahl vor"
+   ],
+   "en": [
+    "proposes the chancellor for election"
+   ]
+  }
+ },
+ "G-71": {
+  "q": {
+   "de": [
+    "am häufigsten auf"
+   ],
+   "en": [
+    "spend most of her/his time"
+   ]
+  },
+  "a": {
+   "de": [
+    "in Berlin"
+   ],
+   "en": [
+    "in Berlin"
+   ]
+  }
+ },
+ "G-72": {
+  "q": {
+   "de": [
+    "jetzige Bundeskanzlerin/der jetzige Bundeskanzler"
+   ],
+   "en": [
+    "current Federal Chancellor"
+   ]
+  },
+  "a": {
+   "de": [
+    "Friedrich Merz"
+   ],
+   "en": [
+    "Friedrich Merz"
+   ]
+  },
+  "like": [
+   "G-75",
+   "G-82",
+   "G-87"
+  ]
+ },
+ "G-73": {
+  "q": {
+   "de": [
+    "beiden größten Fraktionen"
+   ],
+   "en": [
+    "two largest parliamentary groups"
+   ]
+  },
+  "a": {
+   "de": [
+    "CDU/CSU und AfD"
+   ],
+   "en": [
+    "CDU/CSU and AfD"
+   ]
+  }
+ },
+ "G-74": {
+  "q": {
+   "de": [
+    "Parlament für ganz Deutschland"
+   ],
+   "en": [
+    "parliament for the whole of Germany"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundestag"
+   ],
+   "en": [
+    "Bundestag"
+   ]
+  }
+ },
+ "G-75": {
+  "q": {
+   "de": [
+    "Staatsoberhaupt"
+   ],
+   "en": [
+    "head of state"
+   ]
+  },
+  "a": {
+   "de": [
+    "Frank-Walter Steinmeier"
+   ],
+   "en": [
+    "Frank-Walter Steinmeier"
+   ]
+  },
+  "like": [
+   "G-72",
+   "G-82",
+   "G-87"
+  ]
+ },
+ "G-76": {
+  "q": {
+   "de": [
+    "CDU"
+   ],
+   "en": [
+    "CDU"
+   ]
+  },
+  "a": {
+   "de": [
+    "Christlich Demokratische Union"
+   ],
+   "en": [
+    "Christlich Demokratische Union (Christian Democratic Union)"
+   ]
+  }
+ },
+ "G-77": {
+  "q": {
+   "de": [
+    "Bundeswehr"
+   ],
+   "en": [
+    "Bundeswehr"
+   ]
+  },
+  "a": {
+   "de": [
+    "Armee"
+   ],
+   "en": [
+    "armed forces"
+   ]
+  }
+ },
+ "G-78": {
+  "q": {
+   "de": [
+    "SPD"
+   ],
+   "en": [
+    "SPD"
+   ]
+  },
+  "a": {
+   "de": [
+    "Sozialdemokratische Partei Deutschlands"
+   ],
+   "en": [
+    "Sozialdemokratische Partei Deutschlands (Social Democratic Party of Germany)"
+   ]
+  }
+ },
+ "G-79": {
+  "q": {
+   "de": [
+    "FDP"
+   ],
+   "en": [
+    "FDP"
+   ]
+  },
+  "a": {
+   "de": [
+    "Freie Demokratische Partei"
+   ],
+   "en": [
+    "Freie Demokratische Partei (Free Democratic Party)"
+   ]
+  }
+ },
+ "G-80": {
+  "q": {
+   "de": [
+    "Auslegung des Grundgesetzes"
+   ],
+   "en": [
+    "interpreting the Grundgesetz"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundesverfassungsgericht"
+   ],
+   "en": [
+    "Federal Constitutional Court"
+   ]
+  }
+ },
+ "G-81": {
+  "q": {
+   "de": [
+    "wählt",
+    "Bundeskanzler"
+   ],
+   "en": [
+    "elects the Federal Chancellor"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundestag"
+   ],
+   "en": [
+    "Bundestag"
+   ]
+  },
+  "like": [
+   "G-28",
+   "G-44",
+   "G-58",
+   "G-86"
+  ]
+ },
+ "G-82": {
+  "q": {
+   "de": [
+    "leitet",
+    "Bundeskabinett"
+   ],
+   "en": [
+    "heads the German federal cabinet"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundeskanzler"
+   ],
+   "en": [
+    "Federal Chancellor"
+   ]
+  },
+  "like": [
+   "G-72",
+   "G-75",
+   "G-87"
+  ]
+ },
+ "G-83": {
+  "q": {
+   "de": [
+    "wählt",
+    "Bundeskanzler"
+   ],
+   "en": [
+    "elects the German Federal Chancellor"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundestag"
+   ],
+   "en": [
+    "Bundestag"
+   ]
+  },
+  "like": [
+   "G-28",
+   "G-44",
+   "G-58",
+   "G-86"
+  ]
+ },
+ "G-84": {
+  "q": {
+   "de": [
+    "Hauptaufgabe",
+    "Bundespräsident"
+   ],
+   "en": [
+    "main task",
+    "Bundespräsident"
+   ]
+  },
+  "a": {
+   "de": [
+    "repräsentiert das Land"
+   ],
+   "en": [
+    "represents the country"
+   ]
+  }
+ },
+ "G-85": {
+  "q": {
+   "de": [
+    "bildet den deutschen Bundesrat"
+   ],
+   "en": [
+    "makes up the German Bundesrat"
+   ]
+  },
+  "a": {
+   "de": [
+    "Regierungsvertreter der Bundesländer"
+   ],
+   "en": [
+    "government representatives of the federal states"
+   ]
+  }
+ },
+ "G-86": {
+  "q": {
+   "de": [
+    "wählt",
+    "Bundespräsidentin/den Bundespräsidenten"
+   ],
+   "en": [
+    "elects the Bundespräsident"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundesversammlung"
+   ],
+   "en": [
+    "Bundesversammlung"
+   ]
+  },
+  "like": [
+   "G-28",
+   "G-44",
+   "G-58",
+   "G-81",
+   "G-83",
+   "G-129"
+  ]
+ },
+ "G-87": {
+  "q": {
+   "de": [
+    "Staatsoberhaupt"
+   ],
+   "en": [
+    "head of state"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundespräsident"
+   ],
+   "en": [
+    "Federal President"
+   ]
+  },
+  "like": [
+   "G-72",
+   "G-75",
+   "G-82"
+  ]
+ },
+ "G-88": {
+  "q": {
+   "de": [
+    "Opposition"
+   ],
+   "en": [
+    "opposition"
+   ]
+  },
+  "a": {
+   "de": [
+    "kontrolliert die Regierung"
+   ],
+   "en": [
+    "oversees the government"
+   ]
+  }
+ },
+ "G-89": {
+  "q": {
+   "de": [
+    "Vereinigung von Abgeordneten einer Partei"
+   ],
+   "en": [
+    "association of members of parliament from one party"
+   ]
+  },
+  "a": {
+   "de": [
+    "Fraktion"
+   ],
+   "en": [
+    "Fraktion"
+   ]
+  }
+ },
+ "G-90": {
+  "q": {
+   "de": [
+    "Bundesländer wirken an der Gesetzgebung des Bundes mit"
+   ],
+   "en": [
+    "federal states participate in federal legislation"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundesrat"
+   ],
+   "en": [
+    "Bundesrat"
+   ]
+  }
+ },
+ "G-91": {
+  "q": {
+   "de": [
+    "Regierungswechsel in einem Bundesland"
+   ],
+   "en": [
+    "change of government in a federal state"
+   ]
+  },
+  "a": {
+   "de": [
+    "schwieriger",
+    "Mehrheit im Bundesrat"
+   ],
+   "en": [
+    "more difficult",
+    "majority in the Bundesrat"
+   ]
+  }
+ },
+ "G-92": {
+  "q": {
+   "de": [
+    "CSU"
+   ],
+   "en": [
+    "CSU"
+   ]
+  },
+  "a": {
+   "de": [
+    "Christlich Soziale Union"
+   ],
+   "en": [
+    "Christlich Soziale Union (Christian Social Union)"
+   ]
+  }
+ },
+ "G-93": {
+  "q": {
+   "de": [
+    "\"Zweitstimmen\""
+   ],
+   "en": [
+    "\"Zweitstimmen\""
+   ]
+  },
+  "a": {
+   "de": [
+    "mehr Sitze"
+   ],
+   "en": [
+    "more seats"
+   ]
+  }
+ },
+ "G-94": {
+  "q": {
+   "de": [
+    "Alter",
+    "Wahl zum Deutschen Bundestag"
+   ],
+   "en": [
+    "what age",
+    "vote"
+   ]
+  },
+  "a": {
+   "de": [
+    "18"
+   ],
+   "en": [
+    "18"
+   ]
+  },
+  "like": [
+   "BW-4",
+   "BE-4",
+   "BB-4",
+   "HB-4",
+   "HH-4",
+   "MV-4",
+   "NI-4",
+   "NW-4",
+   "ST-4",
+   "SH-4",
+   "TH-4"
+  ]
+ },
+ "G-95": {
+  "q": {
+   "de": [
+    "meisten Kinder"
+   ],
+   "en": [
+    "most children"
+   ]
+  },
+  "a": {
+   "de": [
+    "Schulpflicht"
+   ],
+   "en": [
+    "Compulsory schooling"
+   ]
+  }
+ },
+ "G-96": {
+  "q": {
+   "de": [
+    "Holocaust leugnet"
+   ],
+   "en": [
+    "denies the Holocaust"
+   ]
+  },
+  "a": {
+   "de": [
+    "fünf Jahren oder mit Geldstrafe"
+   ],
+   "en": [
+    "five years or a fine"
+   ]
+  }
+ },
+ "G-97": {
+  "q": {
+   "de": [
+    "automatisch",
+    "fest angestellt"
+   ],
+   "en": [
+    "automatically",
+    "permanently employed"
+   ]
+  },
+  "a": {
+   "de": [
+    "Sozialversicherung"
+   ],
+   "en": [
+    "Social insurance"
+   ]
+  }
+ },
+ "G-98": {
+  "q": {
+   "de": [
+    "Fraktion wechseln"
+   ],
+   "en": [
+    "switch their parliamentary group"
+   ]
+  },
+  "a": {
+   "de": [
+    "Mehrheit verlieren"
+   ],
+   "en": [
+    "lose its majority"
+   ]
+  }
+ },
+ "G-99": {
+  "q": {
+   "de": [
+    "bezahlt",
+    "Sozialversicherungen"
+   ],
+   "en": [
+    "pays for social insurance"
+   ]
+  },
+  "a": {
+   "de": [
+    "Arbeitgeberinnen/Arbeitgeber und Arbeitnehmerinnen/Arbeitnehmer"
+   ],
+   "en": [
+    "Employers and employees"
+   ]
+  }
+ },
+ "G-100": {
+  "q": {
+   "de": [
+    "gesetzlichen Sozialversicherung"
+   ],
+   "en": [
+    "statutory social insurance"
+   ]
+  },
+  "a": {
+   "de": [
+    "Lebensversicherung"
+   ],
+   "en": [
+    "life insurance"
+   ]
+  }
+ },
+ "G-101": {
+  "q": {
+   "de": [
+    "Gewerkschaften"
+   ],
+   "en": [
+    "Trade unions"
+   ]
+  },
+  "a": {
+   "de": [
+    "Arbeitnehmerinnen und Arbeitnehmer"
+   ],
+   "en": [
+    "employees"
+   ]
+  }
+ },
+ "G-102": {
+  "q": {
+   "de": [
+    "geehrt",
+    "besondere Leistung"
+   ],
+   "en": [
+    "honored",
+    "outstanding contribution"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundesverdienstkreuz"
+   ],
+   "en": [
+    "Bundesverdienstkreuz"
+   ]
+  }
+ },
+ "G-103": {
+  "q": {
+   "de": [
+    "\"Ampelkoalition\""
+   ],
+   "en": [
+    "\"Ampelkoalition\""
+   ]
+  },
+  "a": {
+   "de": [
+    "SPD, FDP und Bündnis 90/Die Grünen"
+   ],
+   "en": [
+    "SPD, FDP and Bündnis 90/Die Grünen"
+   ]
+  }
+ },
+ "G-104": {
+  "q": {
+   "de": [
+    "verliert ihre Arbeit",
+    "Grund"
+   ],
+   "en": [
+    "loses her job",
+    "reason"
+   ]
+  },
+  "a": {
+   "de": [
+    "bekommt ein Kind"
+   ],
+   "en": [
+    "having a baby"
+   ]
+  }
+ },
+ "G-105": {
+  "q": {
+   "de": [
+    "Wahlhelferinnen/Wahlhelfern"
+   ],
+   "en": [
+    "election workers"
+   ]
+  },
+  "a": {
+   "de": [
+    "zählen die Stimmen"
+   ],
+   "en": [
+    "count the votes"
+   ]
+  }
+ },
+ "G-106": {
+  "q": {
+   "de": [
+    "Wahlhelferinnen/Wahlhelfern"
+   ],
+   "en": [
+    "election workers"
+   ]
+  },
+  "a": {
+   "de": [
+    "zählen die Stimmen"
+   ],
+   "en": [
+    "count the votes"
+   ]
+  }
+ },
+ "G-107": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Bundestag"
+   ],
+   "en": [
+    "how many years",
+    "Bundestag"
+   ]
+  },
+  "a": {
+   "de": [
+    "4 Jahre"
+   ],
+   "en": [
+    "4 years"
+   ]
+  },
+  "like": [
+   "G-230",
+   "BW-3",
+   "BY-3",
+   "BE-3",
+   "BB-3",
+   "HB-3",
+   "HH-3",
+   "HE-3",
+   "MV-3",
+   "NI-3",
+   "NW-3",
+   "RP-3",
+   "SL-3",
+   "SN-3",
+   "ST-3",
+   "SH-3",
+   "TH-3"
+  ]
+ },
+ "G-108": {
+  "q": {
+   "de": [
+    "Bundestagswahl",
+    "jede/jeder wählen"
+   ],
+   "en": [
+    "Bundestag election",
+    "anyone may vote"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bürgerin/Bürger der Bundesrepublik",
+    "mindestens 18 Jahre"
+   ],
+   "en": [
+    "citizen of the Federal Republic",
+    "at least 18"
+   ]
+  }
+ },
+ "G-109": {
+  "q": {
+   "de": [
+    "Wie oft",
+    "Bundestagswahlen"
+   ],
+   "en": [
+    "How often",
+    "Bundestag"
+   ]
+  },
+  "a": {
+   "de": [
+    "alle vier Jahre"
+   ],
+   "en": [
+    "every four years"
+   ]
+  }
+ },
+ "G-110": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Bundestag"
+   ],
+   "en": [
+    "how many years",
+    "Bundestag"
+   ]
+  },
+  "a": {
+   "de": [
+    "4 Jahre"
+   ],
+   "en": [
+    "4 years"
+   ]
+  },
+  "like": [
+   "G-230",
+   "BW-3",
+   "BY-3",
+   "BE-3",
+   "BB-3",
+   "HB-3",
+   "HH-3",
+   "HE-3",
+   "MV-3",
+   "NI-3",
+   "NW-3",
+   "RP-3",
+   "SL-3",
+   "SN-3",
+   "ST-3",
+   "SH-3",
+   "TH-3"
+  ]
+ },
+ "G-111": {
+  "q": {
+   "de": [
+    "Staat Israel",
+    "verboten"
+   ],
+   "en": [
+    "State of Israel",
+    "prohibited"
+   ]
+  },
+  "a": {
+   "de": [
+    "Aufruf zur Vernichtung Israels"
+   ],
+   "en": [
+    "calling for the destruction of Israel"
+   ]
+  }
+ },
+ "G-112": {
+  "q": {
+   "de": [
+    "Wahlen"
+   ],
+   "en": [
+    "Elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "geheim"
+   ],
+   "en": [
+    "secret"
+   ]
+  }
+ },
+ "G-113": {
+  "q": {
+   "de": [
+    "gewinnt die Partei"
+   ],
+   "en": [
+    "won by the party"
+   ]
+  },
+  "a": {
+   "de": [
+    "meisten Stimmen"
+   ],
+   "en": [
+    "most votes"
+   ]
+  }
+ },
+ "G-114": {
+  "q": {
+   "de": [
+    "teilzunehmen"
+   ],
+   "en": [
+    "Taking part"
+   ]
+  },
+  "a": {
+   "de": [
+    "ein Recht"
+   ],
+   "en": [
+    "right"
+   ]
+  }
+ },
+ "G-115": {
+  "q": {
+   "de": [
+    "\"aktives Wahlrecht\""
+   ],
+   "en": [
+    "\"aktives Wahlrecht\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Man kann wählen"
+   ],
+   "en": [
+    "You can vote"
+   ]
+  }
+ },
+ "G-116": {
+  "q": {
+   "de": [
+    "wählen dürfen"
+   ],
+   "en": [
+    "allowed to vote"
+   ]
+  },
+  "a": {
+   "de": [
+    "aktives Wahlrecht"
+   ],
+   "en": [
+    "active right to vote"
+   ]
+  }
+ },
+ "G-117": {
+  "q": {
+   "de": [
+    "Wie viel Prozent",
+    "Zweitstimmen"
+   ],
+   "en": [
+    "minimum percentage of second votes"
+   ]
+  },
+  "a": {
+   "de": [
+    "5%"
+   ],
+   "en": [
+    "5%"
+   ]
+  }
+ },
+ "G-118": {
+  "q": {
+   "de": [
+    "Makkabi-Sportvereinen",
+    "Mitglied"
+   ],
+   "en": [
+    "Makkabi sports clubs",
+    "member"
+   ]
+  },
+  "a": {
+   "de": [
+    "alle Menschen"
+   ],
+   "en": [
+    "everyone"
+   ]
+  }
+ },
+ "G-119": {
+  "q": {
+   "de": [
+    "Wahlen",
+    "frei"
+   ],
+   "en": [
+    "Elections",
+    "free"
+   ]
+  },
+  "a": {
+   "de": [
+    "ohne Zwang entscheiden"
+   ],
+   "en": [
+    "decide without coercion"
+   ]
+  },
+  "like": [
+   "G-5"
+  ]
+ },
+ "G-120": {
+  "q": {
+   "de": [
+    "Wahlsystem"
+   ],
+   "en": [
+    "electoral system"
+   ]
+  },
+  "a": {
+   "de": [
+    "Mehrheits- und Verhältniswahlrecht"
+   ],
+   "en": [
+    "majority and proportional representation"
+   ]
+  }
+ },
+ "G-121": {
+  "q": {
+   "de": [
+    "Mindestanteil an Wählerstimmen"
+   ],
+   "en": [
+    "minimum share of votes"
+   ]
+  },
+  "a": {
+   "de": [
+    "5%-Hürde"
+   ],
+   "en": [
+    "5% threshold"
+   ]
+  }
+ },
+ "G-122": {
+  "q": {
+   "de": [
+    "Grundsatz"
+   ],
+   "en": [
+    "principle"
+   ]
+  },
+  "a": {
+   "de": [
+    "frei, gleich, geheim"
+   ],
+   "en": [
+    "free, equal, secret"
+   ]
+  }
+ },
+ "G-123": {
+  "q": {
+   "de": [
+    "\"5%-Hürde\""
+   ],
+   "en": [
+    "\"5% threshold\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Mindestanteil an Wählerstimmen"
+   ],
+   "en": [
+    "Minimum share of votes"
+   ]
+  }
+ },
+ "G-124": {
+  "q": {
+   "de": [
+    "Bundestagswahl"
+   ],
+   "en": [
+    "Bundestag election"
+   ]
+  },
+  "a": {
+   "de": [
+    "Parlaments für Deutschland"
+   ],
+   "en": [
+    "parliament for Germany"
+   ]
+  }
+ },
+ "G-125": {
+  "q": {
+   "de": [
+    "Funktion von regelmäßigen Wahlen"
+   ],
+   "en": [
+    "function of regular elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "Wechsel der Regierung"
+   ],
+   "en": [
+    "change of government"
+   ]
+  }
+ },
+ "G-126": {
+  "q": {
+   "de": [
+    "vor einer Wahl"
+   ],
+   "en": [
+    "before an election"
+   ]
+  },
+  "a": {
+   "de": [
+    "Wahlbenachrichtigung"
+   ],
+   "en": [
+    "polling card"
+   ]
+  }
+ },
+ "G-127": {
+  "q": {
+   "de": [
+    "Warum",
+    "5%-Hürde"
+   ],
+   "en": [
+    "Why",
+    "5% threshold"
+   ]
+  },
+  "a": {
+   "de": [
+    "viele kleine Parteien"
+   ],
+   "en": [
+    "many small parties"
+   ]
+  }
+ },
+ "G-128": {
+  "q": {
+   "de": [
+    "Parlamentsmitglieder",
+    "gewählt"
+   ],
+   "en": [
+    "Members of parliament",
+    "elected"
+   ]
+  },
+  "a": {
+   "de": [
+    "Abgeordnete"
+   ],
+   "en": [
+    "Abgeordnete"
+   ]
+  }
+ },
+ "G-129": {
+  "q": {
+   "de": [
+    "Vom Volk gewählt"
+   ],
+   "en": [
+    "people elect"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundestag"
+   ],
+   "en": [
+    "Bundestag"
+   ]
+  },
+  "like": [
+   "G-28",
+   "G-44",
+   "G-58",
+   "G-86"
+  ]
+ },
+ "G-130": {
+  "q": {
+   "de": [
+    "Stimmzettel",
+    "gültig"
+   ],
+   "en": [
+    "ballot paper",
+    "valid"
+   ]
+  },
+  "a": {
+   "de": [
+    "1"
+   ],
+   "en": [
+    "1"
+   ]
+  }
+ },
+ "G-131": {
+  "q": {
+   "de": [
+    "Bürgermeisterin/ein Bürgermeister"
+   ],
+   "en": [
+    "Bürgermeisterin/Bürgermeister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Oberhaupt einer Gemeinde"
+   ],
+   "en": [
+    "head of a municipality"
+   ]
+  }
+ },
+ "G-132": {
+  "q": {
+   "de": [
+    "ehrenamtlich"
+   ],
+   "en": [
+    "ehrenamtlich"
+   ]
+  },
+  "a": {
+   "de": [
+    "freiwillig und unbezahlt"
+   ],
+   "en": [
+    "voluntarily and unpaid"
+   ]
+  }
+ },
+ "G-133": {
+  "q": {
+   "de": [
+    "erlaubt"
+   ],
+   "en": [
+    "allowed"
+   ]
+  },
+  "a": {
+   "de": [
+    "Briefwahl"
+   ],
+   "en": [
+    "postal ballot"
+   ]
+  }
+ },
+ "G-134": {
+  "q": {
+   "de": [
+    "Buslinie abschaffen"
+   ],
+   "en": [
+    "abolish the bus line"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bürgerinitiative"
+   ],
+   "en": [
+    "citizens' initiative"
+   ]
+  }
+ },
+ "G-135": {
+  "q": {
+   "de": [
+    "Gewerkschaften"
+   ],
+   "en": [
+    "trade unions"
+   ]
+  },
+  "a": {
+   "de": [
+    "Arbeitnehmerinnen und Arbeitnehmer"
+   ],
+   "en": [
+    "employees"
+   ]
+  }
+ },
+ "G-136": {
+  "q": {
+   "de": [
+    "Arbeitsgericht"
+   ],
+   "en": [
+    "labor court"
+   ]
+  },
+  "a": {
+   "de": [
+    "ungerechtfertigter Kündigung"
+   ],
+   "en": [
+    "unjustified dismissal"
+   ]
+  },
+  "like": [
+   "G-137",
+   "G-286"
+  ]
+ },
+ "G-137": {
+  "q": {
+   "de": [
+    "Konflikten in der Arbeitswelt"
+   ],
+   "en": [
+    "conflicts in the world of work"
+   ]
+  },
+  "a": {
+   "de": [
+    "Arbeitsgericht"
+   ],
+   "en": [
+    "labor court"
+   ]
+  },
+  "like": [
+   "G-136",
+   "G-286"
+  ]
+ },
+ "G-138": {
+  "q": {
+   "de": [
+    "zu Unrecht gekündigt"
+   ],
+   "en": [
+    "dismissed me unfairly"
+   ]
+  },
+  "a": {
+   "de": [
+    "Kündigungsschutzklage"
+   ],
+   "en": [
+    "unfair dismissal lawsuit"
+   ]
+  }
+ },
+ "G-139": {
+  "q": {
+   "de": [
+    "Prozess vor Gericht"
+   ],
+   "en": [
+    "trial",
+    "court"
+   ]
+  },
+  "a": {
+   "de": [
+    "Straftat begangen",
+    "angeklagt"
+   ],
+   "en": [
+    "criminal offense",
+    "charged"
+   ]
+  }
+ },
+ "G-140": {
+  "q": {
+   "de": [
+    "Schöffin/ein Schöffe"
+   ],
+   "en": [
+    "Schöffin/Schöffe"
+   ]
+  },
+  "a": {
+   "de": [
+    "Schuld und Strafe"
+   ],
+   "en": [
+    "guilt and punishment"
+   ]
+  }
+ },
+ "G-141": {
+  "q": {
+   "de": [
+    "Rechtsfragen",
+    "vor Gericht"
+   ],
+   "en": [
+    "legal questions",
+    "in court"
+   ]
+  },
+  "a": {
+   "de": [
+    "Rechtsanwältin/ein Rechtsanwalt"
+   ],
+   "en": [
+    "lawyer"
+   ]
+  }
+ },
+ "G-142": {
+  "q": {
+   "de": [
+    "Hauptaufgabe",
+    "Richterin/eines Richters"
+   ],
+   "en": [
+    "main task of a judge"
+   ]
+  },
+  "a": {
+   "de": [
+    "spricht Urteile"
+   ],
+   "en": [
+    "pronounces judgments"
+   ]
+  }
+ },
+ "G-143": {
+  "q": {
+   "de": [
+    "Richterin/ein Richter"
+   ],
+   "en": [
+    "judge"
+   ]
+  },
+  "a": {
+   "de": [
+    "Judikative"
+   ],
+   "en": [
+    "judiciary"
+   ]
+  },
+  "like": [
+   "G-60",
+   "G-63",
+   "G-144"
+  ]
+ },
+ "G-144": {
+  "q": {
+   "de": [
+    "Richterin/ein Richter"
+   ],
+   "en": [
+    "judge"
+   ]
+  },
+  "a": {
+   "de": [
+    "rechtsprechenden Gewalt"
+   ],
+   "en": [
+    "judicial power"
+   ]
+  },
+  "like": [
+   "G-60",
+   "G-63",
+   "G-143",
+   "G-145"
+  ]
+ },
+ "G-145": {
+  "q": {
+   "de": [
+    "Staatsgewalt",
+    "Richterin/ein Richter"
+   ],
+   "en": [
+    "branch of state power",
+    "judge"
+   ]
+  },
+  "a": {
+   "de": [
+    "Judikative"
+   ],
+   "en": [
+    "judiciary"
+   ]
+  },
+  "like": [
+   "G-60",
+   "G-63",
+   "G-144"
+  ]
+ },
+ "G-146": {
+  "q": {
+   "de": [
+    "Verfahren vor einem Gericht"
+   ],
+   "en": [
+    "proceeding before a court"
+   ]
+  },
+  "a": {
+   "de": [
+    "Prozess"
+   ],
+   "en": [
+    "Trial"
+   ]
+  }
+ },
+ "G-147": {
+  "q": {
+   "de": [
+    "Arbeit einer Richterin/eines Richters"
+   ],
+   "en": [
+    "work of a judge"
+   ]
+  },
+  "a": {
+   "de": [
+    "Recht sprechen"
+   ],
+   "en": [
+    "administering justice"
+   ]
+  }
+ },
+ "G-148": {
+  "q": {
+   "de": [
+    "Aufgabe der Polizei"
+   ],
+   "en": [
+    "task of the police"
+   ]
+  },
+  "a": {
+   "de": [
+    "Einhaltung von Gesetzen"
+   ],
+   "en": [
+    "compliance with the laws"
+   ]
+  }
+ },
+ "G-149": {
+  "q": {
+   "de": [
+    "antisemitisches Verhalten"
+   ],
+   "en": [
+    "antisemitic behavior"
+   ]
+  },
+  "a": {
+   "de": [
+    "Holocaust leugnen"
+   ],
+   "en": [
+    "denying the Holocaust"
+   ]
+  }
+ },
+ "G-150": {
+  "q": {
+   "de": [
+    "Gerichtsschöffin/ein Gerichtsschöffe"
+   ],
+   "en": [
+    "Gerichtsschöffin/Gerichtsschöffe"
+   ]
+  },
+  "a": {
+   "de": [
+    "ehrenamtliche Richterin"
+   ],
+   "en": [
+    "volunteer (honorary) judge"
+   ]
+  }
+ },
+ "G-151": {
+  "q": {
+   "de": [
+    "Wer baute die Mauer"
+   ],
+   "en": [
+    "Who built the Wall"
+   ]
+  },
+  "a": {
+   "de": [
+    "DDR"
+   ],
+   "en": [
+    "GDR"
+   ]
+  }
+ },
+ "G-152": {
+  "q": {
+   "de": [
+    "Nationalsozialisten",
+    "an der Macht"
+   ],
+   "en": [
+    "National Socialists",
+    "in power"
+   ]
+  },
+  "a": {
+   "de": [
+    "1933 bis 1945"
+   ],
+   "en": [
+    "1933 to 1945"
+   ]
+  }
+ },
+ "G-153": {
+  "q": {
+   "de": [
+    "8. Mai 1945"
+   ],
+   "en": [
+    "8 May 1945"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ende des Zweiten Weltkriegs"
+   ],
+   "en": [
+    "End of the Second World War"
+   ]
+  }
+ },
+ "G-154": {
+  "q": {
+   "de": [
+    "Zweite Weltkrieg zu Ende"
+   ],
+   "en": [
+    "Second World War end"
+   ]
+  },
+  "a": {
+   "de": [
+    "1945"
+   ],
+   "en": [
+    "1945"
+   ]
+  },
+  "like": [
+   "G-156",
+   "G-160",
+   "G-163"
+  ]
+ },
+ "G-155": {
+  "q": {
+   "de": [
+    "Nationalsozialisten",
+    "an der Macht"
+   ],
+   "en": [
+    "National Socialists",
+    "in power"
+   ]
+  },
+  "a": {
+   "de": [
+    "1933 bis 1945"
+   ],
+   "en": [
+    "1933 to 1945"
+   ]
+  }
+ },
+ "G-156": {
+  "q": {
+   "de": [
+    "Hitler Reichskanzler"
+   ],
+   "en": [
+    "Hitler become Reich Chancellor"
+   ]
+  },
+  "a": {
+   "de": [
+    "1933"
+   ],
+   "en": [
+    "1933"
+   ]
+  },
+  "like": [
+   "G-154",
+   "G-160",
+   "G-163"
+  ]
+ },
+ "G-157": {
+  "q": {
+   "de": [
+    "errichteten 1933"
+   ],
+   "en": [
+    "established in Germany"
+   ]
+  },
+  "a": {
+   "de": [
+    "Diktatur"
+   ],
+   "en": [
+    "dictatorship"
+   ]
+  }
+ },
+ "G-158": {
+  "q": {
+   "de": [
+    "\"Dritte Reich\""
+   ],
+   "en": [
+    "\"Third Reich\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Diktatur"
+   ],
+   "en": [
+    "dictatorship"
+   ]
+  }
+ },
+ "G-159": {
+  "q": {
+   "de": [
+    "Was gab es",
+    "Nationalsozialismus"
+   ],
+   "en": [
+    "What did",
+    "exist",
+    "National Socialist era"
+   ]
+  },
+  "a": {
+   "de": [
+    "freie Wahlen"
+   ],
+   "en": [
+    "free elections"
+   ]
+  },
+  "like": [
+   "G-170"
+  ]
+ },
+ "G-160": {
+  "q": {
+   "de": [
+    "1939 bis 1945"
+   ],
+   "en": [
+    "1939 to 1945"
+   ]
+  },
+  "a": {
+   "de": [
+    "Zweite Weltkrieg"
+   ],
+   "en": [
+    "Second World War"
+   ]
+  },
+  "like": [
+   "G-154",
+   "G-156",
+   "G-163"
+  ]
+ },
+ "G-161": {
+  "q": {
+   "de": [
+    "NS-Staat"
+   ],
+   "en": [
+    "Nazi state"
+   ]
+  },
+  "a": {
+   "de": [
+    "staatlichen Rassismus"
+   ],
+   "en": [
+    "state racism"
+   ]
+  }
+ },
+ "G-162": {
+  "q": {
+   "de": [
+    "Stauffenberg"
+   ],
+   "en": [
+    "Stauffenberg"
+   ]
+  },
+  "a": {
+   "de": [
+    "Attentat auf Hitler"
+   ],
+   "en": [
+    "assassination attempt on Hitler"
+   ]
+  }
+ },
+ "G-163": {
+  "q": {
+   "de": [
+    "zerstörten",
+    "Synagogen"
+   ],
+   "en": [
+    "destroy synagogues"
+   ]
+  },
+  "a": {
+   "de": [
+    "1938"
+   ],
+   "en": [
+    "1938"
+   ]
+  },
+  "like": [
+   "G-154",
+   "G-156",
+   "G-160"
+  ]
+ },
+ "G-164": {
+  "q": {
+   "de": [
+    "9. November 1938"
+   ],
+   "en": [
+    "9 November 1938"
+   ]
+  },
+  "a": {
+   "de": [
+    "Synagogen",
+    "zerstört"
+   ],
+   "en": [
+    "synagogues",
+    "destroyed"
+   ]
+  }
+ },
+ "G-165": {
+  "q": {
+   "de": [
+    "erste Bundeskanzler"
+   ],
+   "en": [
+    "first Federal Chancellor"
+   ]
+  },
+  "a": {
+   "de": [
+    "Adenauer"
+   ],
+   "en": [
+    "Adenauer"
+   ]
+  },
+  "like": [
+   "G-211",
+   "G-215"
+  ]
+ },
+ "G-166": {
+  "q": {
+   "de": [
+    "\"Wir sind das Volk\""
+   ],
+   "en": [
+    "\"Wir sind das Volk\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Montagsdemonstrationen 1989"
+   ],
+   "en": [
+    "1989 Monday demonstrations"
+   ]
+  }
+ },
+ "G-167": {
+  "q": {
+   "de": [
+    "\"Alliierte Besatzungsmächte\""
+   ],
+   "en": [
+    "\"Allied occupying powers\""
+   ]
+  },
+  "a": {
+   "de": [
+    "USA, Sowjetunion, Großbritannien, Frankreich"
+   ],
+   "en": [
+    "USA, Soviet Union, Great Britain, France"
+   ]
+  }
+ },
+ "G-168": {
+  "q": {
+   "de": [
+    "\"Alliierte Besatzungsmacht\""
+   ],
+   "en": [
+    "\"Allied occupying power\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Japan"
+   ],
+   "en": [
+    "Japan"
+   ]
+  }
+ },
+ "G-169": {
+  "q": {
+   "de": [
+    "Bundesrepublik Deutschland gegründet"
+   ],
+   "en": [
+    "Federal Republic of Germany founded"
+   ]
+  },
+  "a": {
+   "de": [
+    "1949"
+   ],
+   "en": [
+    "1949"
+   ]
+  }
+ },
+ "G-170": {
+  "q": {
+   "de": [
+    "Was gab es",
+    "Nationalsozialismus"
+   ],
+   "en": [
+    "What existed",
+    "National Socialist era"
+   ]
+  },
+  "a": {
+   "de": [
+    "Verbot von Parteien"
+   ],
+   "en": [
+    "banning of political parties"
+   ]
+  },
+  "like": [
+   "G-159"
+  ]
+ },
+ "G-171": {
+  "q": {
+   "de": [
+    "Soziale Marktwirtschaft"
+   ],
+   "en": [
+    "Social market economy"
+   ]
+  },
+  "a": {
+   "de": [
+    "Angebot und Nachfrage",
+    "sozialen Ausgleich"
+   ],
+   "en": [
+    "supply and demand",
+    "social balance"
+   ]
+  }
+ },
+ "G-172": {
+  "q": {
+   "de": [
+    "Besatzungszone",
+    "DDR"
+   ],
+   "en": [
+    "occupation zone",
+    "GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "sowjetischen"
+   ],
+   "en": [
+    "Soviet"
+   ]
+  }
+ },
+ "G-173": {
+  "q": {
+   "de": [
+    "Gründungsmitglied"
+   ],
+   "en": [
+    "founding member"
+   ]
+  },
+  "a": {
+   "de": [
+    "Europäischen Union"
+   ],
+   "en": [
+    "European Union"
+   ]
+  }
+ },
+ "G-174": {
+  "q": {
+   "de": [
+    "DDR gegründet"
+   ],
+   "en": [
+    "GDR founded"
+   ]
+  },
+  "a": {
+   "de": [
+    "1949"
+   ],
+   "en": [
+    "1949"
+   ]
+  }
+ },
+ "G-175": {
+  "q": {
+   "de": [
+    "Wie viele Besatzungszonen"
+   ],
+   "en": [
+    "How many occupation zones"
+   ]
+  },
+  "a": {
+   "de": [
+    "4"
+   ],
+   "en": [
+    "4"
+   ]
+  },
+  "like": [
+   "G-24",
+   "G-218",
+   "G-236"
+  ]
+ },
+ "G-176": {
+  "q": {
+   "de": [
+    "Besatzungszonen",
+    "verteilt"
+   ],
+   "en": [
+    "occupation zones distributed"
+   ]
+  },
+  "a": {
+   "de": [
+    "1=Großbritannien, 2=Sowjetunion, 3=USA, 4=Frankreich"
+   ],
+   "en": [
+    "1=Great Britain, 2=Soviet Union, 3=USA, 4=France"
+   ]
+  }
+ },
+ "G-177": {
+  "q": {
+   "de": [
+    "vier Sektoren"
+   ],
+   "en": [
+    "four sectors"
+   ]
+  },
+  "a": {
+   "de": [
+    "Berlin"
+   ],
+   "en": [
+    "Berlin"
+   ]
+  }
+ },
+ "G-178": {
+  "q": {
+   "de": [
+    "Luftbrücke"
+   ],
+   "en": [
+    "airlift"
+   ]
+  },
+  "a": {
+   "de": [
+    "unterbrach den gesamten Verkehr auf dem Landwege"
+   ],
+   "en": [
+    "cut off all traffic by land"
+   ]
+  }
+ },
+ "G-179": {
+  "q": {
+   "de": [
+    "Zweite Weltkrieg in Europa offiziell"
+   ],
+   "en": [
+    "Second World War in Europe officially end"
+   ]
+  },
+  "a": {
+   "de": [
+    "bedingungslose Kapitulation"
+   ],
+   "en": [
+    "unconditional surrender"
+   ]
+  }
+ },
+ "G-180": {
+  "q": {
+   "de": [
+    "erste Bundeskanzler"
+   ],
+   "en": [
+    "first Federal Chancellor"
+   ]
+  },
+  "a": {
+   "de": [
+    "Adenauer"
+   ],
+   "en": [
+    "Adenauer"
+   ]
+  },
+  "like": [
+   "G-211",
+   "G-215"
+  ]
+ },
+ "G-181": {
+  "q": {
+   "de": [
+    "Willy Brandt",
+    "Kniefall"
+   ],
+   "en": [
+    "Willy Brandt",
+    "kneeling"
+   ]
+  },
+  "a": {
+   "de": [
+    "um Vergebung"
+   ],
+   "en": [
+    "forgiveness"
+   ]
+  }
+ },
+ "G-182": {
+  "q": {
+   "de": [
+    "jüdische Gebetshaus"
+   ],
+   "en": [
+    "Jewish house of prayer"
+   ]
+  },
+  "a": {
+   "de": [
+    "Synagoge"
+   ],
+   "en": [
+    "Synagogue"
+   ]
+  }
+ },
+ "G-183": {
+  "q": {
+   "de": [
+    "\"Wirtschaftswunder\""
+   ],
+   "en": [
+    "\"Wirtschaftswunder\""
+   ]
+  },
+  "a": {
+   "de": [
+    "50er Jahre"
+   ],
+   "en": [
+    "1950s"
+   ]
+  }
+ },
+ "G-184": {
+  "q": {
+   "de": [
+    "Staat Israel gegründet"
+   ],
+   "en": [
+    "State of Israel founded"
+   ]
+  },
+  "a": {
+   "de": [
+    "Resolution der Vereinten Nationen"
+   ],
+   "en": [
+    "resolution of the United Nations"
+   ]
+  }
+ },
+ "G-185": {
+  "q": {
+   "de": [
+    "\"Eiserner Vorhang\""
+   ],
+   "en": [
+    "\"Iron Curtain\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Warschauer Pakts gegen den Westen"
+   ],
+   "en": [
+    "Warsaw Pact from the West"
+   ]
+  }
+ },
+ "G-186": {
+  "q": {
+   "de": [
+    "1953",
+    "Aufstand"
+   ],
+   "en": [
+    "1953",
+    "uprising"
+   ]
+  },
+  "a": {
+   "de": [
+    "17. Juni"
+   ],
+   "en": [
+    "17 June"
+   ]
+  },
+  "like": [
+   "G-194"
+  ]
+ },
+ "G-187": {
+  "q": {
+   "de": [
+    "Hammer, Zirkel und Ährenkranz"
+   ],
+   "en": [
+    "hammer, compass and wreath"
+   ]
+  },
+  "a": {
+   "de": [
+    "DDR"
+   ],
+   "en": [
+    "GDR"
+   ]
+  }
+ },
+ "G-188": {
+  "q": {
+   "de": [
+    "Mauer in Berlin gebaut"
+   ],
+   "en": [
+    "Wall in Berlin built"
+   ]
+  },
+  "a": {
+   "de": [
+    "1961"
+   ],
+   "en": [
+    "1961"
+   ]
+  },
+  "like": [
+   "G-191"
+  ]
+ },
+ "G-189": {
+  "q": {
+   "de": [
+    "baute",
+    "Mauer"
+   ],
+   "en": [
+    "build the Wall"
+   ]
+  },
+  "a": {
+   "de": [
+    "1961"
+   ],
+   "en": [
+    "1961"
+   ]
+  },
+  "like": [
+   "G-191"
+  ]
+ },
+ "G-190": {
+  "q": {
+   "de": [
+    "DDR"
+   ],
+   "en": [
+    "DDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "Deutsche Demokratische Republik"
+   ],
+   "en": [
+    "Deutsche Demokratische Republik (German Democratic Republic)"
+   ]
+  }
+ },
+ "G-191": {
+  "q": {
+   "de": [
+    "Mauer",
+    "geöffnet"
+   ],
+   "en": [
+    "Wall",
+    "opened"
+   ]
+  },
+  "a": {
+   "de": [
+    "1989"
+   ],
+   "en": [
+    "1989"
+   ]
+  },
+  "like": [
+   "G-188",
+   "G-189"
+  ]
+ },
+ "G-192": {
+  "q": {
+   "de": [
+    "DDR"
+   ],
+   "en": [
+    "GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "Brandenburg"
+   ],
+   "en": [
+    "Brandenburg"
+   ]
+  },
+  "like": [
+   "G-195",
+   "G-197",
+   "G-198",
+   "G-200"
+  ]
+ },
+ "G-193": {
+  "q": {
+   "de": [
+    "1961 bis 1989"
+   ],
+   "en": [
+    "1961 to 1989"
+   ]
+  },
+  "a": {
+   "de": [
+    "Mauer geteilt"
+   ],
+   "en": [
+    "divided by a wall"
+   ]
+  }
+ },
+ "G-194": {
+  "q": {
+   "de": [
+    "3. Oktober"
+   ],
+   "en": [
+    "3 October"
+   ]
+  },
+  "a": {
+   "de": [
+    "Einheit"
+   ],
+   "en": [
+    "Unity"
+   ]
+  },
+  "like": [
+   "G-186"
+  ]
+ },
+ "G-195": {
+  "q": {
+   "de": [
+    "DDR"
+   ],
+   "en": [
+    "GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "Sachsen-Anhalt"
+   ],
+   "en": [
+    "Saxony-Anhalt"
+   ]
+  },
+  "like": [
+   "G-192",
+   "G-197",
+   "G-198",
+   "G-200"
+  ]
+ },
+ "G-196": {
+  "q": {
+   "de": [
+    "\"Die Wende\""
+   ],
+   "en": [
+    "\"Die Wende\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Diktatur zur Demokratie"
+   ],
+   "en": [
+    "dictatorship to a democracy"
+   ]
+  }
+ },
+ "G-197": {
+  "q": {
+   "de": [
+    "DDR"
+   ],
+   "en": [
+    "GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "Thüringen"
+   ],
+   "en": [
+    "Thuringia"
+   ]
+  },
+  "like": [
+   "G-192",
+   "G-195",
+   "G-198",
+   "G-200"
+  ]
+ },
+ "G-198": {
+  "q": {
+   "de": [
+    "DDR"
+   ],
+   "en": [
+    "GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "Sachsen"
+   ],
+   "en": [
+    "Saxony"
+   ]
+  },
+  "like": [
+   "G-192",
+   "G-195",
+   "G-197",
+   "G-200"
+  ]
+ },
+ "G-199": {
+  "q": {
+   "de": [
+    "\"Stasi\""
+   ],
+   "en": [
+    "\"Stasi\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Staatssicherheit"
+   ],
+   "en": [
+    "State Security"
+   ]
+  }
+ },
+ "G-200": {
+  "q": {
+   "de": [
+    "DDR"
+   ],
+   "en": [
+    "GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "Mecklenburg-Vorpommern"
+   ],
+   "en": [
+    "Mecklenburg-Western Pomerania"
+   ]
+  },
+  "like": [
+   "G-192",
+   "G-195",
+   "G-197",
+   "G-198"
+  ]
+ },
+ "G-201": {
+  "q": {
+   "de": [
+    "nur Bundesländer",
+    "früheren DDR"
+   ],
+   "en": [
+    "only federal states",
+    "former GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "Mecklenburg-Vorpommern, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen"
+   ],
+   "en": [
+    "Mecklenburg-Western Pomerania, Brandenburg, Saxony, Saxony-Anhalt, Thuringia"
+   ]
+  }
+ },
+ "G-202": {
+  "q": {
+   "de": [
+    "\"Kalten Krieg\""
+   ],
+   "en": [
+    "\"Cold War\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Warschauer Pakt"
+   ],
+   "en": [
+    "Warsaw Pact"
+   ]
+  }
+ },
+ "G-203": {
+  "q": {
+   "de": [
+    "Wirtschaftssystem der DDR"
+   ],
+   "en": [
+    "economic system of the GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "Planwirtschaft"
+   ],
+   "en": [
+    "planned economy"
+   ]
+  }
+ },
+ "G-204": {
+  "q": {
+   "de": [
+    "zu einem Staat"
+   ],
+   "en": [
+    "become one state"
+   ]
+  },
+  "a": {
+   "de": [
+    "beigetreten"
+   ],
+   "en": [
+    "joined"
+   ]
+  }
+ },
+ "G-205": {
+  "q": {
+   "de": [
+    "neuen Bundesländer"
+   ],
+   "en": [
+    "new federal states"
+   ]
+  },
+  "a": {
+   "de": [
+    "Europäischen Union"
+   ],
+   "en": [
+    "European Union"
+   ]
+  }
+ },
+ "G-206": {
+  "q": {
+   "de": [
+    "„Stolpersteine“"
+   ],
+   "en": [
+    "\"Stolpersteine\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Opfer des Nationalsozialismus"
+   ],
+   "en": [
+    "victims of National Socialism"
+   ]
+  }
+ },
+ "G-207": {
+  "q": {
+   "de": [
+    "Militärbündnis",
+    "DDR"
+   ],
+   "en": [
+    "military alliance",
+    "GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "Warschauer Pakt"
+   ],
+   "en": [
+    "Warsaw Pact"
+   ]
+  }
+ },
+ "G-208": {
+  "q": {
+   "de": [
+    "\"Stasi\""
+   ],
+   "en": [
+    "\"Stasi\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Geheimdienst"
+   ],
+   "en": [
+    "secret service"
+   ]
+  }
+ },
+ "G-209": {
+  "q": {
+   "de": [
+    "Wappen der Deutschen Demokratischen Republik"
+   ],
+   "en": [
+    "coat of arms of the German Democratic Republic"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 4"
+   ],
+   "en": [
+    "Image 4"
+   ]
+  }
+ },
+ "G-210": {
+  "q": {
+   "de": [
+    "17. Juni 1953"
+   ],
+   "en": [
+    "17 June 1953"
+   ]
+  },
+  "a": {
+   "de": [
+    "Streiks",
+    "Volksaufstand"
+   ],
+   "en": [
+    "strikes",
+    "popular uprising"
+   ]
+  }
+ },
+ "G-211": {
+  "q": {
+   "de": [
+    "\"Ostverträge\""
+   ],
+   "en": [
+    "\"Ostverträge\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Willy Brandt"
+   ],
+   "en": [
+    "Willy Brandt"
+   ]
+  },
+  "like": [
+   "G-165",
+   "G-180",
+   "G-215"
+  ]
+ },
+ "G-212": {
+  "q": {
+   "de": [
+    "vollem Namen"
+   ],
+   "en": [
+    "full name"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundesrepublik Deutschland"
+   ],
+   "en": [
+    "Bundesrepublik Deutschland (Federal Republic of Germany)"
+   ]
+  }
+ },
+ "G-213": {
+  "q": {
+   "de": [
+    "Einwohner"
+   ],
+   "en": [
+    "inhabitants"
+   ]
+  },
+  "a": {
+   "de": [
+    "84 Millionen"
+   ],
+   "en": [
+    "84 million"
+   ]
+  }
+ },
+ "G-214": {
+  "q": {
+   "de": [
+    "Farben",
+    "Flagge"
+   ],
+   "en": [
+    "colours of the German flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "schwarz-rot-gold"
+   ],
+   "en": [
+    "black-red-gold"
+   ]
+  }
+ },
+ "G-215": {
+  "q": {
+   "de": [
+    "\"Kanzler der Deutschen Einheit\""
+   ],
+   "en": [
+    "\"Chancellor of German Unity\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Helmut Kohl"
+   ],
+   "en": [
+    "Helmut Kohl"
+   ]
+  },
+  "like": [
+   "G-165",
+   "G-180",
+   "G-211"
+  ]
+ },
+ "G-216": {
+  "q": {
+   "de": [
+    "Plenarsaal"
+   ],
+   "en": [
+    "plenary hall"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bundesadler"
+   ],
+   "en": [
+    "federal eagle"
+   ]
+  }
+ },
+ "G-217": {
+  "q": {
+   "de": [
+    "Zeitraum",
+    "DDR"
+   ],
+   "en": [
+    "period",
+    "GDR"
+   ]
+  },
+  "a": {
+   "de": [
+    "1949 bis 1990"
+   ],
+   "en": [
+    "1949 to 1990"
+   ]
+  }
+ },
+ "G-218": {
+  "q": {
+   "de": [
+    "Bundesländer kamen",
+    "Wiedervereinigung"
+   ],
+   "en": [
+    "federal states were added",
+    "reunification"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-24",
+   "G-175",
+   "G-236"
+  ]
+ },
+ "G-219": {
+  "q": {
+   "de": [
+    "Grenzen von heute"
+   ],
+   "en": [
+    "present-day borders"
+   ]
+  },
+  "a": {
+   "de": [
+    "1990"
+   ],
+   "en": [
+    "1990"
+   ]
+  }
+ },
+ "G-220": {
+  "q": {
+   "de": [
+    "27. Januar"
+   ],
+   "en": [
+    "27 January"
+   ]
+  },
+  "a": {
+   "de": [
+    "Auschwitz"
+   ],
+   "en": [
+    "Auschwitz"
+   ]
+  }
+ },
+ "G-221": {
+  "q": {
+   "de": [
+    "Schengener Abkommens"
+   ],
+   "en": [
+    "Schengen Agreement"
+   ]
+  },
+  "a": {
+   "de": [
+    "ohne Passkontrolle"
+   ],
+   "en": [
+    "without passport checks"
+   ]
+  }
+ },
+ "G-222": {
+  "q": {
+   "de": [
+    "Nachbarland"
+   ],
+   "en": [
+    "neighbouring country"
+   ]
+  },
+  "a": {
+   "de": [
+    "Schweiz"
+   ],
+   "en": [
+    "Switzerland"
+   ]
+  },
+  "like": [
+   "G-223",
+   "G-227",
+   "G-229",
+   "G-233"
+  ]
+ },
+ "G-223": {
+  "q": {
+   "de": [
+    "Nachbarland"
+   ],
+   "en": [
+    "neighbouring country"
+   ]
+  },
+  "a": {
+   "de": [
+    "Polen"
+   ],
+   "en": [
+    "Poland"
+   ]
+  },
+  "like": [
+   "G-222",
+   "G-227",
+   "G-229",
+   "G-233"
+  ]
+ },
+ "G-224": {
+  "q": {
+   "de": [
+    "EU"
+   ],
+   "en": [
+    "EU"
+   ]
+  },
+  "a": {
+   "de": [
+    "Europäische Union"
+   ],
+   "en": [
+    "European Union"
+   ]
+  }
+ },
+ "G-225": {
+  "q": {
+   "de": [
+    "deutschsprachige Bevölkerung"
+   ],
+   "en": [
+    "German-speaking population"
+   ]
+  },
+  "a": {
+   "de": [
+    "Österreich"
+   ],
+   "en": [
+    "Austria"
+   ]
+  }
+ },
+ "G-226": {
+  "q": {
+   "de": [
+    "Flagge der Europäischen Union"
+   ],
+   "en": [
+    "flag of the European Union"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 2"
+   ],
+   "en": [
+    "Image 2"
+   ]
+  }
+ },
+ "G-227": {
+  "q": {
+   "de": [
+    "Nachbarland"
+   ],
+   "en": [
+    "neighbouring country"
+   ]
+  },
+  "a": {
+   "de": [
+    "Dänemark"
+   ],
+   "en": [
+    "Denmark"
+   ]
+  },
+  "like": [
+   "G-222",
+   "G-223",
+   "G-229",
+   "G-233"
+  ]
+ },
+ "G-228": {
+  "q": {
+   "de": [
+    "Beitritt der DDR",
+    "1990"
+   ],
+   "en": [
+    "accession of the GDR",
+    "1990"
+   ]
+  },
+  "a": {
+   "de": [
+    "Wiedervereinigung"
+   ],
+   "en": [
+    "reunification"
+   ]
+  }
+ },
+ "G-229": {
+  "q": {
+   "de": [
+    "Nachbarland"
+   ],
+   "en": [
+    "neighbouring country"
+   ]
+  },
+  "a": {
+   "de": [
+    "Luxemburg"
+   ],
+   "en": [
+    "Luxembourg"
+   ]
+  },
+  "like": [
+   "G-222",
+   "G-223",
+   "G-227",
+   "G-233"
+  ]
+ },
+ "G-230": {
+  "q": {
+   "de": [
+    "Europäische Parlament"
+   ],
+   "en": [
+    "European Parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5 Jahre"
+   ],
+   "en": [
+    "5 years"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "BW-3",
+   "BY-3",
+   "BE-3",
+   "BB-3",
+   "HB-3",
+   "HH-3",
+   "HE-3",
+   "MV-3",
+   "NI-3",
+   "NW-3",
+   "RP-3",
+   "SL-3",
+   "SN-3",
+   "ST-3",
+   "SH-3",
+   "TH-3"
+  ]
+ },
+ "G-231": {
+  "q": {
+   "de": [
+    "\"europäische Integration\""
+   ],
+   "en": [
+    "\"European integration\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Zusammenschluss europäischer Staaten"
+   ],
+   "en": [
+    "joining together of European states"
+   ]
+  }
+ },
+ "G-232": {
+  "q": {
+   "de": [
+    "Europawahl"
+   ],
+   "en": [
+    "European election"
+   ]
+  },
+  "a": {
+   "de": [
+    "Abgeordneten des Europäischen Parlaments"
+   ],
+   "en": [
+    "members of the European Parliament"
+   ]
+  }
+ },
+ "G-233": {
+  "q": {
+   "de": [
+    "Nachbarland"
+   ],
+   "en": [
+    "neighbouring country"
+   ]
+  },
+  "a": {
+   "de": [
+    "Tschechien"
+   ],
+   "en": [
+    "Czech Republic"
+   ]
+  },
+  "like": [
+   "G-222",
+   "G-223",
+   "G-227",
+   "G-229"
+  ]
+ },
+ "G-234": {
+  "q": {
+   "de": [
+    "ein Sitz des Europäischen Parlaments"
+   ],
+   "en": [
+    "one seat of the European Parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "Straßburg"
+   ],
+   "en": [
+    "Strasbourg"
+   ]
+  },
+  "like": [
+   "G-238"
+  ]
+ },
+ "G-235": {
+  "q": {
+   "de": [
+    "Verdun",
+    "Ziel der Europäischen Union"
+   ],
+   "en": [
+    "Verdun",
+    "goal of the European Union"
+   ]
+  },
+  "a": {
+   "de": [
+    "Frieden und Sicherheit"
+   ],
+   "en": [
+    "peace and security"
+   ]
+  }
+ },
+ "G-236": {
+  "q": {
+   "de": [
+    "Mitgliedstaaten"
+   ],
+   "en": [
+    "member states"
+   ]
+  },
+  "a": {
+   "de": [
+    "27"
+   ],
+   "en": [
+    "27"
+   ]
+  },
+  "like": [
+   "G-24",
+   "G-175",
+   "G-218"
+  ]
+ },
+ "G-237": {
+  "q": {
+   "de": [
+    "\"Römischen Verträge\"",
+    "Inhalt"
+   ],
+   "en": [
+    "\"Treaties of Rome\"",
+    "contain"
+   ]
+  },
+  "a": {
+   "de": [
+    "Europäischen Wirtschaftsgemeinschaft"
+   ],
+   "en": [
+    "European Economic Community"
+   ]
+  }
+ },
+ "G-238": {
+  "q": {
+   "de": [
+    "An welchen Orten"
+   ],
+   "en": [
+    "which places"
+   ]
+  },
+  "a": {
+   "de": [
+    "Straßburg, Luxemburg und Brüssel"
+   ],
+   "en": [
+    "Strasbourg, Luxembourg and Brussels"
+   ]
+  },
+  "like": [
+   "G-234"
+  ]
+ },
+ "G-239": {
+  "q": {
+   "de": [
+    "Verträge",
+    "Europäischen Wirtschaftsgemeinschaft"
+   ],
+   "en": [
+    "treaties",
+    "European Economic Community"
+   ]
+  },
+  "a": {
+   "de": [
+    "\"Römischen Verträge\""
+   ],
+   "en": [
+    "\"Treaties of Rome\""
+   ]
+  }
+ },
+ "G-240": {
+  "q": {
+   "de": [
+    "Euro in bar"
+   ],
+   "en": [
+    "cash",
+    "euros"
+   ]
+  },
+  "a": {
+   "de": [
+    "2002"
+   ],
+   "en": [
+    "2002"
+   ]
+  }
+ },
+ "G-241": {
+  "q": {
+   "de": [
+    "Elterngeld"
+   ],
+   "en": [
+    "Elterngeld"
+   ]
+  },
+  "a": {
+   "de": [
+    "Antrag bei der Elterngeldstelle"
+   ],
+   "en": [
+    "application to the Elterngeldstelle"
+   ]
+  }
+ },
+ "G-242": {
+  "q": {
+   "de": [
+    "Kindergarten"
+   ],
+   "en": [
+    "kindergarten"
+   ]
+  },
+  "a": {
+   "de": [
+    "Eltern/die Erziehungsberechtigten"
+   ],
+   "en": [
+    "parents/legal guardians"
+   ]
+  }
+ },
+ "G-243": {
+  "q": {
+   "de": [
+    "Demonstration",
+    "vorher"
+   ],
+   "en": [
+    "demonstration",
+    "beforehand"
+   ]
+  },
+  "a": {
+   "de": [
+    "Demonstration anmelden"
+   ],
+   "en": [
+    "register the demonstration"
+   ]
+  }
+ },
+ "G-244": {
+  "q": {
+   "de": [
+    "Schulabschluss",
+    "Universität"
+   ],
+   "en": [
+    "school-leaving qualification",
+    "university"
+   ]
+  },
+  "a": {
+   "de": [
+    "Abitur"
+   ],
+   "en": [
+    "Abitur"
+   ]
+  }
+ },
+ "G-245": {
+  "q": {
+   "de": [
+    "als Paar zusammenleben"
+   ],
+   "en": [
+    "live together as a couple"
+   ]
+  },
+  "a": {
+   "de": [
+    "13 Jahre"
+   ],
+   "en": [
+    "Anne (13)"
+   ]
+  }
+ },
+ "G-246": {
+  "q": {
+   "de": [
+    "volljährig"
+   ],
+   "en": [
+    "come of age"
+   ]
+  },
+  "a": {
+   "de": [
+    "18"
+   ],
+   "en": [
+    "18"
+   ]
+  },
+  "like": [
+   "G-2",
+   "G-263"
+  ]
+ },
+ "G-247": {
+  "q": {
+   "de": [
+    "schwanger",
+    "Schutz"
+   ],
+   "en": [
+    "pregnant",
+    "protection"
+   ]
+  },
+  "a": {
+   "de": [
+    "Mutterschutz"
+   ],
+   "en": [
+    "Mutterschutz"
+   ]
+  }
+ },
+ "G-248": {
+  "q": {
+   "de": [
+    "Erziehung der Kinder"
+   ],
+   "en": [
+    "raising children"
+   ]
+  },
+  "a": {
+   "de": [
+    "Eltern"
+   ],
+   "en": [
+    "parents"
+   ]
+  },
+  "like": [
+   "G-49",
+   "G-67",
+   "G-249"
+  ]
+ },
+ "G-249": {
+  "q": {
+   "de": [
+    "verantwortlich für die Kindererziehung"
+   ],
+   "en": [
+    "responsible for raising children"
+   ]
+  },
+  "a": {
+   "de": [
+    "Eltern"
+   ],
+   "en": [
+    "parents"
+   ]
+  },
+  "like": [
+   "G-49",
+   "G-67",
+   "G-248"
+  ]
+ },
+ "G-250": {
+  "q": {
+   "de": [
+    "gut bezahlten Arbeitsplatz"
+   ],
+   "en": [
+    "well-paid job"
+   ]
+  },
+  "a": {
+   "de": [
+    "gut ausgebildet"
+   ],
+   "en": [
+    "well trained/educated"
+   ]
+  }
+ },
+ "G-251": {
+  "q": {
+   "de": [
+    "Kind schlägt"
+   ],
+   "en": [
+    "hits a child"
+   ]
+  },
+  "a": {
+   "de": [
+    "bestraft"
+   ],
+   "en": [
+    "punished"
+   ]
+  }
+ },
+ "G-252": {
+  "q": {
+   "de": [
+    "In Deutschland"
+   ],
+   "en": [
+    "In Germany"
+   ]
+  },
+  "a": {
+   "de": [
+    "nur mit einer Partnerin/einem Partner verheiratet"
+   ],
+   "en": [
+    "married to only one partner"
+   ]
+  }
+ },
+ "G-253": {
+  "q": {
+   "de": [
+    "umziehen"
+   ],
+   "en": [
+    "move house"
+   ]
+  },
+  "a": {
+   "de": [
+    "Einwohnermeldeamt"
+   ],
+   "en": [
+    "Einwohnermeldeamt"
+   ]
+  },
+  "like": [
+   "G-255",
+   "G-265",
+   "G-273"
+  ]
+ },
+ "G-254": {
+  "q": {
+   "de": [
+    "\"Trennungsjahr\""
+   ],
+   "en": [
+    "\"Trennungsjahr\""
+   ]
+  },
+  "a": {
+   "de": [
+    "mindestens ein Jahr getrennt"
+   ],
+   "en": [
+    "separately for at least one year"
+   ]
+  }
+ },
+ "G-255": {
+  "q": {
+   "de": [
+    "Erziehungsproblemen"
+   ],
+   "en": [
+    "problems raising their children"
+   ]
+  },
+  "a": {
+   "de": [
+    "Jugendamt"
+   ],
+   "en": [
+    "Jugendamt"
+   ]
+  },
+  "like": [
+   "G-253",
+   "G-265",
+   "G-273"
+  ]
+ },
+ "G-256": {
+  "q": {
+   "de": [
+    "Restaurant eröffnen"
+   ],
+   "en": [
+    "open a restaurant"
+   ]
+  },
+  "a": {
+   "de": [
+    "Gaststättenerlaubnis"
+   ],
+   "en": [
+    "restaurant licence"
+   ]
+  }
+ },
+ "G-257": {
+  "q": {
+   "de": [
+    "erwachsene Frau",
+    "Abitur nachholen"
+   ],
+   "en": [
+    "adult woman",
+    "Abitur later"
+   ]
+  },
+  "a": {
+   "de": [
+    "Abendgymnasium"
+   ],
+   "en": [
+    "Abendgymnasium"
+   ]
+  }
+ },
+ "G-258": {
+  "q": {
+   "de": [
+    "Jugendamt"
+   ],
+   "en": [
+    "Jugendamt"
+   ]
+  },
+  "a": {
+   "de": [
+    "aus der Familie nehmen"
+   ],
+   "en": [
+    "remove a child"
+   ]
+  }
+ },
+ "G-259": {
+  "q": {
+   "de": [
+    "Berufsinformationszentrum BIZ"
+   ],
+   "en": [
+    "BIZ career information centre"
+   ]
+  },
+  "a": {
+   "de": [
+    "Lehrstellensuche"
+   ],
+   "en": [
+    "apprenticeship"
+   ]
+  }
+ },
+ "G-260": {
+  "q": {
+   "de": [
+    "Kind in der Schule"
+   ],
+   "en": [
+    "child at school"
+   ]
+  },
+  "a": {
+   "de": [
+    "Anwesenheitspflicht"
+   ],
+   "en": [
+    "compulsory attendance"
+   ]
+  }
+ },
+ "G-261": {
+  "q": {
+   "de": [
+    "30 Jahren",
+    "Abitur nachholen"
+   ],
+   "en": [
+    "30-year-old man",
+    "Abitur later"
+   ]
+  },
+  "a": {
+   "de": [
+    "Abendgymnasium"
+   ],
+   "en": [
+    "Abendgymnasium"
+   ]
+  }
+ },
+ "G-262": {
+  "q": {
+   "de": [
+    "Gleichbehandlung"
+   ],
+   "en": [
+    "equal treatment"
+   ]
+  },
+  "a": {
+   "de": [
+    "Behinderung benachteiligt"
+   ],
+   "en": [
+    "disadvantaged",
+    "disability"
+   ]
+  }
+ },
+ "G-263": {
+  "q": {
+   "de": [
+    "strafmündig",
+    "14 Jahre und älter"
+   ],
+   "en": [
+    "criminally responsible",
+    "14 and over"
+   ]
+  },
+  "a": {
+   "de": [
+    "bestraft"
+   ],
+   "en": [
+    "punished"
+   ]
+  },
+  "like": [
+   "G-2",
+   "G-246"
+  ]
+ },
+ "G-264": {
+  "q": {
+   "de": [
+    "bunte Kostüme und Masken"
+   ],
+   "en": [
+    "colourful costumes and masks"
+   ]
+  },
+  "a": {
+   "de": [
+    "Rosenmontag"
+   ],
+   "en": [
+    "Rosenmontag"
+   ]
+  }
+ },
+ "G-265": {
+  "q": {
+   "de": [
+    "heiraten"
+   ],
+   "en": [
+    "get married"
+   ]
+  },
+  "a": {
+   "de": [
+    "Standesamt"
+   ],
+   "en": [
+    "Standesamt"
+   ]
+  },
+  "like": [
+   "G-253",
+   "G-255",
+   "G-273"
+  ]
+ },
+ "G-266": {
+  "q": {
+   "de": [
+    "Nachtruhe"
+   ],
+   "en": [
+    "night-time quiet"
+   ]
+  },
+  "a": {
+   "de": [
+    "22 Uhr"
+   ],
+   "en": [
+    "10 p.m."
+   ]
+  }
+ },
+ "G-267": {
+  "q": {
+   "de": [
+    "22 Jahre alt",
+    "Freund",
+    "Eltern"
+   ],
+   "en": [
+    "22 years old",
+    "boyfriend",
+    "parents"
+   ]
+  },
+  "a": {
+   "de": [
+    "respektieren"
+   ],
+   "en": [
+    "respect the decision"
+   ]
+  }
+ },
+ "G-268": {
+  "q": {
+   "de": [
+    "Führerschein",
+    "Muttersprache"
+   ],
+   "en": [
+    "driving licence",
+    "mother tongue"
+   ]
+  },
+  "a": {
+   "de": [
+    "Theorie-Prüfung",
+    "Muttersprache"
+   ],
+   "en": [
+    "theory test in her mother tongue"
+   ]
+  }
+ },
+ "G-269": {
+  "q": {
+   "de": [
+    "ab dem Alter von drei Jahren",
+    "Anspruch"
+   ],
+   "en": [
+    "from the age of three",
+    "entitled"
+   ]
+  },
+  "a": {
+   "de": [
+    "Kindergartenplatz"
+   ],
+   "en": [
+    "kindergarten place"
+   ]
+  }
+ },
+ "G-270": {
+  "q": {
+   "de": [
+    "Volkshochschule"
+   ],
+   "en": [
+    "Volkshochschule"
+   ]
+  },
+  "a": {
+   "de": [
+    "Weiterbildung"
+   ],
+   "en": [
+    "further education"
+   ]
+  }
+ },
+ "G-271": {
+  "q": {
+   "de": [
+    "Weihnachten"
+   ],
+   "en": [
+    "Christmas"
+   ]
+  },
+  "a": {
+   "de": [
+    "Tannenbaum schmücken"
+   ],
+   "en": [
+    "decorating a fir tree"
+   ]
+  }
+ },
+ "G-272": {
+  "q": {
+   "de": [
+    "Lebensform",
+    "erlaubt"
+   ],
+   "en": [
+    "form of living together",
+    "allowed"
+   ]
+  },
+  "a": {
+   "de": [
+    "mit zwei Frauen zur selben Zeit"
+   ],
+   "en": [
+    "two women at the same time"
+   ]
+  }
+ },
+ "G-273": {
+  "q": {
+   "de": [
+    "Erziehungsproblemen"
+   ],
+   "en": [
+    "problems raising your children"
+   ]
+  },
+  "a": {
+   "de": [
+    "Jugendamt"
+   ],
+   "en": [
+    "Jugendamt"
+   ]
+  },
+  "like": [
+   "G-253",
+   "G-255",
+   "G-265"
+  ]
+ },
+ "G-274": {
+  "q": {
+   "de": [
+    "Brief geöffnet"
+   ],
+   "en": [
+    "opened a letter"
+   ]
+  },
+  "a": {
+   "de": [
+    "Briefgeheimnis"
+   ],
+   "en": [
+    "secrecy of correspondence"
+   ]
+  }
+ },
+ "G-275": {
+  "q": {
+   "de": [
+    "Ehescheidung"
+   ],
+   "en": [
+    "divorce"
+   ]
+  },
+  "a": {
+   "de": [
+    "Anwältin/eines Anwalts"
+   ],
+   "en": [
+    "lawyer"
+   ]
+  }
+ },
+ "G-276": {
+  "q": {
+   "de": [
+    "Behörde schlecht behandelt"
+   ],
+   "en": [
+    "treated badly",
+    "public authority"
+   ]
+  },
+  "a": {
+   "de": [
+    "Behördenleiterin/beim Behördenleiter beschweren"
+   ],
+   "en": [
+    "complain to the head of the authority"
+   ]
+  }
+ },
+ "G-277": {
+  "q": {
+   "de": [
+    "zweijähriges Kind",
+    "Diskriminierung"
+   ],
+   "en": [
+    "two-year-old child",
+    "discrimination"
+   ]
+  },
+  "a": {
+   "de": [
+    "Mutter"
+   ],
+   "en": [
+    "mother"
+   ]
+  }
+ },
+ "G-278": {
+  "q": {
+   "de": [
+    "Rollstuhl",
+    "Diskriminierung"
+   ],
+   "en": [
+    "wheelchair",
+    "discrimination"
+   ]
+  },
+  "a": {
+   "de": [
+    "Rollstuhl"
+   ],
+   "en": [
+    "wheelchair"
+   ]
+  }
+ },
+ "G-279": {
+  "q": {
+   "de": [
+    "\"Hausordnung\""
+   ],
+   "en": [
+    "\"Hausordnung\""
+   ]
+  },
+  "a": {
+   "de": [
+    "Regeln",
+    "alle Bewohnerinnen und Bewohner"
+   ],
+   "en": [
+    "rules",
+    "all residents"
+   ]
+  }
+ },
+ "G-280": {
+  "q": {
+   "de": [
+    "falschen Steuerbescheid"
+   ],
+   "en": [
+    "incorrect tax assessment"
+   ]
+  },
+  "a": {
+   "de": [
+    "Einspruch"
+   ],
+   "en": [
+    "objection"
+   ]
+  },
+  "like": [
+   "G-283"
+  ]
+ },
+ "G-281": {
+  "q": {
+   "de": [
+    "Schwimmbad",
+    "dunkle Hautfarbe",
+    "Recht"
+   ],
+   "en": [
+    "swimming pool",
+    "dark skin",
+    "right"
+   ]
+  },
+  "a": {
+   "de": [
+    "Gleichbehandlung"
+   ],
+   "en": [
+    "equal treatment"
+   ]
+  }
+ },
+ "G-282": {
+  "q": {
+   "de": [
+    "Ehrenamt müssen"
+   ],
+   "en": [
+    "honorary office must"
+   ]
+  },
+  "a": {
+   "de": [
+    "Wahlhelferin/Wahlhelfer"
+   ],
+   "en": [
+    "election worker"
+   ]
+  }
+ },
+ "G-283": {
+  "q": {
+   "de": [
+    "falsche Rechnung",
+    "Behörde"
+   ],
+   "en": [
+    "incorrect bill",
+    "public authority"
+   ]
+  },
+  "a": {
+   "de": [
+    "Widerspruch"
+   ],
+   "en": [
+    "Widerspruch"
+   ]
+  },
+  "like": [
+   "G-280"
+  ]
+ },
+ "G-284": {
+  "q": {
+   "de": [
+    "ändert sich in Zukunft sehr schnell"
+   ],
+   "en": [
+    "change very quickly"
+   ]
+  },
+  "a": {
+   "de": [
+    "immer weiter lernen"
+   ],
+   "en": [
+    "keep on learning"
+   ]
+  }
+ },
+ "G-285": {
+  "q": {
+   "de": [
+    "fest angestellte",
+    "Gehalt"
+   ],
+   "en": [
+    "permanent employee",
+    "salary"
+   ]
+  },
+  "a": {
+   "de": [
+    "Umsatzsteuer"
+   ],
+   "en": [
+    "sales tax"
+   ]
+  }
+ },
+ "G-286": {
+  "q": {
+   "de": [
+    "Firma hilft",
+    "Problemen mit der Arbeitgeberin"
+   ],
+   "en": [
+    "company helps employees",
+    "problems with their employer"
+   ]
+  },
+  "a": {
+   "de": [
+    "Betriebsrat"
+   ],
+   "en": [
+    "Betriebsrat"
+   ]
+  },
+  "like": [
+   "G-136",
+   "G-137"
+  ]
+ },
+ "G-287": {
+  "q": {
+   "de": [
+    "Arbeitsverhältnis beenden"
+   ],
+   "en": [
+    "end your employment"
+   ]
+  },
+  "a": {
+   "de": [
+    "Kündigungsfrist"
+   ],
+   "en": [
+    "notice period"
+   ]
+  }
+ },
+ "G-288": {
+  "q": {
+   "de": [
+    "besondere Verantwortung für Israel"
+   ],
+   "en": [
+    "special responsibility towards Israel"
+   ]
+  },
+  "a": {
+   "de": [
+    "nationalsozialistischen Verbrechen gegen Juden"
+   ],
+   "en": [
+    "National Socialist crimes against Jews"
+   ]
+  }
+ },
+ "G-289": {
+  "q": {
+   "de": [
+    "dunkler Hautfarbe",
+    "Kellner",
+    "Diskriminierung"
+   ],
+   "en": [
+    "dark skin",
+    "waiter",
+    "discrimination"
+   ]
+  },
+  "a": {
+   "de": [
+    "dunkle Haut"
+   ],
+   "en": [
+    "dark skin"
+   ]
+  }
+ },
+ "G-290": {
+  "q": {
+   "de": [
+    "Fernseher",
+    "kaputt"
+   ],
+   "en": [
+    "television",
+    "broken"
+   ]
+  },
+  "a": {
+   "de": [
+    "reklamieren"
+   ],
+   "en": [
+    "make a claim"
+   ]
+  }
+ },
+ "G-291": {
+  "q": {
+   "de": [
+    "Steuererklärung",
+    "Kirche"
+   ],
+   "en": [
+    "tax return",
+    "church"
+   ]
+  },
+  "a": {
+   "de": [
+    "Kirchensteuer"
+   ],
+   "en": [
+    "church tax"
+   ]
+  }
+ },
+ "G-292": {
+  "q": {
+   "de": [
+    "religiösen Toleranz"
+   ],
+   "en": [
+    "religious tolerance"
+   ]
+  },
+  "a": {
+   "de": [
+    "glauben, was er möchte"
+   ],
+   "en": [
+    "believe what they want"
+   ]
+  }
+ },
+ "G-293": {
+  "q": {
+   "de": [
+    "Ostern"
+   ],
+   "en": [
+    "Easter"
+   ]
+  },
+  "a": {
+   "de": [
+    "Eier bemalen"
+   ],
+   "en": [
+    "painting eggs"
+   ]
+  }
+ },
+ "G-294": {
+  "q": {
+   "de": [
+    "Pfingsten"
+   ],
+   "en": [
+    "Pentecost"
+   ]
+  },
+  "a": {
+   "de": [
+    "christlicher Feiertag"
+   ],
+   "en": [
+    "Christian holiday"
+   ]
+  }
+ },
+ "G-295": {
+  "q": {
+   "de": [
+    "Religion",
+    "geprägt"
+   ],
+   "en": [
+    "religion",
+    "shaped"
+   ]
+  },
+  "a": {
+   "de": [
+    "Christentum"
+   ],
+   "en": [
+    "Christianity"
+   ]
+  }
+ },
+ "G-296": {
+  "q": {
+   "de": [
+    "letzten vier Wochen vor Weihnachten"
+   ],
+   "en": [
+    "last four weeks before Christmas"
+   ]
+  },
+  "a": {
+   "de": [
+    "Adventszeit"
+   ],
+   "en": [
+    "Advent"
+   ]
+  }
+ },
+ "G-297": {
+  "q": {
+   "de": [
+    "meisten Migrantinnen und Migranten"
+   ],
+   "en": [
+    "most migrants"
+   ]
+  },
+  "a": {
+   "de": [
+    "Türkei"
+   ],
+   "en": [
+    "Turkey"
+   ]
+  },
+  "like": [
+   "G-300"
+  ]
+ },
+ "G-298": {
+  "q": {
+   "de": [
+    "In der DDR",
+    "Migrantinnen und Migranten"
+   ],
+   "en": [
+    "In the GDR, migrants"
+   ]
+  },
+  "a": {
+   "de": [
+    "Vietnam, Polen, Mosambik"
+   ],
+   "en": [
+    "Vietnam, Poland, Mozambique"
+   ]
+  }
+ },
+ "G-299": {
+  "q": {
+   "de": [
+    "50er und 60er Jahren",
+    "angeworben"
+   ],
+   "en": [
+    "1950s and 1960s",
+    "recruited"
+   ]
+  },
+  "a": {
+   "de": [
+    "Gastarbeiterinnen/Gastarbeiter"
+   ],
+   "en": [
+    "Gastarbeiter"
+   ]
+  }
+ },
+ "G-300": {
+  "q": {
+   "de": [
+    "ersten Gastarbeiterinnen und Gastarbeiter"
+   ],
+   "en": [
+    "first guest workers"
+   ]
+  },
+  "a": {
+   "de": [
+    "Italien"
+   ],
+   "en": [
+    "Italy"
+   ]
+  },
+  "like": [
+   "G-297"
+  ]
+ },
+ "BW-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 1"
+   ],
+   "en": [
+    "Image 1"
+   ]
+  }
+ },
+ "BW-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Neckar-Odenwald-Kreis"
+   ],
+   "en": [
+    "Neckar-Odenwald-Kreis"
+   ]
+  }
+ },
+ "BW-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "BW-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "BW-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "schwarz-gold"
+   ],
+   "en": [
+    "black-gold"
+   ]
+  }
+ },
+ "BW-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "BW-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Stuttgart"
+   ],
+   "en": [
+    "Stuttgart"
+   ]
+  }
+ },
+ "BW-8": {
+  "q": {
+   "de": [
+    "Baden-Württemberg"
+   ],
+   "en": [
+    "Baden-Württemberg"
+   ]
+  },
+  "a": {
+   "de": [
+    "2"
+   ],
+   "en": [
+    "2"
+   ]
+  }
+ },
+ "BW-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsident"
+   ]
+  }
+ },
+ "BW-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "BY-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 2"
+   ],
+   "en": [
+    "Image 2"
+   ]
+  }
+ },
+ "BY-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Altötting"
+   ],
+   "en": [
+    "Altötting"
+   ]
+  }
+ },
+ "BY-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "BY-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "18"
+   ],
+   "en": [
+    "18"
+   ]
+  }
+ },
+ "BY-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "weiß-blau"
+   ],
+   "en": [
+    "white-blue"
+   ]
+  }
+ },
+ "BY-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "BY-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "München"
+   ],
+   "en": [
+    "Munich"
+   ]
+  }
+ },
+ "BY-8": {
+  "q": {
+   "de": [
+    "Bayern"
+   ],
+   "en": [
+    "Bavaria"
+   ]
+  },
+  "a": {
+   "de": [
+    "4"
+   ],
+   "en": [
+    "4"
+   ]
+  }
+ },
+ "BY-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsident"
+   ]
+  }
+ },
+ "BY-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "BE-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 4"
+   ],
+   "en": [
+    "Image 4"
+   ]
+  }
+ },
+ "BE-2": {
+  "q": {
+   "de": [
+    "Bezirk"
+   ],
+   "en": [
+    "Bezirk"
+   ]
+  },
+  "a": {
+   "de": [
+    "Pankow"
+   ],
+   "en": [
+    "Pankow"
+   ]
+  }
+ },
+ "BE-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landesparlament"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "BE-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "BE-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "weiß-rot"
+   ],
+   "en": [
+    "white-red"
+   ]
+  }
+ },
+ "BE-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "BE-7": {
+  "q": {
+   "de": [
+    "Stadtstaat"
+   ],
+   "en": [
+    "city-state"
+   ]
+  },
+  "a": {
+   "de": [
+    "Berlin"
+   ],
+   "en": [
+    "Berlin"
+   ]
+  }
+ },
+ "BE-8": {
+  "q": {
+   "de": [
+    "Berlin"
+   ],
+   "en": [
+    "Berlin"
+   ]
+  },
+  "a": {
+   "de": [
+    "4"
+   ],
+   "en": [
+    "4"
+   ]
+  }
+ },
+ "BE-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Regierende Bürgermeisterin/Regierender Bürgermeister"
+   ],
+   "en": [
+    "Regierender Bürgermeister"
+   ]
+  }
+ },
+ "BE-10": {
+  "q": {
+   "de": [
+    "Senator"
+   ],
+   "en": [
+    "senator"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenbeziehungen"
+   ],
+   "en": [
+    "External Relations"
+   ]
+  }
+ },
+ "BB-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 1"
+   ],
+   "en": [
+    "Image 1"
+   ]
+  }
+ },
+ "BB-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Prignitz"
+   ],
+   "en": [
+    "Prignitz"
+   ]
+  }
+ },
+ "BB-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "BB-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "BB-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "rot-weiß"
+   ],
+   "en": [
+    "red-white"
+   ]
+  }
+ },
+ "BB-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "BB-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Potsdam"
+   ],
+   "en": [
+    "Potsdam"
+   ]
+  }
+ },
+ "BB-8": {
+  "q": {
+   "de": [
+    "Brandenburg"
+   ],
+   "en": [
+    "Brandenburg"
+   ]
+  },
+  "a": {
+   "de": [
+    "4"
+   ],
+   "en": [
+    "4"
+   ]
+  }
+ },
+ "BB-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsident"
+   ]
+  }
+ },
+ "BB-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "HB-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 3"
+   ],
+   "en": [
+    "Image 3"
+   ]
+  }
+ },
+ "HB-2": {
+  "q": {
+   "de": [
+    "Stadtteil"
+   ],
+   "en": [
+    "Stadtteil"
+   ]
+  },
+  "a": {
+   "de": [
+    "Hemelingen"
+   ],
+   "en": [
+    "Hemelingen"
+   ]
+  }
+ },
+ "HB-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landesparlament"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "4"
+   ],
+   "en": [
+    "4"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "HB-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Bürgerschaft"
+   ],
+   "en": [
+    "what age",
+    "Bürgerschaft"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "HB-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "rot-weiß"
+   ],
+   "en": [
+    "red-white"
+   ]
+  }
+ },
+ "HB-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "HB-7": {
+  "q": {
+   "de": [
+    "Stadtstaat"
+   ],
+   "en": [
+    "city-state"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bremen"
+   ],
+   "en": [
+    "Bremen"
+   ]
+  }
+ },
+ "HB-8": {
+  "q": {
+   "de": [
+    "Bremen"
+   ],
+   "en": [
+    "Bremen"
+   ]
+  },
+  "a": {
+   "de": [
+    "1"
+   ],
+   "en": [
+    "1"
+   ]
+  }
+ },
+ "HB-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Präsidentin/Präsident des Senates"
+   ],
+   "en": [
+    "President of the Senate"
+   ]
+  }
+ },
+ "HB-10": {
+  "q": {
+   "de": [
+    "Senator"
+   ],
+   "en": [
+    "senator"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenbeziehungen"
+   ],
+   "en": [
+    "External Relations"
+   ]
+  }
+ },
+ "HH-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 2"
+   ],
+   "en": [
+    "Image 2"
+   ]
+  }
+ },
+ "HH-2": {
+  "q": {
+   "de": [
+    "Bezirk"
+   ],
+   "en": [
+    "Bezirk"
+   ]
+  },
+  "a": {
+   "de": [
+    "Altona"
+   ],
+   "en": [
+    "Altona"
+   ]
+  }
+ },
+ "HH-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landesparlament"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "HH-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "HH-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "weiß-rot"
+   ],
+   "en": [
+    "white-red"
+   ]
+  }
+ },
+ "HH-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "HH-7": {
+  "q": {
+   "de": [
+    "Stadtstaat"
+   ],
+   "en": [
+    "city-state"
+   ]
+  },
+  "a": {
+   "de": [
+    "Hamburg"
+   ],
+   "en": [
+    "Hamburg"
+   ]
+  }
+ },
+ "HH-8": {
+  "q": {
+   "de": [
+    "Hamburg"
+   ],
+   "en": [
+    "Hamburg"
+   ]
+  },
+  "a": {
+   "de": [
+    "3"
+   ],
+   "en": [
+    "3"
+   ]
+  }
+ },
+ "HH-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Erste Bürgermeisterin/Erster Bürgermeister"
+   ],
+   "en": [
+    "Erster Bürgermeister"
+   ]
+  }
+ },
+ "HH-10": {
+  "q": {
+   "de": [
+    "Senator"
+   ],
+   "en": [
+    "senator"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenbeziehungen"
+   ],
+   "en": [
+    "External Relations"
+   ]
+  }
+ },
+ "HE-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 1"
+   ],
+   "en": [
+    "Image 1"
+   ]
+  }
+ },
+ "HE-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Main-Taunus-Kreis"
+   ],
+   "en": [
+    "Main-Taunus-Kreis"
+   ]
+  }
+ },
+ "HE-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "HE-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "18"
+   ],
+   "en": [
+    "18"
+   ]
+  }
+ },
+ "HE-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "rot-weiß"
+   ],
+   "en": [
+    "red-white"
+   ]
+  }
+ },
+ "HE-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "HE-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Wiesbaden"
+   ],
+   "en": [
+    "Wiesbaden"
+   ]
+  }
+ },
+ "HE-8": {
+  "q": {
+   "de": [
+    "Hessen"
+   ],
+   "en": [
+    "Hesse"
+   ]
+  },
+  "a": {
+   "de": [
+    "3"
+   ],
+   "en": [
+    "3"
+   ]
+  }
+ },
+ "HE-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsident"
+   ]
+  }
+ },
+ "HE-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "MV-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 3"
+   ],
+   "en": [
+    "Image 3"
+   ]
+  }
+ },
+ "MV-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Mecklenburgische Seenplatte"
+   ],
+   "en": [
+    "Mecklenburgische Seenplatte"
+   ]
+  }
+ },
+ "MV-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "MV-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "MV-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "blau-weiß-gelb-rot"
+   ],
+   "en": [
+    "blue-white-yellow-red"
+   ]
+  }
+ },
+ "MV-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "MV-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Schwerin"
+   ],
+   "en": [
+    "Schwerin"
+   ]
+  }
+ },
+ "MV-8": {
+  "q": {
+   "de": [
+    "Mecklenburg-Vorpommern"
+   ],
+   "en": [
+    "Mecklenburg-Western Pomerania"
+   ]
+  },
+  "a": {
+   "de": [
+    "3"
+   ],
+   "en": [
+    "3"
+   ]
+  }
+ },
+ "MV-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsident"
+   ]
+  }
+ },
+ "MV-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "NI-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 3"
+   ],
+   "en": [
+    "Image 3"
+   ]
+  }
+ },
+ "NI-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ammerland"
+   ],
+   "en": [
+    "Ammerland"
+   ]
+  }
+ },
+ "NI-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "NI-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "NI-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "schwarz-rot-gold"
+   ],
+   "en": [
+    "black-red-gold"
+   ]
+  }
+ },
+ "NI-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "NI-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Hannover"
+   ],
+   "en": [
+    "Hanover"
+   ]
+  }
+ },
+ "NI-8": {
+  "q": {
+   "de": [
+    "Niedersachsen"
+   ],
+   "en": [
+    "Lower Saxony"
+   ]
+  },
+  "a": {
+   "de": [
+    "1"
+   ],
+   "en": [
+    "1"
+   ]
+  }
+ },
+ "NI-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ]
+  }
+ },
+ "NI-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "NW-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 2"
+   ],
+   "en": [
+    "Image 2"
+   ]
+  }
+ },
+ "NW-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Rhein-Sieg-Kreis"
+   ],
+   "en": [
+    "Rhein-Sieg-Kreis"
+   ]
+  }
+ },
+ "NW-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "NW-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "NW-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "grün-weiß-rot"
+   ],
+   "en": [
+    "green-white-red"
+   ]
+  }
+ },
+ "NW-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "NW-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Düsseldorf"
+   ],
+   "en": [
+    "Düsseldorf"
+   ]
+  }
+ },
+ "NW-8": {
+  "q": {
+   "de": [
+    "Nordrhein-Westfalen"
+   ],
+   "en": [
+    "North Rhine-Westphalia"
+   ]
+  },
+  "a": {
+   "de": [
+    "3"
+   ],
+   "en": [
+    "3"
+   ]
+  }
+ },
+ "NW-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ]
+  }
+ },
+ "NW-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "RP-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 1"
+   ],
+   "en": [
+    "Image 1"
+   ]
+  }
+ },
+ "RP-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Westerwaldkreis"
+   ],
+   "en": [
+    "Westerwaldkreis"
+   ]
+  }
+ },
+ "RP-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "RP-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "18"
+   ],
+   "en": [
+    "18"
+   ]
+  }
+ },
+ "RP-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "schwarz-rot-gold"
+   ],
+   "en": [
+    "black-red-gold"
+   ]
+  }
+ },
+ "RP-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "RP-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Mainz"
+   ],
+   "en": [
+    "Mainz"
+   ]
+  }
+ },
+ "RP-8": {
+  "q": {
+   "de": [
+    "Rheinland-Pfalz"
+   ],
+   "en": [
+    "Rhineland-Palatinate"
+   ]
+  },
+  "a": {
+   "de": [
+    "1"
+   ],
+   "en": [
+    "1"
+   ]
+  }
+ },
+ "RP-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ]
+  }
+ },
+ "RP-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "SL-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 4"
+   ],
+   "en": [
+    "Image 4"
+   ]
+  }
+ },
+ "SL-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Neunkirchen"
+   ],
+   "en": [
+    "Neunkirchen"
+   ]
+  }
+ },
+ "SL-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "SL-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "18"
+   ],
+   "en": [
+    "18"
+   ]
+  }
+ },
+ "SL-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "schwarz-rot-gold"
+   ],
+   "en": [
+    "black-red-gold"
+   ]
+  }
+ },
+ "SL-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "SL-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Saarbrücken"
+   ],
+   "en": [
+    "Saarbrücken"
+   ]
+  }
+ },
+ "SL-8": {
+  "q": {
+   "de": [
+    "Saarland"
+   ],
+   "en": [
+    "Saarland"
+   ]
+  },
+  "a": {
+   "de": [
+    "2"
+   ],
+   "en": [
+    "2"
+   ]
+  }
+ },
+ "SL-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ]
+  }
+ },
+ "SL-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "SN-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 4"
+   ],
+   "en": [
+    "Image 4"
+   ]
+  }
+ },
+ "SN-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Vogtlandkreis"
+   ],
+   "en": [
+    "Vogtlandkreis"
+   ]
+  }
+ },
+ "SN-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "SN-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "18"
+   ],
+   "en": [
+    "18"
+   ]
+  }
+ },
+ "SN-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "weiß-grün"
+   ],
+   "en": [
+    "white-green"
+   ]
+  }
+ },
+ "SN-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "SN-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Dresden"
+   ],
+   "en": [
+    "Dresden"
+   ]
+  }
+ },
+ "SN-8": {
+  "q": {
+   "de": [
+    "Sachsen"
+   ],
+   "en": [
+    "Saxony"
+   ]
+  },
+  "a": {
+   "de": [
+    "4"
+   ],
+   "en": [
+    "4"
+   ]
+  }
+ },
+ "SN-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ]
+  }
+ },
+ "SN-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "ST-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 4"
+   ],
+   "en": [
+    "Image 4"
+   ]
+  }
+ },
+ "ST-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Börde"
+   ],
+   "en": [
+    "Börde"
+   ]
+  }
+ },
+ "ST-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "ST-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "ST-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "gelb-schwarz"
+   ],
+   "en": [
+    "yellow-black"
+   ]
+  }
+ },
+ "ST-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "ST-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Magdeburg"
+   ],
+   "en": [
+    "Magdeburg"
+   ]
+  }
+ },
+ "ST-8": {
+  "q": {
+   "de": [
+    "Sachsen-Anhalt"
+   ],
+   "en": [
+    "Saxony-Anhalt"
+   ]
+  },
+  "a": {
+   "de": [
+    "3"
+   ],
+   "en": [
+    "3"
+   ]
+  }
+ },
+ "ST-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ]
+  }
+ },
+ "ST-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "SH-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 3"
+   ],
+   "en": [
+    "Image 3"
+   ]
+  }
+ },
+ "SH-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Nordfriesland"
+   ],
+   "en": [
+    "Nordfriesland"
+   ]
+  }
+ },
+ "SH-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "SH-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "SH-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "blau-weiß-rot"
+   ],
+   "en": [
+    "blue-white-red"
+   ]
+  }
+ },
+ "SH-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landesbeauftragten"
+   ],
+   "en": [
+    "Landesbeauftragte"
+   ]
+  }
+ },
+ "SH-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Kiel"
+   ],
+   "en": [
+    "Kiel"
+   ]
+  }
+ },
+ "SH-8": {
+  "q": {
+   "de": [
+    "Schleswig-Holstein"
+   ],
+   "en": [
+    "Schleswig-Holstein"
+   ]
+  },
+  "a": {
+   "de": [
+    "1"
+   ],
+   "en": [
+    "1"
+   ]
+  }
+ },
+ "SH-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ]
+  }
+ },
+ "SH-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ },
+ "TH-1": {
+  "q": {
+   "de": [
+    "Wappen"
+   ],
+   "en": [
+    "coat of arms"
+   ]
+  },
+  "a": {
+   "de": [
+    "Bild 4"
+   ],
+   "en": [
+    "Image 4"
+   ]
+  }
+ },
+ "TH-2": {
+  "q": {
+   "de": [
+    "Landkreis"
+   ],
+   "en": [
+    "Landkreis"
+   ]
+  },
+  "a": {
+   "de": [
+    "Wartburgkreis"
+   ],
+   "en": [
+    "Wartburgkreis"
+   ]
+  }
+ },
+ "TH-3": {
+  "q": {
+   "de": [
+    "wie viele Jahre",
+    "Landtag"
+   ],
+   "en": [
+    "how many years",
+    "state parliament"
+   ]
+  },
+  "a": {
+   "de": [
+    "5"
+   ],
+   "en": [
+    "5"
+   ]
+  },
+  "like": [
+   "G-107",
+   "G-110",
+   "G-230"
+  ]
+ },
+ "TH-4": {
+  "q": {
+   "de": [
+    "Alter",
+    "Kommunalwahlen"
+   ],
+   "en": [
+    "what age",
+    "local elections"
+   ]
+  },
+  "a": {
+   "de": [
+    "16"
+   ],
+   "en": [
+    "16"
+   ]
+  },
+  "like": [
+   "G-94"
+  ]
+ },
+ "TH-5": {
+  "q": {
+   "de": [
+    "Landesflagge"
+   ],
+   "en": [
+    "state flag"
+   ]
+  },
+  "a": {
+   "de": [
+    "weiß-rot"
+   ],
+   "en": [
+    "white-red"
+   ]
+  }
+ },
+ "TH-6": {
+  "q": {
+   "de": [
+    "politische Themen"
+   ],
+   "en": [
+    "political topics"
+   ]
+  },
+  "a": {
+   "de": [
+    "Landeszentrale"
+   ],
+   "en": [
+    "Landeszentrale"
+   ]
+  }
+ },
+ "TH-7": {
+  "q": {
+   "de": [
+    "Landeshauptstadt"
+   ],
+   "en": [
+    "state capital"
+   ]
+  },
+  "a": {
+   "de": [
+    "Erfurt"
+   ],
+   "en": [
+    "Erfurt"
+   ]
+  }
+ },
+ "TH-8": {
+  "q": {
+   "de": [
+    "Thüringen"
+   ],
+   "en": [
+    "Thuringia"
+   ]
+  },
+  "a": {
+   "de": [
+    "2"
+   ],
+   "en": [
+    "2"
+   ]
+  }
+ },
+ "TH-9": {
+  "q": {
+   "de": [
+    "Regierungschef"
+   ],
+   "en": [
+    "head of government"
+   ]
+  },
+  "a": {
+   "de": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ],
+   "en": [
+    "Ministerpräsidentin/Ministerpräsident"
+   ]
+  }
+ },
+ "TH-10": {
+  "q": {
+   "de": [
+    "Minister"
+   ],
+   "en": [
+    "minister"
+   ]
+  },
+  "a": {
+   "de": [
+    "Außenministerin/Außenminister"
+   ],
+   "en": [
+    "Foreign Affairs"
+   ]
+  }
+ }
+}

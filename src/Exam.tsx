@@ -330,6 +330,8 @@ function Exam({ store, onExit, onRetake, onPractise }: ExamProps) {
           showEnglish={store.p.showEnglish}
           selected={answers[cur]}
           reveal={!!finished}
+          keywords={!!finished && store.p.keywords}
+          userState={store.p.state}
           onSelect={finished ? undefined : (i) => setAnswers((a) => a.map((v, k) => (k === idx ? i : v)))}
         />
         {finished && answers[cur] === null && <p className="muted center">You did not answer this question.</p>}
