@@ -66,7 +66,7 @@ export function Practice({ title, ids, store, onExit, onRestart }: Props) {
 
   if (ids.length === 0) {
     return (
-      <div className="session">
+      <div className="session session-narrow">
         {header}
         <main className="page">
           <div className="empty">
@@ -83,7 +83,7 @@ export function Practice({ title, ids, store, onExit, onRestart }: Props) {
   if (!q) {
     const missed = ids.filter((_, i) => results[i] === false)
     return (
-      <div className="session">
+      <div className="session session-narrow">
         {header}
         <main className="page">
           <section className="result-card">

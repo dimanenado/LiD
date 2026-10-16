@@ -200,7 +200,7 @@ function Exam({ store, onExit, onRetake, onPractise }: ExamProps) {
     const missed = ids.filter((_, i) => !correct(i))
     const passed = score >= PASS
     return (
-      <div className="session">
+      <div className="session session-narrow">
         <header className="sessbar">
           <div className="sessbar-in">
             <button className="icon-btn" aria-label="Close results" onClick={onExit}>
